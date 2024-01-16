@@ -1,0 +1,39 @@
+{
+"services": [
+    {
+      "id": 1,
+      "title": "БРИФ",
+      "description": "МЫ ОБСУЖДАЕМ ПРОЕКТ."
+    },
+    {
+      "id": 2,
+      "title": "50% PAYMENT",
+      "description": "AFTER THE BRIEF WE SIGN THE CONTRACT AND ACCEPT HALF OF THE PAYMENT"
+    },
+    {
+      "id": 3,
+      "title": "DEVELOPMENT",
+      "description": "AFTER THE DESIGN IS APPROVED, OUR DEVELOPERS BEGIN CODE THE WEBSITE AND ENLIVEN IT"
+    },
+    {
+      "id": 4,
+      "title": "PROTOTYPING",
+      "description": "WE WORK ON DESIGN OF THE WEBSITE THROUGH STEP-BY-STEP ITERATIONS"
+    },
+    {
+        "id": 5,
+        "title": "CONTENT FILLING",
+        "description": "AS WE FINISH DEVELOPING THE PRODUCT WE HAVE TO FILL IT WITH THE REAL TEXT AND PHOTOS"
+      },
+      {
+        "id": 6,
+        "title": "TESTING",
+        "description": "AFTER THE WEBSITE IS READY WE TEST IT IN ALL TERMS FROM THE UX TO ITS LOADING SPEED"
+      },
+      {
+        "id": 7,
+        "title": "DELIVERY",
+        "description": "AFTER THE PRODUCT PASSES ALL THE CHECK UPS WE CAN BRAVELY HAND IT TO YOU"
+      }
+  ]
+}
