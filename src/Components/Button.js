@@ -39,13 +39,13 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
 
   return (
     <>
-      <Button onClick={() => { getPortfolio(); handleOpen(); }}>
-        <div className='relative flex justify-end mt-11 h-[100px] w-[260px] group'>
+      <button className='flex justify-center items-center' onClick={() => { getPortfolio(); handleOpen(); }}>
+        <div className='relative flex justify-end mt-11 h-[100px] lg:w-[260px] w-[200px] group'>
           {/* First Element */}
-          <div className="element absolute w-[56.50px] h-[37.50px] border border-teal-500 z-10 left-60 bottom-[88px]"></div>
+          <div className="element absolute lg:w-[56.50px] w-[46px] lg:h-[37.50px] h-[30px] border border-teal-500 z-10 lg:left-60 left-[190px] lg:bottom-[88px] bottom-[100px]"></div>
 
           {/* Second Element */}
-          <div className="element absolute w-[113px] h-[75px] border border-teal-500 ml-16 left-28 bottom-[40px] z-30"></div>
+          <div className="element absolute lg:w-[113px] w-[80px] lg:h-[75px] h-[50px] border border-teal-500 ml-16 lg:left-28 left-20 lg:bottom-[40px] bottom-[65px] z-30"></div>
 
           {/* Third Element */}
           <div
@@ -55,12 +55,12 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
             {text}
           </div>
         </div>
-      </Button>
+      </button>
     <div className='flex items-center justify-center'>
       <Dialog open={open} handler={handleOpen} className="w-[70vw] h-[80vh] mx-auto my-auto flex">
       {popupContent && (
         <>
-      <img className='h-[80vh] w-[50%]' src={popupContent.imageUrl} alt="Portfolio" />
+      <img loading='lazy' role="presentation" decoding='async' fetchpriority = 'high' className='h-[80vh] w-[50%]' src={popupContent.imageUrl} alt="Portfolio" />
 
       <DialogBody className="h-[42rem]">
         <DialogHeader>{popupContent.serviceTitle}</DialogHeader>

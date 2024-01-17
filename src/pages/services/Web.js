@@ -14,57 +14,58 @@ import Last3Page from '../../Components/Last3Page'
 
 export default function Web() {
     return (
-        <div className='lg:flex block lg:overflow-x-auto overflow-x-hidden h-[100vh]'>
+        <div className='lg:flex block lg:overflow-x-auto overflow-x-hidden  h-[100vh]'>
             <NavBar />
-            <section className='bg-black flex-shrink-0  w-screen h-screen  flex  justify-center'>
-                <div className='lg:flex gap-40'>
+            <section className='bg-black flex-shrink-0  w-auto lg:h-[100vh] h-[80vh]  flex items-center px-11'>
+                <div className='lg:flex '>
                 <div className='  flex lg:flex-col items-center justify-center md:mt-4 mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                     </div>
-                    <div className='relative h-[80vh]'>
-                        <div className=''>
+                    <div className=''>
+                        
+                        <div className=' lg:ml-[17rem]'>
                             <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">создание сайтов<span className='font-extralight ml-3'>и</span>  <span className='font-extralight flex justify-end'>приложений</span></h1>
                         </div>
-
-                        <div className='absolute lg:bottom-0 top-[330px] left-0'>
+                        
+                        <div className='lg:ml-[5rem]'>
                             <h2 className="2xl:text-[190px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
                         </div>
                     </div>
-                </div>
+                </div>  
             </section>
-            <section className='bg-black flex-shrink-0  w-auto lg:h-screen h-auto block lg:flex items-center'>
+            <section className='bg-black flex-shrink-0  w-auto lg:h-screen h-auto block lg:flex items-center  lg:px-11 pr-11'>
                 <Slider text={'Вебсайты'} />
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-10 relative'>
                     <h2 className="text-white 2xl:text-[200px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> сайтов любой<br /> сложности</h2>
-                    <p className="2xl:w-[600px] md:absolute lg:top-[120px] lg:right-[-80px] top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <p className="2xl:w-[600px] md:absolute lg:top-0 lg:right-[-80px] top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
                     Рисуем прототипы, создаём макеты, верстаем для разных типов устройств. Внедряем необходимую CMS, интегрируем CRM.</p>
                 </div>
-                <div className='md:block hidden'>
+                <div className='lg:block md:hidden block lg:ml-40'>
                     <SnakeBox />
                 </div>
 
 
-                <div className='lg:block md:flex justify-center items-center'>
-                    <div className='lg:space-y-0 md:space-y-60'>
-                        <div className=' md:mr-14 '>
+                <div className='lg:block md:flex justify-center items-center md:mt-0 mt-9'>
+                    <div className='lg:space-y-0 md:space-y-60 '>
+                        <div className='md:mr-14 '>
                             <Button text={'Landing Page'} category={'web'} documentId = {1}/>
                         </div>
                         <div className='lg:ml-20 md:block flex justify-end' documentId={4}>
                             <Button text={'E-Commerce'} />
                         </div>
                     </div>
-                    <div className='md:block hidden'>
+                    <div className=' lg:hidden md:block hidden'>
                         <SnakeBox />
                     </div>
 
-                    <div className='lg:space-y-0 md:space-y-60'>
+                    <div className='lg:space-y-0 md:space-y-60 md:mr-24'>
                         <div className=' lg:ml-48'>
                             <Button text={'Корпоративный сайт'} documentId = {2} />
                         </div>
 
-                        <div className=' lg:ml-72 md:block flex justify-end'>
+                        <div className=' lg:ml-72  md:block flex justify-end'>
                             <Button text={'Сайт каталог'} documentId = {3}/>
                         </div>
                     </div>
@@ -79,8 +80,8 @@ export default function Web() {
             </section>
 
             <section className='bg-black flex-shrink-0  w-auto  lg:h-screen h-auto  lg:flex items-center'>
-                <div className=' lg:h-screen lg:w-[182px] h-[182px] w-full lg:border-r lg:border-l border-t border-b py-20 border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[100px] md:text-[80px] text-4xl  font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">online services</h3>
+                <div className=' lg:h-screen 2xl:w-[182px] lg:w-[100px] 2xl:h-[182px] h-[100px] w-full lg:border-r lg:border-l border-t border-b py-20 border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
+                    <h3 className="font_border horizon-text 2xl:text-[100px] md:text-[60px] text-4xl  font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">online services</h3>
                 </div>
 
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-10 relative'>
@@ -97,7 +98,7 @@ export default function Web() {
                     <div className='md:flex justify-center items-center  hidden'>
                         <SnakeBox />
                     </div>
-                    <div className='flex justify-end items-end'>
+                    <div className='flex justify-end items-end md:mr-0 mr-10'>
                         <Button text={'SYSTEMS FOR BUSINESS'} />
                     </div>
                 </div>
@@ -130,7 +131,7 @@ export default function Web() {
                     <div className='md:flex justify-center items-center  hidden'>
                         <SnakeBox />
                     </div>
-                    <div className='flex justify-end items-end'>
+                    <div className='flex justify-end items-end md:mr-0 mr-10'>
                         <Button text={'ANDROID DEVELOPMENT'} documentId={7} />
                     </div>
                 </div>
