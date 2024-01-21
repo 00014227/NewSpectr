@@ -18,27 +18,27 @@ export default function Branding() {
         
         <div  className='lg:flex block lg:overflow-x-auto overflow-x-hidden h-[100vh]' >
             <NavBar />
-            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto  lg:flex  justify-center  px-12'>
-                <div className='lg:flex gap-40'>
+            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto relative  lg:flex items-center  px-12'>
+                <div className='lg:flex '>
                     <div className='  flex lg:flex-col items-center justify-center md:mt-4 mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                     </div>
-                    <div className='relative lg:h-[80vh] h-[50vh]'>
-                        <div className=''>
-                            <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px]  font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]"><span className='font-extralight'>communication</span> design <span className='font-extralight'>&</span> <span className='flex justify-end'>branding</span></h1>
+                    <div className=' space-y-[10%]'>
+                        <div className='lg:ml-[14rem] '>
+                            <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px]  font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">дизайн <span className='font-extralight ml-3'>и</span> брендинг</h1>
 
                         </div>
 
-                        <div className='absolute lg:top-[180px] md:top-[350px]'>
-                            <h2 className="2xl:text-[240px] md:text-[120px] text-[64px] font_border  font-bold font-['Jost'] uppercase ">Our<br /> services</h2>
+                        <div className=' lg:ml-[5rem]'>
+                            <h2 className="2xl:text-[240px] md:text-[120px] text-[64px] font_border  font-bold font-['Jost'] uppercase ">Наши<br />услуги</h2>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className='bg-black flex-shrink-0  w-auto lg:h-screen h-auto lg:flex items-center lg:pt-0 md:pt-24'>
+            <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center  lg:pt-0 md:pt-24'>
                 <div className=' lg:h-screen lg:w-[182px] h-[182px] w-full lg:border-r lg:border-l border-t border-b py-20 border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                     <h3 className="font_border horizon-text 2xl:text-[70px] md:text-[60px] text-4xl  font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">what kind of branding</h3>
                 </div>
@@ -68,7 +68,7 @@ export default function Branding() {
                 <div className='lg:hidden hidden  md:flex flex-col justify-center items-center'>
                     <SnakeBox />
                     </div>
-                <div className=' lg:ml-32  '>
+                <div className=' lg:ml-32   '>
                     <div className='lg:block md:flex justify-between'>
                     <div className=''>
             
