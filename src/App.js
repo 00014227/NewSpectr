@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 import Web from './pages/services/Web';
 import Branding from './pages/services/Branding';
 import Presentation from './pages/services/Presentation';
+import TestPage from './pages/TestPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="/works" element={<DetailWorks />} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/test" element={<TestPage/>} />
         <Route path="/services/web" element={<Web/>}/>
         <Route path="/services/branding" element={<Branding/>}/>
         <Route path="/services/presentation" element={<Presentation/>}/>
