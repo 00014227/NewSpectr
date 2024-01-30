@@ -1,115 +1,86 @@
-import React from 'react'
-import ss1 from '../assets/ss1.svg'
-import ss2 from '../assets/ss2.svg'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import '../pages/DetailWorks/detail.css'
+import React, { useState } from 'react';
+import spectr from '../assets/navbar/spectr.svg'
+import lang from '../assets/navbar/language.svg'
+import download from '../assets/navbar/DOWNLOAD.svg'
+import connect from '../assets/navbar/CONNECT.svg'
+import phone from '../assets/navbar/PHONE.svg'
+import menu from '../assets/navbar/MENU.svg'
+import { Link } from 'react-router-dom'
+const TestPage = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-import slide_image_1 from '../assets/service.png'
+    const handleHover = () => {
+        setIsHovered(true);
+    };
 
-export default function TestPage() {
+    const handleLeave = () => {
+        setIsHovered(false);
+    };
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
+        <div className='flex items-center h-screen bg-black'>
+            <div className='flex items-center'
+                onMouseEnter={handleHover}
+                onMouseLeave={handleLeave}>
 
-        <div className="container">
-            <h1 className="heading">Flower Gallery</h1>
-            <Swiper
-                effect={'coverflow'}
-                grabCursor={true}
-                centeredSlides={true}
-                loop={true}
-                slidesPerView={3}
-                coverflowEffect={{
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 2.5,
-                }}
-                pagination={{ el: '.swiper-pagination', clickable: true }}
-                navigation={{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                    clickable: true,
-                }}
-                modules={[EffectCoverflow, Pagination, Navigation]}
-                className="swiper_container"
-            >
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
+                {isHovered && (
+                    <div className='lg:w-[120px] w-[100%] transition-transform ease-in-out duration-2500 transform   lg:h-screen md:h-[5.9rem] h-auto border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center px-10  z-50'>
+                        <div className='lg:w-[120px] w-[100%] flex lg:flex-col flex-row justify-between lg:h-[100%]'>
+                            <div className=' space-y-12  '>
+                                <img src={spectr} className="mx-auto  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={lang} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={download} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            </div>
 
-                <div className="slider-controler">
-                    <div className="swiper-button-prev slider-arrow">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
+                            <div className=' lg:hidden md:flex hidden gap-10'>
+                                <img src={lang} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={download} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={connect} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={phone} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+
+                            </div>
+
+                            <div className='lg:mx-auto my-auto'>
+                                <button
+                                    className="w-[60px] h-8 focus:outline-none"
+                                    onClick={toggleMenu}
+                                >
+                                    <div className={`bg-white h-1 w-full mb-1 transition-transform transform ${isOpen ? 'rotate-45 translate-y-2' : 'translate-y-0'}`}></div>
+                                    <div className={`bg-white h-1 w-full mb-1 opacity-0 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></div>
+                                    <div className={`bg-white h-1 w-full transition-transform transform ${isOpen ? '-rotate-45 -translate-y-2' : 'translate-y-0'}`}></div>
+                                </button>
+                            </div>
+
+                            <div className=' space-y-12 lg:block hidden'>
+                                <img src={connect} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={phone} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            </div>
+                        </div>
+                        <div className='md:hidden flex justify-center  gap-10 mt-10'>
+                            <img src={lang} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            <img src={download} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            <img src={connect} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            <img src={phone} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+
+                        </div>
+
                     </div>
-                    <div className="swiper-button-next slider-arrow">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </div>
-                    <div className="swiper-pagination"></div>
-                </div>
-            </Swiper>
-        </div>
+                )}
+                <div
 
-
-    )
-}
-
-
-{/* <div className=' flex relative ml-56'>
-                    
-<div className='flex gap-20'>
-    <img src={currentItem.image} className="w-[30vw] h-[85vh]" />
-    <div>
-        <h1 className="text-white ml-36 2xl:text-[120px] text-[80px] font-extralight font-['Jost'] uppercase">our <span className='font-bold'>works</span></h1>
-        <div className='flex gap-36'>
-            <div>
-                {currentItem && currentItem.works.map((work, index) => (
-                    <p key={index} className='text-white text-2xl'>
-                        {work}
-                    </p>
-                ))}
-                <p className="text-white text-2xl">UI/UX Design</p>
-                <p className="text-white text-2xl">Branding</p>
-                <p className="text-white text-2xl">Case Study</p>
-                <div className='flex'>
-                    <button onClick={prevItem}><svg class="w-[64px] h-[24px] text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4" />
-                    </svg></button>
-                    <button onClick={nextItem}>
-                        <svg class="w-[64px] h-[24px] text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </button>
+                    className={`cursor-pointer transition-transform z-50 transform ${isHovered ? 'hover:scale-110' : ''}`}>
+                    <svg class="w-20 h-20 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+                    </svg>
                 </div>
             </div>
-     
-            <img src={portfolioData.portfolio[(currentIndex + 1) % totalItems]?.image} className="w-[18vw] h-[55vh]" />
-        </div>
-    </div>
+            </div>
+    );
+};
 
-
-</div>
-
-<h4 className="text-white bottom-0 z-40 absolute text-[150px] font-black font-['HelveticaNeueCyr'] uppercase">{currentItem.company_name}</h4>
-</div> */}
+export default TestPage

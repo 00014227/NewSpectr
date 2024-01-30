@@ -16,9 +16,9 @@ export default function Branding() {
 
     return (
 
-        <div className='lg:flex block lg:overflow-x-auto overflow-x-hidden h-[100vh]' >
+        <div className='lg:flex items-center block lg:overflow-x-auto bg-black overflow-x-hidden h-[100vh]' >
             <NavBar />
-            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto relative  lg:flex items-center  px-12'>
+            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto    lg:flex items-center  px-12'>
                 <div className='lg:flex '>
                     <div className='  flex lg:flex-col items-center justify-center md:mt-4 mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
                         <svg className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">

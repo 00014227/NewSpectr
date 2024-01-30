@@ -13,6 +13,7 @@ import Last3Page from '../Components/Last3Page';
 import MovingFigure3 from '../Components/MovingFigure3';
 import MovingFigure1 from '../Components/MovingFigure1';
 import MovingFigure2 from '../Components/MovingFigure2';
+import Eye from '../Components/Eye';
 
 const HomePage = () => {
     const [isBeating, setIsBeating] = useState(false);
@@ -40,13 +41,13 @@ const HomePage = () => {
     }, []);
     return (
 
-        <div className="lg:flex block lg:overflow-x-auto overflow-x-hidden h-[100vh]">
+        <div className="lg:flex items-center block lg:overflow-x-auto bg-black overflow-x-hidden h-[100vh]">
             <NavBar />
             {/* px-10 */}
             <section className="bg-black flex-shrink-0  w-auto 2xl:h-screen h-auto py-24 flex flex-col lg:items-center justify-center   pb-[60px]">
                 <div className='lg:w-screen'>
                     <div className='max-w-[1620px] w-auto mx-auto py-14 lg:ml-36 px-4'>
-                        <h2 className=" text-white font-black hidden lg:block  xl:text-7xl lg:text-[80px] text-[50px] uppercase xl:leading-[192px] ">Мы <span className=" font-light lg:leading-[192px]">маркетинговое Агенство  и здесь чтобы создать</span> будущее для вашего бизнеса</h2>
+                        <h2 className=" text-white font-black hidden lg:block  xl:text-7xl lg:text-[80px] text-[50px] uppercase xl:leading-[152px] ">Мы <span className=" font-light lg:leading-[152px]">маркетинговое Агенство  и здесь чтобы создать</span> будущее для вашего бизнеса</h2>
                         <h2 className=" text-white font-black block lg:hidden  xl:text-7xl lg:text-[80px] text-[50px] uppercase  ">Мы <span className=" font-light ">маркетинговое Агенство  и здесь чтобы создать</span> <br /><span className='flex md:justify-end lg:mr-0 mr-7'>будущее для </span><br /> <span className='flex justify-end lg:mr-0 mr-7'>вашего бизнеса</span> </h2>
 
                     </div>
@@ -105,7 +106,8 @@ const HomePage = () => {
                     </div>
 
                     <div className=' 2xl:space-y-[70px] lg:space-y-[30px] md:mt-0 '>
-                        <img src={eye} className=' 2xl:w-auto 2xl:h-auto md:mr-0 mr-10 lg:w-[500px] lg:h-[200px] md:w-[400px] md:h-[188px] w-[191px] h-20 lg:mt-0 md:mt-14' />
+                        <Eye/>
+                        {/* <img src={eye} className=' 2xl:w-auto 2xl:h-auto md:mr-0 mr-10 lg:w-[500px] lg:h-[200px] md:w-[400px] md:h-[188px] w-[191px] h-20 lg:mt-0 md:mt-14' /> */}
                         <h2 className="text-white flex flex-col items-end 2xl:text-[240px] lg:text-[200px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase lg:leading-[240px] ">работы</h2>
                     </div>
                 </div>
