@@ -9,7 +9,7 @@ import { DialogDefault, LongDialog } from './Modal'
 
 export default function Last3Page({ isBeating }) {
     return (
-        <section className='flex-shrink-0 bg-black w-auto  lg:h-screen  lg:flex 2xl:py-12 items-center gap-36'>
+        <section className='flex-shrink-0  w-auto  lg:h-screen  lg:flex 2xl:py-12 items-center gap-36'>
             <div className='flex flex-col md:items-end md:justify-end'>
                 <div className=' 2xl:ml-56 md:ml-32 md:flex'>
                     <h2 className="text-white 2xl:text-[240px] md:text-[70px] text-[56px] font-bold font-['Jost'] uppercase md:leading-[240px]">давайте  <span className='hidden'>services</span></h2>

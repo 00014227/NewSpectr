@@ -19,7 +19,7 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
   
     setPopupContent(result)
   };
-  console.log(popupContent)
+
   const handleOpen = () => setOpen(!open);
 
   useEffect(() => {

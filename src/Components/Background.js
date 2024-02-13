@@ -16,13 +16,14 @@ export default function Background() {
     }, []);
     return (
         <Particles
+        className=" absolute z-10"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
           background: {
             color: {
-              value: "#121d21"
+              value: "#000000"
             }
           },
           fpsLimit: 120,
@@ -66,7 +67,7 @@ export default function Background() {
                 default: "bounce"
               },
               random: false,
-              speed: 6,
+              speed: 4,
               straight: false
             },
             rotate: {
@@ -75,7 +76,7 @@ export default function Background() {
               direction: "clockwise",
               animation: {
                 enable: true,
-                speed: 12,
+                speed: 8,
                 sync: false
               }
             },
@@ -84,7 +85,7 @@ export default function Background() {
                 enable: true,
                 area: 800
               },
-              value:  80
+              value:  40
             },
             opacity: {
               value: 1

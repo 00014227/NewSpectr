@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import slide_image_1 from '../assets/service.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom'
 export default function DetailWorks() {
     const [slidesPerView, setSlidesPerView] = useState(3); 
 
@@ -38,7 +39,10 @@ export default function DetailWorks() {
             <NavBar />
             <section className="bg-black flex-shrink-0 relative  w-screen h-screen flex flex-col lg:items-start justify-center">
                 <div>
-                <h1 className="heading absolute right-0 top-5 text-white text-6xl text-right">Наши работы</h1>
+                    <Link to={'/'}> 
+                    <h1 className="heading absolute right-0 top-5 text-white text-6xl text-right">Наши работы</h1>
+
+                    </Link>
                 </div>
                
                 <div className="container mx-auto">
