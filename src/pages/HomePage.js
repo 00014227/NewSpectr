@@ -47,6 +47,8 @@ const HomePage = () => {
         }, 4000);
     };
 
+ 
+
     useEffect(() => {
         const intervalId = setInterval(() => {
             setIsBeating((prev) => !prev);
@@ -138,6 +140,7 @@ const HomePage = () => {
                 {/* Cards */}
                 <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20 md:space-y-0 space-y-8'>
                     <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
+                        <div className='  hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
                         <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
                         <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
                             <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
@@ -146,6 +149,8 @@ const HomePage = () => {
                     </div>
 
                     <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
+                    <div className='  hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
+
                         <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
                         <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
                             <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
@@ -154,6 +159,8 @@ const HomePage = () => {
                     </div>
 
                     <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
+                    <div className='  hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
+
                         <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
                         <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
                             <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
@@ -162,6 +169,8 @@ const HomePage = () => {
                     </div>
 
                     <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
+                    <div className='  hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
+
                         <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
                         <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
                             <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
@@ -173,8 +182,8 @@ const HomePage = () => {
                 </div>
 
                 <div className=' md:ml-56 flex flex-col justify-center items-center'>
-                    <img src={next} className="md:w-auto md:h-auto w-[120px] h-[100px]" />
-                    <p className="text-teal-500 md:text-[100px] text-[56px] font-bold font-['Jost'] capitalize">see more</p>
+                    <img src={next} className="md:w-200 md:h-200 w-[120px] h-[100px]" />
+                    <p className="text-teal-500 md:text-[60px] text-[56px] font-bold font-['Jost'] capitalize">see more</p>
                 </div>
             </section>
             <Services />

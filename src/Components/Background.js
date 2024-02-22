@@ -85,7 +85,7 @@ export default function Background() {
                 enable: true,
                 area: 800
               },
-              value:  40
+              value:  20
             },
             opacity: {
               value: 1

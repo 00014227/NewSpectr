@@ -14,7 +14,7 @@ import Last3Page from '../../Components/Last3Page'
 
 export default function Web() {
     return (
-        <div className='lg:flex block lg:overflow-x-auto overflow-x-hidden  h-[100vh]'>
+        <div className='lg:flex block lg:overflow-x-auto overflow-x-hidden overflow-y-hidden  h-[100vh]'>
             <NavBar />
             <section className='bg-black flex-shrink-0  w-auto lg:h-[100vh] h-[80vh]  flex items-center px-11'>
                 <div className='lg:flex '>
