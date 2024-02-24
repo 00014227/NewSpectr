@@ -77,7 +77,7 @@ const NavBar = () => {
 
                             </div>
 
-                            <div className='lg:mx-auto my-auto'>
+                            {/* <div className='lg:mx-auto my-auto'>
                                 <button
                                     className="w-[60px] h-8 focus:outline-none"
                                     onClick={toggleMenu}
@@ -86,7 +86,7 @@ const NavBar = () => {
                                     <div className={`bg-white h-1 w-full mb-1 opacity-0 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></div>
                                     <div className={`bg-white h-1 w-full transition-transform transform ${isOpen ? '-rotate-45 -translate-y-2' : 'translate-y-0'}`}></div>
                                 </button>
-                            </div>
+                            </div> */}
 
                             <div className=' space-y-20 lg:flex hidden flex-col items-center'>
                                 <Link to={'/services/web'}>

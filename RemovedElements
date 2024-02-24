@@ -1,0 +1,34 @@
+   <div className='flex flex-col md:items-end md:justify-end'>
+                <div className=' 2xl:ml-56 md:ml-32 md:flex'>
+                    <h2 className="text-white 2xl:text-[240px] md:text-[70px] text-[56px] font-bold font-['Jost'] uppercase md:leading-[240px]">давайте  <span className='hidden'>services</span></h2>
+                    <div className='md:block flex items-center justify-center'>
+                        <div class="pulse flex items-center justify-center 2xl:ml-32 ">
+                            <div
+                                className={` ml-9 transition-transform transform ${isBeating ? 'scale-110' : 'scale-100'}`}
+                            >
+                                {/* Your Heart SVG goes here */}
+                                <img
+                                    src={hands} // Replace with your Heart SVG image source
+                                    alt="brain"
+                                    className="2xl:w-auto 2xl:h-auto md:w-[300px] md:h-[200px] w-[152px] h-[78px]"
+                                />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div className='md:block flex justify-end'>
+
+                    <h2 className="text-white 2xl:text-[240px] md:text-[70px] lg:mr-0 mr-6 text-[56px] z-30 font-bold font-['Jost'] uppercase ">работать</h2>
+
+                </div>
+            </div>
+
+
+            <!-- Text -->
+            <div className=''>
+                <h2 className="text-white md:text-[56px] text-4xl font-bold font-['Jost'] capitalize">хотите быть в курсе?</h2>
+                <h3 class="2xl:w-[1200px] w-[765px] 2xl:text-[100px] md:text-[60px] text-[30px] "><span className="font_border font-bold font-['Jost'] uppercase 2xl:leading-[100px] leading-[60px] tracking-[5px]">под</span><span className="text-white font-bold font-['Jost'] uppercase 2xl:leading-[100px] leading-[60px] tracking-[5px]">пишите</span><span className="font_border font-bold font-['Jost'] uppercase 2xl:leading-[100px] leading-[60px] tracking-[5px]">сь</span><span className="font_border font-bold font-['Jost'] uppercase 2xl:leading-[100px] leading-[60px] tracking-[5px]"> на </span><br/><span className=" font_border  font-bold font-['Jost'] uppercase 2xl:leading-[100px] leading-[60px] tracking-[5px]">наши социальные<br/> сети, </span></h3>
+                <h3 className=' flex flex-con justify-end mr-7 2xl:text-[100px] md:text-[60px] text-[36px] '><span className=" font_border  font-bold font-['Jost'] uppercase leading-[100px] tracking-[5px]">будьте</span><span className=" font_border lg:mx-8 mx-2 font-bold font-['Jost'] uppercase leading-[100px] tracking-[5px]">с </span><span className="text-white  font-bold font-['Jost'] uppercase leading-[100px] tracking-[5px]">нам</span><span className=" font_border  font-bold font-['Jost'] uppercase leading-[100px] tracking-[5px]">и    </span></h3>
+            </div>

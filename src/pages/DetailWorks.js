@@ -49,13 +49,13 @@ export default function DetailWorks() {
 
                     <Swiper
                         effect={'coverflow'}
-                        spaceBetween={80}
+                        spaceBetween={100}
                         grabCursor={true}
                         centeredSlides={true}
                         loop={true}
                         slidesPerView={slidesPerView}
                         coverflowEffect={{
-                            rotate: 0,
+                            rotate: 50,
                             stretch: 0,
                             depth: 100,
                             modifier: 2.5,

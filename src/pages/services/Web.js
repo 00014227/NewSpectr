@@ -14,7 +14,7 @@ import Last3Page from '../../Components/Last3Page'
 
 export default function Web() {
     return (
-        <div className='lg:flex block lg:overflow-x-auto overflow-x-hidden overflow-y-hidden  h-[100vh]'>
+        <div className='lg:flex block bg-black lg:overflow-x-auto overflow-x-hidden overflow-y-hidden items-center  h-[100vh]'>
             <NavBar />
             <section className='bg-black flex-shrink-0  w-auto lg:h-[100vh] h-[80vh]  flex items-center px-11'>
                 <div className='lg:flex '>
@@ -47,7 +47,7 @@ export default function Web() {
                 </div>
 
 
-                <div className='lg:block md:flex justify-center items-center md:mt-0 mt-9'>
+                <div className='lg:block md:flex justify-center items-center md:mt-0 mt-9 ml-28 '>
                     <div className='lg:space-y-0 md:space-y-60 '>
                         <div className='md:mr-14 '>
                             <Button text={'Landing Page'} category={'web'} documentId = {1}/>
@@ -86,12 +86,12 @@ export default function Web() {
 
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-10 relative'>
                     <h2 className="text-white 2xl:text-[200px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">Создание <br /> онлайн <br /> сервиса</h2>
-                    <p className="2xl:w-[600px] md:absolute lg:top-[294px] lg:right-[-400px] md:ml-0 right-0 top-60 md:w-[350px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <p className="2xl:w-[600px] md:absolute lg:top-[164px] lg:right-[-250px] md:ml-0 right-0 top-60 md:w-[350px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
                     Проектируем, разрабатываем и развиваем сервисы для ваших клиентов или для внутреннего использования.</p>
                 </div>
 
 
-                <div className=' flex flex-col lg:justify-center lg:ml-96 lg:items-center'>
+                <div className=' flex flex-col lg:justify-center lg:ml-96 lg:items-center space-y-8'>
                     <div className='flex justify-start items-start'>
                         <Button text={'SYSTEMS FOR BUSINESS'} documentId={5} />
                     </div>
@@ -119,12 +119,12 @@ export default function Web() {
 
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-10 relative'>
                     <h2 className="text-white 2xl:text-[240px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> мобильных <br />приложений</h2>
-                    <p className="2xl:w-[600px] lg:absolute top-[-15px] lg:right-[-80px] right-[20px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <p className="2xl:w-[600px] w-[540px] lg:absolute top-[-45px] 2xl:right-[-200px] lg:right-[-370px] right-[20px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
                     Мы предлагаем разработку приложений для мобильных устройств на платформе iOS и Android с гарантией. Создаем с нуля полезные функциональные программы, превращающие обычный телефон в незаменимый девайс. С мобильным приложением ваш бизнес всегда «под рукой» у клиентов.  </p>
                 </div>
 
 
-                <div className=' flex flex-col lg:justify-center lg:items-center lg:ml-14'>
+                <div className=' flex flex-col lg:justify-center lg:items-center lg:ml-[30rem] space-y-10'>
                     <div className='flex justify-start items-start'>
                         <Button text={'IOS development'} documentId={6}/>
                     </div>
@@ -145,8 +145,8 @@ export default function Web() {
             </section>
 
             <section className='bg-black flex-shrink-0  w-auto  lg:h-screen h-auto  lg:flex items-center'>
-                <div className=' lg:h-screen lg:w-[182px] h-[182px] w-full lg:border-r lg:border-l border-t border-b py-20 border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[80px] md:text-[80px] text-4xl font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">Как мы работаем?</h3>
+                <div className=' lg:h-screen lg:w-[102px] h-[182px] w-full lg:border-r lg:border-l border-t border-b py-20 border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
+                    <h3 className="font_border horizon-text 2xl:text-[80px] md:text-[50px] text-4xl font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">Как мы работаем?</h3>
                 </div>
 
                 <h3 className="text-white 2xl:text-[240px] uppercase md:text-[120px] text-[44px] font-bold">наш <br /> <span className=' md:ml-40'>процесс</span></h3>
@@ -168,60 +168,7 @@ export default function Web() {
 
             </section>
 
-            <section className='flex-shrink-0 bg-black w-auto lg:h-screen lg:flex items-center justify-center py-20 px-10'>
-                <Slider text={'PORTFOLIO'} />
-                <div className='md:flex gap-3'>
-                    <div className=' md:mb-40 lg:ml-56'>
-                        <h2 className="text-white 2xl:text-[240px] lg:text-[200px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase md:leading-[240px]">Наши  <span className='hidden'>работы</span></h2>
-                    </div>
-
-                    <div className=' 2xl:space-y-[70px] lg:space-y-[30px] md:mt-0 '>
-                        <img src={eye} className=' 2xl:w-auto 2xl:h-auto md:mr-0 mr-10 lg:w-[500px] lg:h-[200px] md:w-[400px] md:h-[188px] w-[191px] h-20 lg:mt-0 md:mt-14' />
-                        <h2 className="text-white flex flex-col items-end 2xl:text-[240px] lg:text-[200px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase lg:leading-[240px] ">работы</h2>
-                    </div>
-                </div>
-                {/* Cards */}
-                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20 md:space-y-0 space-y-8'>
-                    <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
-                        <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
-                            <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
-                            <p className="text-white lg:text-[28px] text-[20px] font-normal font-['Jost'] capitalize leading-[42px]">FORKLIFT COMPANY</p>
-                        </div>
-                    </div>
-
-                    <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
-                        <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
-                            <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
-                            <p className="text-white lg:text-[28px] text-[20px] font-normal font-['Jost'] capitalize leading-[42px]">FORKLIFT COMPANY</p>
-                        </div>
-                    </div>
-
-                    <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
-                        <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
-                            <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
-                            <p className="text-white lg:text-[28px] text-[20px] font-normal font-['Jost'] capitalize leading-[42px]">FORKLIFT COMPANY</p>
-                        </div>
-                    </div>
-
-                    <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
-                        <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
-                            <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
-                            <p className="text-white lg:text-[28px] text-[20px] font-normal font-['Jost'] capitalize leading-[42px]">FORKLIFT COMPANY</p>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div className=' md:ml-56 flex flex-col justify-center items-center'>
-                    <img src={next} className="md:w-auto md:h-auto w-[120px] h-[100px]" />
-                    <p className="text-teal-500 md:text-[100px] text-[56px] font-bold font-['Jost'] capitalize">see more</p>
-                </div>
-            </section>
+    
 
 
             <Last3Page />

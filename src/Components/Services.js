@@ -5,9 +5,35 @@ export default function Services() {
     return (
         <section className='flex-shrink-0  w-auto lg:h-screen h-auto lg:flex block items-center lg:pb-0 pb-[50px]'>
             <div className=' lg:h-screen lg:w-[102px] h-[102px] w-full lg:border-r lg:border-l border-t border-b lg:py-20 border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                <h3 className="font_border horizon-text 2xl:text-[100px] md:text-[68px] text-4xl  font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">наши услуги</h3>
+                <h3 className="font_border horizon-text 2xl:text-[100px] md:text-[58px] text-4xl  font-bold  font-['HelveticaNeueCyr'] uppercase leading-snug tracking-wider">наши услуги</h3>
             </div>
-            <div className=' lg:ml-10 grid lg:grid-cols-3 gap-x-20'>
+            <div className=' ml-20'>
+                <ul className='marker:text-teal-500 list-square text-xl uppercase space-y-4' >
+                    <li className=' text-white '>маркетинг стратегия/продвижение</li>
+                    <li className=' text-white '>создание нового бренда</li>
+                    <li className=' text-white '>smm продвижение</li>
+                    <li className=' text-white '>анимационные ролики</li>
+                    <li className=' text-white '>разработка сайта/мобильный приложений</li>
+                    <li className=' text-white '>sea оптимизация/контекстная реклама</li>
+                    <li className=' text-white '>маркениг анализ/аудит</li>
+                    <li className=' text-white '>тайный покупатель</li>
+                    <li className=' text-white '>управление репутацией компании</li>
+                    <li className=' text-white '>профессиональная рекламная съемка</li>
+                    <li className=' text-white '>мобилография/создание контетна</li>
+                    <li className=' text-white '>имиджевая фотосъемка продукта</li>
+                    <li className=' text-white '>органицаяция подключ ивентов/открытий/выставок/презентаций</li>
+                    
+                </ul>
+            </div>
+
+
+        </section>
+    )
+}
+
+
+
+          {/* <div className=' lg:ml-10 grid lg:grid-cols-2 gap-x-20'>
                 <div className='lg:block md:flex justify-between md:pr-10'>
                     <div className=''>
                         <ButtonModal text={'Разроботка веб сайтов'} />
@@ -32,31 +58,26 @@ export default function Services() {
                     </div>
                 </div>
 
-                <div className='lg:flex-wrap flex justify-center '>
+                {/* <div className='lg:flex-wrap flex justify-center '>
                     <ButtonModal text={'SEO оптимизация'} />
-                </div>
-                <div className='lg:block md:flex justify-between  md:pr-10'>
-                <div>
-                    <ButtonModal text={'Digital маркетинг'} />
-                </div>
-                <div className='flex justify-center'>
-                    <ButtonModal text={'AmoCRM'} />
-                </div>
-                </div>
+                </div> */}
+            //     <div className='lg:block md:flex justify-between  md:pr-10'>
+            //     <div>
+            //         <ButtonModal text={'Digital маркетинг'} />
+            //     </div>
+            //     <div className='flex justify-center'>
+            //         <ButtonModal text={'AmoCRM'} />
+            //     </div>
+            //     </div>
                
-                <div className='lg:block md:flex justify-between md:pr-10'>
-                <div>
-                    <ButtonModal text={'Таргет'} />
-                </div>
-                <div className='flex justify-center'>
-                    <ButtonModal text={'Мероприятия'} />
-                </div>
-                </div>
+            //     <div className='lg:block md:flex justify-between md:pr-10'>
+            //     <div>
+            //         <ButtonModal text={'Таргет'} />
+            //     </div>
+            //     <div className='flex justify-center'>
+            //         <ButtonModal text={'Мероприятия'} />
+            //     </div>
+            //     </div>
                
 
-            </div>
-
-
-        </section>
-    )
-}
+            // </div> 

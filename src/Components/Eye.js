@@ -33,7 +33,7 @@ export default function Eye() {
   
     return (
       <div className=' bg-black max-h-[50vh] flex justify-center items-center'>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" id="eye" width="800" height="700">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" id="eye" className='lg:w-[800px] lg:h-[700px] w-[200px] '>
       <path
         d="M50.5 32.3c-16.6 0-32.7 15.9-33.4 16.5-.5.5-.7 1.1-.7 1.7s.3 1.2.7 1.7c.7.7 16.7 16.5 33.4 16.5s32.7-15.9 33.4-16.5c.4-.4.7-1.1.7-1.7s-.3-1.2-.7-1.7c-.7-.7-16.8-16.5-33.4-16.5zm0 31.6c-11.6 0-23.6-9.5-28.1-13.4 4.5-4 16.5-13.4 28.1-13.4s23.6 9.5 28.1 13.4c-4.5 4-16.5 13.4-28.1 13.4z"
         fill="white"

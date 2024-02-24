@@ -174,60 +174,7 @@ export default function Branding() {
 
 
 
-            <section className='flex-shrink-0 bg-black w-auto lg:h-screen lg:flex items-center justify-center py-20 px-10'>
-                <Slider text={'PORTFOLIO'} />
-                <div className='flex gap-3'>
-                    <div className=' mb-40 lg:ml-56'>
-                        <h2 className="text-white 2xl:text-[240px] lg:text-[200px] md:text-[120px] text-[56px] font-bold font-['Jost'] uppercase leading-[240px]">Our  <span className='hidden'>work</span></h2>
-                    </div>
-
-                    <div className=' 2xl:space-y-[70px] lg:space-y-[30px] md:mt-0 mt-20'>
-                        <img src={eye} className='mx-auto 2xl:w-auto 2xl:h-auto md:mr-0 mr-10 lg:w-[500px] lg:h-[200px] md:w-[500px] md:h-[208px] w-[191px] h-20 lg:mt-0 mt-14' />
-                        <h2 className="text-white flex flex-col items-end 2xl:text-[240px] lg:text-[200px] md:text-[120px] text-[56px] font-bold font-['Jost'] uppercase lg:leading-[240px]">work</h2>
-                    </div>
-                </div>
-                {/* Cards */}
-                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20  '>
-                    <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
-                        <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
-                            <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
-                            <p className="text-white lg:text-[28px] text-[20px] font-normal font-['Jost'] capitalize leading-[42px]">FORKLIFT COMPANY</p>
-                        </div>
-                    </div>
-
-                    <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
-                        <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
-                            <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
-                            <p className="text-white lg:text-[28px] text-[20px] font-normal font-['Jost'] capitalize leading-[42px]">FORKLIFT COMPANY</p>
-                        </div>
-                    </div>
-
-                    <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
-                        <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
-                            <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
-                            <p className="text-white lg:text-[28px] text-[20px] font-normal font-['Jost'] capitalize leading-[42px]">FORKLIFT COMPANY</p>
-                        </div>
-                    </div>
-
-                    <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
-                        <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
-                            <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>
-                            <p className="text-white lg:text-[28px] text-[20px] font-normal font-['Jost'] capitalize leading-[42px]">FORKLIFT COMPANY</p>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div className=' md:ml-56 flex flex-col justify-center items-center'>
-                    <img src={next} className="md:w-auto md:h-auto w-[120px] h-[100px]" />
-                    <p className="text-teal-500 md:text-[100px] text-[56px] font-bold font-['Jost'] capitalize">see more</p>
-                </div>
-            </section>
+  
 
 
 
