@@ -3,6 +3,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { loadImageShape } from "tsparticles-shape-image";
  import {as} from '../assets/figure.png'
+ import logo from '../assets/Logo.svg'
 export default function Background() {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -51,13 +52,13 @@ export default function Background() {
           },
           particles: {
             color: {
-              value: "#ffffff"
+              value: "#ffffff79"
             },
             links: {
-              color: "#ffffff",
+              color: "#ffffff79",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.2,
               width: 1
             },
             move: {
@@ -76,7 +77,7 @@ export default function Background() {
               direction: "clockwise",
               animation: {
                 enable: true,
-                speed: 8,
+                speed: 2,
                 sync: false
               }
             },
@@ -92,13 +93,17 @@ export default function Background() {
             },
             shape: {
               type: "image",
+              
               image: {
                 src:
-                  "https://i.postimg.cc/WpyMTkLx/2-3.png"
+                logo,
+                  // "https://i.postimg.cc/WpyMTkLx/2-3.png",
+                  opacity: 20
+                
               }
             },
             size: {
-              value: { min: 4, max: 8 }
+              value: { min: 4, max: 4 }
             }
           },
           detectRetina: true
