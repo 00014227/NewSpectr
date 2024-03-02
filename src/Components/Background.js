@@ -103,7 +103,7 @@ export default function Background() {
               }
             },
             size: {
-              value: { min: 4, max: 4 }
+              value: { min: 4, max: 7 }
             }
           },
           detectRetina: true

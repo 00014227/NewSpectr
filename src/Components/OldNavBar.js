@@ -15,46 +15,58 @@ const NavBar = () => {
         setIsHovered(true);
     };
 
-    const handleLeave = () => { 
+    const handleLeave = () => {
         setIsHovered(false);
     };
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-     
+
     };
 
     const checkScreenSize = () => {
         setIsHovered(window.innerWidth < 1024); // Adjust the breakpoint (1024) based on your design
-      };
-    
-      useEffect(() => { 
+    };
+
+    useEffect(() => {
         // Check screen size on mount
         checkScreenSize();
-    
+
         // Attach event listener for window resize
         window.addEventListener('resize', checkScreenSize);
-    
+
         // Cleanup the event listener on component unmount
         return () => {
-          window.removeEventListener('resize', checkScreenSize);
+            window.removeEventListener('resize', checkScreenSize);
         };
-      }, []); 
+    }, []);
 
     return (
         <>
             <div className='flex items-center fixed z-50 lg:w-[120px] w-full'
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}>
-                   {/* <div className='flex items-center' > */}
+                {/* <div className='flex items-center' > */}
 
                 {isHovered && (
                     <div className='lg:w-[120px] w-[100%] transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center px-10  z-[100]'>
                         <div className='lg:w-[120px] w-[100%] flex lg:flex-col flex-row justify-between lg:h-[100%]'>
                             <div className=' space-y-12  '>
-                                <img src={spectr} className="mx-auto  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                                <img src={lang} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                                <img src={download} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <Link to={'/'}>
+                                    <img src={spectr} className="mx-auto  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+
+                                </Link>
+                                <div className='flex flex-col justify-center items-center space-y-20'>
+                                    <Link to={'/services/marketing'}>
+                                    <p className=' uppercase text-white text-xl'>маркетинг</p>
+                                    </Link>
+                                    <Link to={'/services/smm'}>
+                                    <p className=' uppercase text-white text-xl'>смм</p>
+
+                                    </Link>
+                                </div>
+                                {/* <img src={lang} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={download} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" /> */}
                             </div>
 
                             <div className=' lg:hidden md:flex hidden gap-10'>
@@ -65,7 +77,7 @@ const NavBar = () => {
 
                             </div>
 
-                            <div className='lg:mx-auto my-auto'>
+                            {/* <div className='lg:mx-auto my-auto'>
                                 <button
                                     className="w-[60px] h-8 focus:outline-none"
                                     onClick={toggleMenu}
@@ -74,11 +86,18 @@ const NavBar = () => {
                                     <div className={`bg-white h-1 w-full mb-1 opacity-0 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></div>
                                     <div className={`bg-white h-1 w-full transition-transform transform ${isOpen ? '-rotate-45 -translate-y-2' : 'translate-y-0'}`}></div>
                                 </button>
-                            </div>
+                            </div> */}
 
-                            <div className=' space-y-12 lg:block hidden'>
-                                <img src={connect} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                                <img src={phone} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            <div className=' space-y-20 lg:flex hidden flex-col items-center'>
+                                <Link to={'/services/web'}>
+                                    <p className=' uppercase text-white text-xl'>вебсайты</p>
+                                </Link>
+                                <Link to={'/services/branding'} >
+                                    <p className=' uppercase text-white text-xl'>Брендинг</p>
+                                </Link>
+
+                                {/* <img src={connect} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={phone} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" /> */}
                             </div>
                         </div>
                         <div className='md:hidden flex justify-center  gap-10 mt-10'>
@@ -98,7 +117,7 @@ const NavBar = () => {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
                     </svg>
                 </div>
-            {/* </div> */}
+                {/* </div> */}
             </div>
 
 
