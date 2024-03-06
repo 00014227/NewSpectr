@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import NavBar from '../../Components/NavBar'
 import branding from "../../assets/services/branding.svg"
 import web from "../../assets/services/web.svg"
@@ -11,6 +11,7 @@ import Last3Page from '../../Components/Last3Page'
 
 export default function Marketing() {
     const scrollContainerRef = useRef(null); 
+    const [navbar, setNavbar] = useState(true); 
 
     const handleWheelScroll = (e) => {
         // Specify the scroll distance for horizontal scrolling
@@ -23,10 +24,11 @@ export default function Marketing() {
         } else if (e.deltaY < 0) {
             scrollContainerRef.current.scrollLeft -= scrollDistanceX;
         }
+        setNavbar(false)
     };
     return (
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-x-auto overflow-x-hidden h-[100vh]'>
-            <NavBar />
+            <NavBar navbar={navbar}/>
             <section className=' flex-shrink-0  w-screen lg:h-screen h-auto lg:flex '>
                 <div className='lg:flex gap-40'>
                     <div className='flex relative justify-center'>

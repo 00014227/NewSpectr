@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import NavBar from '../../Components/NavBar'
 import branding from "../../assets/services/branding.svg"
 import web from "../../assets/services/web.svg"
@@ -13,9 +13,34 @@ import service from '../../assets/service.png'
 import Last3Page from '../../Components/Last3Page'
 
 export default function Web() {
+    const [navbar, setNavbar] = useState(true); 
+    const scrollContainerRef = useRef(null); 
+
+
+
+
+    const handleWheelScroll = (e) => {
+        // Specify the scroll distance for horizontal scrolling
+        const scrollDistanceX = 100;
+       
+        // Check if scrolling down
+        if (e.deltaY > 0) {
+            // Scroll to the right by 'scrollDistanceX' pixels
+            scrollContainerRef.current.scrollLeft += scrollDistanceX;
+           
+           
+        } else if (e.deltaY < 0) {
+            scrollContainerRef.current.scrollLeft -= scrollDistanceX;
+        }
+
+        setNavbar(false)
+    };
+
     return (
-        <div className='lg:flex block bg-black lg:overflow-x-auto overflow-x-hidden overflow-y-hidden items-center  h-[100vh]'>
-            <NavBar />
+        <div
+        ref={scrollContainerRef} onWheel={handleWheelScroll} 
+        className='lg:flex block bg-black lg:overflow-x-hidden overflow-x-hidden overflow-y-hidden items-center  h-[100vh]'>
+            <NavBar navbar={navbar}/>
             <section className='bg-black flex-shrink-0  w-auto lg:h-[100vh] h-[80vh]  flex items-center px-11'>
                 <div className='lg:flex '>
                 <div className='  flex lg:flex-col items-center justify-center md:mt-4 mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>

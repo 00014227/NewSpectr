@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import NavBar from '../../Components/NavBar'
 import branding from "../../assets/services/branding.svg"
 import web from "../../assets/services/web.svg"
@@ -9,7 +9,7 @@ import next from '../../assets/next.svg'
 import Last3Page from '../../Components/Last3Page'
 
 export default function Smm() {
-
+    const [navbar, setNavbar] = useState(true);
     const scrollContainerRef = useRef(null); 
 
     const handleWheelScroll = (e) => {
@@ -23,10 +23,11 @@ export default function Smm() {
         } else if (e.deltaY < 0) {
             scrollContainerRef.current.scrollLeft -= scrollDistanceX;
         }
+        setNavbar(false)
     };
   return (
     <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-x-auto overflow-x-hidden overflow-y-hidden h-[100vh]'>
-        <NavBar/>
+        <NavBar navbar={navbar}/>
         <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] h-[80vh]  flex items-center px-11'>
                 <div className='lg:flex '>
                 <div className='  flex lg:flex-col items-center justify-center md:mt-4 mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>

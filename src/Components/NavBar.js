@@ -7,13 +7,22 @@ import phone from '../assets/navbar/PHONE.svg'
 import menu from '../assets/navbar/MENU.svg'
 import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = ({navbar}) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered, setIsHovered] = useState(navbar);
+    const [screen, setScreen] = useState(true)
+
+
+
+   useEffect(() => {
+    setIsHovered(navbar);
+}, [navbar ]);
 
     const handleHover = () => {
         setIsHovered(true);
     };
+
+    
 
     const handleLeave = () => { 
         setIsHovered(false);
@@ -25,11 +34,12 @@ const NavBar = () => {
     };
 
     const checkScreenSize = () => {
-        setIsHovered(window.innerWidth < 1024); // Adjust the breakpoint (1024) based on your design
+        setScreen(window.innerWidth < 1024); // Adjust the breakpoint (1024) based on your design
       };
     
       useEffect(() => { 
         // Check screen size on mount
+
         checkScreenSize();
     
         // Attach event listener for window resize
@@ -43,12 +53,12 @@ const NavBar = () => {
 
     return (
         <>
-            <div className='flex items-center fixed z-50 lg:w-[120px] w-full'
+            <div className='flex items-center lg:fixed z-50 lg:w-[120px] w-full'
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}>
                    {/* <div className='flex items-center' > */}
 
-                {isHovered && (
+                {isHovered ? (
                     <div className='lg:w-[120px] w-[100%] transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center px-10  z-[100]'>
                         <div className='lg:w-[120px] w-[100%] flex lg:flex-col flex-row justify-between lg:h-[100%]'>
                             <div className=' space-y-12  '>
@@ -90,7 +100,7 @@ const NavBar = () => {
                         </div>
 
                     </div>
-                )}
+                ) : ''}
                 <div
 
                     className={`cursor-pointer lg:block hidden transition-transform z-50 transform ${isHovered ? 'hover:scale-110' : ''}`}>

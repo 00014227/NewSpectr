@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import branding from "../../assets/services/branding.svg"
 import web from "../../assets/services/web.svg"
 import Button from '../../Components/Button'
@@ -12,12 +12,35 @@ import eye from '../../assets/eye.png'
 import service from '../../assets/service.png'
 
 export default function Branding() {
+    const [navbar, setNavbar] = useState(true);  
+    const scrollContainerRef = useRef(null); 
 
+
+
+
+    const handleWheelScroll = (e) => {
+        // Specify the scroll distance for horizontal scrolling
+        const scrollDistanceX = 100;
+       
+        // Check if scrolling down
+        if (e.deltaY > 0) {
+            // Scroll to the right by 'scrollDistanceX' pixels
+            scrollContainerRef.current.scrollLeft += scrollDistanceX;
+           
+           
+        } else if (e.deltaY < 0) {
+            scrollContainerRef.current.scrollLeft -= scrollDistanceX;
+        }
+
+        setNavbar(false)
+    };
 
     return (
 
-        <div className='lg:flex items-center block lg:overflow-x-auto bg-black overflow-x-hidden h-[100vh]' >
-            <NavBar />
+        <div
+        ref={scrollContainerRef} onWheel={handleWheelScroll} 
+        className='lg:flex items-center block lg:overflow-x-auto bg-black overflow-x-hidden h-[100vh]' >
+            <NavBar navbar={navbar}/>
             <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto    lg:flex items-center  px-12'>
                 <div className='lg:flex '>
                     <div className='  flex lg:flex-col items-center justify-center md:mt-4 mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>

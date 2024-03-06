@@ -23,18 +23,27 @@ const HomePage = () => {
     const [isAnimating, setIsAnimating] = useState(false);
     const [bgColorChange, setBgColorChange] = useState('black');
     const scrollContainerRef = useRef(null);
+    const [navbar, setNavbar] = useState(true);
+
+
 
     const handleWheelScroll = (e) => {
         // Specify the scroll distance for horizontal scrolling
         const scrollDistanceX = 100;
-
+       
         // Check if scrolling down
         if (e.deltaY > 0) {
             // Scroll to the right by 'scrollDistanceX' pixels
             scrollContainerRef.current.scrollLeft += scrollDistanceX;
+           
+           
         } else if (e.deltaY < 0) {
             scrollContainerRef.current.scrollLeft -= scrollDistanceX;
         }
+        if (window.innerWidth < 1024) {
+            setNavbar(true)
+        } else{
+        setNavbar(false) }
     };
 
 
@@ -63,10 +72,10 @@ const HomePage = () => {
 
     return (
 
-        <div ref={scrollContainerRef} onWheel={handleWheelScroll}
-            className="  relative z-50 lg:flex items-center overflow-x-hidden lg:overflow-y-hidden  block lg:overflow-x-auto bg-black  h-[100vh]">
-            <NavBar />
-            <div className='w-full h-screen -z-10 absolute top-0 left-0'>
+        <div ref={scrollContainerRef} onWheel={handleWheelScroll} 
+            className="  relative z-50 lg:flex items-center  lg:overflow-y-hidden  block lg:overflow-x-hidden bg-black  h-[100vh]">
+            <NavBar navbar={navbar}/>
+            <div className='w-full h-[100vh] -z-10 absolute top-0 left-0'>
                 <Background />
             </div>
 
@@ -150,7 +159,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 {/* Cards */}
-                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20 md:space-y-0 space-y-8 mt-5'>
+                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20 md:space-y-0 space-y-8 py-5'>
                     <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
                         <div className='  hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
                         <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />

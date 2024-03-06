@@ -13,10 +13,10 @@ export default function Last3Page({ isBeating }) {
         setRangeValue(parseInt(event.target.value));
       };
         return (
-        <section className='flex-shrink-0  w-auto pl-40  lg:h-screen  lg:flex 2xl:py-12 items-center gap-36'>
+        <section className='flex-shrink-0  w-auto lg:pl-40  lg:h-screen  lg:flex 2xl:py-12 items-center gap-36'>
 
             <div className=' '>
-                <form className='flex gap-20'>
+                <form className='flex flex-col items-center gap-20'>
                     <div className=' space-y-10'>
                         <div className='flex flex-col'>
                             <label className=' text-white text-xl'>Название вашей компании</label>
@@ -64,18 +64,18 @@ export default function Last3Page({ isBeating }) {
                         min='0' max='20000' 
                         value={rangeValue}
                         onChange={handleRangeChange}
-                        className=' bg- text-teal-500 appearance-none rounded-lg'/>
+                        className=' bg- text-teal-500 appearance-none rounded-lg '/>
                         </div>
 
 
-                        <button className=' text-white text-xl border-2 border-teal-500 rounded-xl hover:bg-teal-500 w-[20rem] h-[3rem]'>Отправить</button>
+                        <button className=' text-white text-xl border-2 ml-10 border-teal-500 rounded-xl hover:bg-teal-500 w-[20rem] h-[3rem]'>Отправить</button>
                     </div>
                 </form>
             </div>
 
 
 
-            <div className=' lg:h-screen h-[80vh] w-auto flex lg:flex-col justify-between px-8 py-12'>
+            <div className=' lg:h-screen md:h-[80vh] w-auto flex lg:flex-col justify-between px-8 py-12'>
                 <div className='relative'>
                     <img src={telegram} className=" animate-spin-slow 2xl:w-auto 2xl:h-auto lg:w-[150px] lg:h-[150px] w-[70px] h-[70px]" />
                     {/* <img src={whatsapp} className=" absolute lg:top-12 lg:left-14 top-[20px] left-5 lg:w-auto lg:h-auto w-8 h-8" /> */}
@@ -90,7 +90,6 @@ export default function Last3Page({ isBeating }) {
 
             </div>
 
-            <LongDialog />
 
 
             <footer className=' lg:h-screen h-[182px] lg:w-[182px] w-full lg:border-r border-t py-20 border-white lg:rotate-180 flex flex-col justify-between items-center'>

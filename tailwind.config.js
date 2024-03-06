@@ -9,8 +9,8 @@ module.exports = {
      },
 
      listStyleType: {
-       square: 'square'
-       
+       square: 'square',
+       disc: 'disc',
      }
   },
   plugins: [],
