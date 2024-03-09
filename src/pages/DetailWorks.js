@@ -17,7 +17,7 @@ export default function DetailWorks() {
 
     const checkScreenSize = () => {
       // Adjust the breakpoint value (768) based on your design
-      setSlidesPerView(window.innerWidth < 768 ? 1 : 4);
+      setSlidesPerView(window.innerWidth < 768 ? 2 : 4);
     };
   
     useEffect(() => { 
@@ -35,7 +35,7 @@ export default function DetailWorks() {
 
 
     return (
-        <div className='lg:flex items-center block overflow-y-hidden bg-black  overflow-x-auto h-[100vh]'>
+        <div className='lg:flex items-center block  bg-black  overflow-x-auto h-[100vh]'>
             <NavBar />
             <section className="bg-black flex-shrink-0 relative  w-screen h-screen flex flex-col lg:items-start justify-center">
                 <div>
@@ -55,7 +55,7 @@ export default function DetailWorks() {
                         loop={true}
                         slidesPerView={slidesPerView}
                         coverflowEffect={{
-                            rotate: -45,
+                            rotate: 80,
                             stretch: 0,
                             depth: 100,
                             modifier: 2.5,
@@ -71,8 +71,8 @@ export default function DetailWorks() {
                     >
                         {portfolioData.portfolio.map((work) => (
                             <SwiperSlide className='relarive' key={work.id}>
-                                <img src={slide_image_1} alt="slide_image" className='w-[22rem] h-[30rem]' />
-                                <h3 className="absolute top-0 text-white lg:text-[46px] text-[40px] font-bold font-['Jost'] capitalize">{work.company_name}</h3>
+                                <img src={slide_image_1} alt="slide_image" className='lg:w-[22rem] lg:h-[30rem] w-[13rem] h-[18rem]' />
+                                <h3 className="absolute top-0 text-white lg:text-[46px] text-[20px] font-bold font-['Jost'] capitalize">{work.company_name}</h3>
                             </SwiperSlide>
                         ))}
 
