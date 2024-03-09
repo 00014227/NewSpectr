@@ -13,11 +13,11 @@ import slide_image_1 from '../assets/service.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom'
 export default function DetailWorks() {
-    const [slidesPerView, setSlidesPerView] = useState(3); 
+    const [slidesPerView, setSlidesPerView] = useState(10); 
 
     const checkScreenSize = () => {
       // Adjust the breakpoint value (768) based on your design
-      setSlidesPerView(window.innerWidth < 768 ? 1 : 3);
+      setSlidesPerView(window.innerWidth < 768 ? 1 : 4);
     };
   
     useEffect(() => { 
@@ -49,13 +49,13 @@ export default function DetailWorks() {
 
                     <Swiper
                         effect={'coverflow'}
-                        spaceBetween={100}
+                        spaceBetween={50}
                         grabCursor={true}
                         centeredSlides={true}
                         loop={true}
                         slidesPerView={slidesPerView}
                         coverflowEffect={{
-                            rotate: 50,
+                            rotate: -45,
                             stretch: 0,
                             depth: 100,
                             modifier: 2.5,

@@ -87,12 +87,7 @@ const HomePage = () => {
                         <h2 className=" text-white font-black block lg:hidden  xl:text-7xl lg:text-[80px] text-[35px] uppercase  ">Мы <span className=" font-light ">маркетинговое Агенство  и здесь чтобы создать</span> <br /><span className='flex md:justify-end lg:mr-0 mr-7'>будущее для вашего бизнеса</span></h2>
 
                     </div>
-                    <div className='fixed bottom-0 right-0 mb-8 mr-8'>
-                        <div>
-                            <p className="text-white text-xl font-light uppercase font-['HelveticaNeueCyr'] leading-tight">scroll</p>
-                            <div className="w-[200px] h-0.5 bg-white" />
-                        </div>
-                    </div>
+                
                 </div>
 
             </section>

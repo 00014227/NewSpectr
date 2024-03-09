@@ -226,7 +226,9 @@ h1, h2, h3 {
     box-shadow: 5px 5px 5px #aaa;
   }
 
-
+.rot {
+  transform: rotateY(45deg);
+}
 
 
   @keyframes colorChange {

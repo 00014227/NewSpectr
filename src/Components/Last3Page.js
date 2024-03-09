@@ -16,7 +16,7 @@ export default function Last3Page({ isBeating }) {
         <section className='flex-shrink-0  w-auto lg:pl-40  lg:h-screen  lg:flex 2xl:py-12 items-center gap-36'>
 
             <div className=' '>
-                <form className='flex flex-col items-center gap-20'>
+                <form className='lg:flex flex-col items-center gap-20'>
                     <div className=' space-y-10'>
                         <div className='flex flex-col'>
                             <label className=' text-white text-xl'>Название вашей компании</label>
