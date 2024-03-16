@@ -140,7 +140,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center  '>
+            <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center px-4'>
                 <Slider text={'ПОРТФОЛИО'} />
                 <div className='md:flex gap-3 items-center lg:mb-[17rem]'>
                     <div className=' md:mb-40 lg:ml-16'>

@@ -35,7 +35,7 @@ export default function Marketing() {
     return (
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-y-hidden overflow-x-hidden h-[100vh]  '>
             <NavBar navbar={navbar} />
-            <section className=' flex-shrink-0  w-screen lg:h-screen h-auto lg:flex items-center '>
+            <section className=' flex-shrink-0 px-4 w-screen lg:h-screen h-auto lg:flex items-center '>
                 <div className='lg:flex gap-40'>
                     <div className='lg:flex relative justify-center'>
                         <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
@@ -62,7 +62,7 @@ export default function Marketing() {
                 <Slider text={'MARKETING'} />
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-5 relative h-fit'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px] md:leading-[200px]">Виды <br />маркетинга</h2>
-                    <p className=" md:absolute lg:top-0 lg:-right-[22rem] bottom-[180px] md:-right-6 right-[0px] lg:w-[90%] md:w-[500px] w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  lg:leading-[42px] leading-[30 px]">
+                    <p className=" md:absolute lg:top-0 lg:-right-[22rem] bottom-[180px] md:-right-6 right-[0px] lg:w-[90%] md:w-[500px] w-[410px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  lg:leading-[42px] leading-[30px]">
                         Существует множество видов маркетинга, каждый из которых имеет свои особенности и преимущества. Они включают традиционный маркетинг, основанный на использовании традиционных каналов коммуникации, таких как ТВ и пресса, а также цифровой маркетинг, ориентированный на интернет-платформы и социальные сети для привлечения и взаимодействия с аудиторией.</p>
                 </div>
 
@@ -73,7 +73,7 @@ export default function Marketing() {
 
                 <div className='lg:block md:flex justify-center items-center lg:ml-[10rem] '>
                     <div className='xl:space-y-0 lg:space-y-60'>
-                        <div className=' mr-14'>
+                        <div className=' lg:mr-14 ml-[2rem]'>
                             <ButtonModal text={'Традиционный маркетинг'} category={'web'} documentId={1} />
                         </div>
                         <div className='lg:ml-20 md:block flex justify-end'>
@@ -85,7 +85,7 @@ export default function Marketing() {
                     </div>
 
                     <div className='xl:space-y-0 lg:space-y-60 '>
-                        <div className=' lg:ml-48 '>
+                        <div className=' lg:ml-48 ml-[2rem]'>
                             <ButtonModal text={'Маркетинг стратегия'} documentId={3} />
                         </div>
 
@@ -103,7 +103,7 @@ export default function Marketing() {
 
                 <div className='lg:block md:flex justify-center items-center '>
                     <div className='xl:space-y-0 lg:space-y-60'>
-                        <div className=' mr-14'>
+                        <div className=' lg:mr-14 ml-[2rem]'>
                             <ButtonModal text={'разработка маркетинг плана'} category={'web'} documentId={1} />
                         </div>
                         <div className='lg:ml-20 md:block flex justify-end'>
@@ -112,7 +112,7 @@ export default function Marketing() {
                     </div>
                  
                     <div className='xl:space-y-0 lg:space-y-60'>
-                        <div className=' lg:ml-48 '>
+                        <div className=' lg:ml-48 ml-[2rem]'>
                             <ButtonModal text={'Маркетинг событий'} documentId={3} />
                         </div>
 

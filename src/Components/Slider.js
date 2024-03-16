@@ -29,7 +29,7 @@ const Slider = ({text}) => {
       </div>
 
       <div className='flex items-center justify-center infinite-scroll gap-10 mx-auto my-auto'>
-        <div className="w-2.5 h-2.5 bg-teal-500 mt-16 lg:my-0 my-auto" />
+        <div className="w-2.5 h-2.5 bg-teal-500 яяmt-16 lg:my-0 my-auto" />
         <p className="text-white 2xl:text-[70px] md:text-[50px] text-xl font-bold tracking-widest ">
         {text}
         </p>

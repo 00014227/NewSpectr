@@ -50,7 +50,7 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
           {/* Third Element */}
           <div
 
-            className={`element absolute w-[320px] 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-40 2xl:text-2xl text-[20px] font-bold font-Jost capitalize leading-[43.20px] ${shouldAnimate ? 'animated-button' : ''} ${style}`}
+            className={`element absolute w-[320px] 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-40 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px] ${shouldAnimate ? 'animated-button' : ''} ${style}`}
           >
             {text}
           </div>

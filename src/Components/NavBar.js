@@ -62,7 +62,7 @@ const NavBar = ({navbar}) => {
                     <div className='lg:w-[120px] w-[100%] transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center px-10  z-[100]'>
                         <div className='lg:w-[120px] w-[100%] flex lg:flex-col flex-row justify-between lg:h-[100%]'>
                             <div className=' space-y-12  '>
-                                <img src={spectr} className="mx-auto  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={spectr} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={lang} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={download} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             </div>
