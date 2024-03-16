@@ -80,10 +80,10 @@ const HomePage = () => {
             </div>
 
 
-            <section className=" flex-shrink-0  w-auto 2xl:h-screen h-auto py-24 flex flex-col lg:items-center justify-center   pb-[60px]">
+            <section className=" flex-shrink-0  w-auto 2xl:h-screen h-auto  flex flex-col lg:items-center justify-center   ">
                 <div className='lg:w-screen'>
-                    <div className='max-w-[1620px] w-auto mx-auto py-14 lg:ml-36 px-4'>
-                        <h2 className=" text-white font-black hidden lg:block 2xl:text-[5rem]  xl:text-6xl lg:text-[80px] text-[50px] uppercase xl:leading-[152px] ">Мы <span className=" font-light lg:leading-[152px]">маркетинговое Агенство  и здесь чтобы создать</span> будущее для вашего бизнеса</h2>
+                    <div className=' w-auto mx-auto py-14 lg:ml-36 px-4'>
+                        <h2 className=" text-white font-black hidden lg:block 2xl:text-[7rem]  xl:text-6xl lg:text-[80px] text-[50px] uppercase xl:leading-[152px] ">Мы <span className=" font-light lg:leading-[152px]">маркетинговое Агенство  и здесь чтобы создать</span> будущее для вашего бизнеса</h2>
                         <h2 className=" text-white font-black block lg:hidden  xl:text-7xl lg:text-[80px] text-[35px] uppercase  ">Мы <span className=" font-light ">маркетинговое Агенство  и здесь чтобы создать</span> <br /><span className='flex md:justify-end lg:mr-0 mr-7'>будущее для вашего бизнеса</span></h2>
 
                     </div>
@@ -135,28 +135,27 @@ const HomePage = () => {
                         <p className="text-white  text-xl block lg:hidden font-normal font-['Evolventa'] md:w-[500px] w-[390px] lg:w-auto capitalize leading-9 max-w-[810px]">
                             Маркетинговое агентство «Спектр» (Ташкент) специализируется на комплексном развитии успешных корпоративных, продуктовых и розничных брендов от построения стратегии бренда, разработки имени, создания логотипа, создания фирменного стиля до разработки сайта любого сложность. Также мы поможем вам рассказать о компании, товаре или услуге посредством презентации.
                         </p>
-                        <h1 className="text-white xl:text-[100px] text-[140px] hidden lg:block font-bold font-['Jost'] uppercase leading-[150px] 2xl:leading-[200px]">marketing <br /> agency</h1>
+                        <h1 className="text-white xl:text-[120px] text-[140px] hidden lg:block font-bold font-['Jost'] uppercase leading-[150px] 2xl:leading-[200px]">marketing <br /> agency</h1>
                     </div>
                 </div>
             </section>
 
-            <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center  px-10'>
+            <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center  '>
                 <Slider text={'ПОРТФОЛИО'} />
-                <div className='md:flex gap-3'>
+                <div className='md:flex gap-3 items-center lg:mb-[17rem]'>
                     <div className=' md:mb-40 lg:ml-16'>
-                        <h2 className="text-white 2xl:text-[240px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase md:leading-[240px]">Наши  <span className='hidden'>работы</span></h2>
+                        <h2 className="text-white 2xl:text-[140px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase md:leading-[240px]">Наши  <span className='hidden'>работы</span></h2>
                     </div>
 
-                    <div className=' 2xl:space-y-[70px] lg:space-y-[30px] md:mt-0 '>
+                    <div className=' 2xl:space-y-[70px] lg:space-y-[30px] md:mt-0 items-center relative'>
                         <Eye />
-                        {/* <img src={eye} className=' 2xl:w-auto 2xl:h-auto md:mr-0 mr-10 lg:w-[500px] lg:h-[200px] md:w-[400px] md:h-[188px] w-[191px] h-20 lg:mt-0 md:mt-14' /> */}
-                        <h2 className="text-white flex flex-col items-end 2xl:text-[240px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase lg:leading-[240px] ">работы</h2>
+                        <h2 className="text-white flex flex-col lg:absolute top-[20rem] items-end 2xl:text-[140px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase lg:leading-[240px] ">работы</h2>
                     </div>
                 </div>
                 {/* Cards */}
-                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20 md:space-y-0 space-y-8 py-5'>
+                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20  md:space-y-0 space-y-8 py-5 px-11'>
                     <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
-                        <div className='  hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
+                        <div className='   hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
                         <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
                         <div className=' absolute 2xl:left-72 2xl:top-[37rem] lg:left-[12rem] lg:top-[27rem] top-[18rem] left-36 z-30 flex flex-col items-end'>
                             <h3 className="text-white lg:text-[56px] text-[40px] font-bold font-['Jost'] capitalize">Maxelon</h3>

@@ -113,7 +113,7 @@ const NavBar = ({navbar}) => {
 
 
 
-            <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] flex-shrink-0 w-[100%] h-screen py-24   flex items-center lg:justify-start justify-center absolute z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
+            <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] fixed flex-shrink-0 w-[100%] h-screen py-24   flex items-center lg:justify-start justify-center z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
                 <div className='md:flex gap-24 '>
                     <ul className=' space-y-20 lg:ml-52 my-auto'>
                         <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize flex gap-12">
@@ -177,7 +177,7 @@ const NavBar = ({navbar}) => {
                             <div className='flex h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
                                 <div className='md:flex hidden h-fit my-auto'>
                                     <div className="w-5 h-5 bg-teal-500 rounded-full  " />
-                                    <div className="w-[102px] h-0.5 my-auto bg-teal-500 " />
+                             
                                 </div>
 
                                 <p className="lg:text-[120px] text-[60px] h-fit font-bold z-0 mb-4 capitalize  text-teal-500">Вебсайты</p>

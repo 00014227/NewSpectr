@@ -20,17 +20,23 @@ export default function Smm() {
         if (e.deltaY > 0) {
             // Scroll to the right by 'scrollDistanceX' pixels
             scrollContainerRef.current.scrollLeft += scrollDistanceX;
+
+
         } else if (e.deltaY < 0) {
             scrollContainerRef.current.scrollLeft -= scrollDistanceX;
         }
-        setNavbar(false)
+        if (window.innerWidth < 1024) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
     };
   return (
-    <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-x-auto overflow-x-hidden overflow-y-hidden h-[100vh]'>
+    <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-x-auto overflow-x-hidden lg:overflow-y-hidden h-[100vh]'>
         <NavBar navbar={navbar}/>
-        <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] h-[80vh]  flex items-center px-11'>
+        <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh]   flex items-center '>
                 <div className='lg:flex '>
-                <div className='  flex lg:flex-col items-center justify-center md:mt-4 mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
+                <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
@@ -50,69 +56,51 @@ export default function Smm() {
 
 
 
-           <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center  lg:pt-0 md:pt-24 '>
-                <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[182px] w-full lg:border-r lg:border-l border-t border-b py-20 border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[70px] md:text-[60px] text-4xl  font-bold  font-['HelveticaNeueCyr'] leading-snug tracking-wider">Какие виды Смм</h3>
+           <section className='bg-black flex-shrink-0 xl:ml-0 ml-[8rem] w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center  lg:pt-0 md:pt-24 '>
+                <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
+                    <h3 className="font_border horizon-text 2xl:text-[70px] md:text-[60px] text-4xl my-auto  font-bold  font-['HelveticaNeueCyr'] leading-snug tracking-wider">Какие виды Смм</h3>
                 </div>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-10 relative'>
-                    <h2 className="text-white 2xl:text-[240px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">виды смм<br /> продвижение <br /></h2>
-                    <p className="2xl:w-[600px]  top-36 lg:right-[-80px] right-[200px] w-[550px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">виды смм<br /> продвижение <br /></h2>
+                    <p className="2xl:w-[800px] lg:w-[900px] top-36 lg:right-[-80px] right-[200px] w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
                     SMM (социальные медиа-маркетинг) - это стратегия продвижения бренда или продукта через социальные платформы, такие как Facebook, Instagram, Twitter и LinkedIn. Он включает в себя создание и распространение контента, взаимодействие с аудиторией, а также использование рекламных инструментов для достижения целей маркетинговой кампании.</p>
                 </div>
 
-                <div className=' lg:ml-32 lg:block md:flex justify-between'>
-                    <div>
-                        <Button text={'Реклама'} />
-                        <div className='lg:block flex justify-end'>
-                            <Button text={'Контент'} />
-                        </div>
-
-
-                    </div>
-                    <div className=' mr-11'>
-                        <Button text={'Инфлюенсеры'} />
-                        <div className='lg:block flex justify-end'>
-                            <Button text={'Акции'} />
-
-                        </div>
-                    </div>
-                </div>
-                <div className='lg:hidden hidden  md:flex flex-col justify-center items-center'>
+          
+                <div className=' hidden md:flex flex-col justify-center items-center lg:mt-0 mt-10'>
                     <SnakeBox />
                 </div>
                 <div className=' lg:ml-32   '>
                     <div className='lg:block md:flex justify-between'>
                         <div className=''>
 
-                            <Button text={'Конкурсы'} />
+                            <Button text={'SMM стратегия'} />
 
-                            <div className='lg:block flex justify-end'>   <Button text={'Взаимодействие'} /></div>
+                            <div className='lg:block flex justify-end'>   <Button text={'SMM продвижение'} /></div>
 
                         </div>
                         <div className=' mr-11'>
 
-                            <Button text={'Ретаргетинг'} />
+                            <Button text={'Создание контента'} />
                             <div className='lg:block flex justify-end'>
-                                <Button text={'Хештеги'} />
+                                <Button text={'Инфлюенс маркетинг'} />
                             </div>
 
                         </div>
                     </div>
-                    <div className='lg:block flex md:justify-center md:items-center'>
-                        <Button text={'Геотаргетинг'} />
-                    </div>
+             
                 </div>
 
-                <div className=' md:flex lg:flex-col lg:justify-center space-y-9 ml-20 items-center'>
+                <div className=' md:flex lg:flex-col lg:justify-center justify-between space-y-9 lg:ml-20 items-center'>
                     <div className='lg:block flex justify-end'>
-                        <Button text={'Партнеры'} />
+                        <Button text={'Фирменный стиль страниц'} />
                     </div>
 
-                    <div className='lg:block hidden'>
+                    {/* <div className='lg:block hidden'>
                         <SnakeBox />
-                    </div>
+                    </div> */}
                     <div className=' mr-11'>
-                        <Button text={'Аналитика'} />
+                        <Button text={'таргетированная реклама'} />
                     </div>
 
                 </div>

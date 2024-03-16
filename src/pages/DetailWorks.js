@@ -17,7 +17,7 @@ export default function DetailWorks() {
 
     const checkScreenSize = () => {
       // Adjust the breakpoint value (768) based on your design
-      setSlidesPerView(window.innerWidth < 768 ? 2 : 4);
+      setSlidesPerView(window.innerWidth < 768 ? 2 : 3);
     };
   
     useEffect(() => { 
@@ -37,7 +37,7 @@ export default function DetailWorks() {
     return (
         <div className='lg:flex items-center block  bg-black  overflow-x-auto h-[100vh]'>
             <NavBar />
-            <section className="bg-black flex-shrink-0 relative  w-screen h-screen flex flex-col lg:items-start justify-center">
+            <section className="bg-black flex-shrink-0 relative  w-screen lg:h-screen  flex flex-col lg:items-start justify-center">
                 <div>
                     <Link to={'/'}> 
                     <h1 className="heading absolute right-0 top-5 text-white text-6xl text-right">Наши работы</h1>
@@ -45,7 +45,7 @@ export default function DetailWorks() {
                     </Link>
                 </div>
                
-                <div className="container mx-auto">
+                <div className="container mx-auto mt-[10rem] pb-[7rem]">
 
                     <Swiper
                         effect={'coverflow'}
@@ -55,10 +55,10 @@ export default function DetailWorks() {
                         loop={true}
                         slidesPerView={slidesPerView}
                         coverflowEffect={{
-                            rotate: 80,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 2.5,
+                            rotate: 50,
+                            stretch: -100,
+                            depth: 500,
+                            modifier: 1,
                         }}
                         pagination={{ el: '.swiper-pagination', clickable: true }}
                         navigation={{
@@ -76,26 +76,9 @@ export default function DetailWorks() {
                             </SwiperSlide>
                         ))}
 
-                        {/* <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" className=' w-[22rem] h-[30rem]' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" className=' w-[22rem] h-[30rem]' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" className=' w-[22rem] h-[30rem]' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" className=' w-[22rem] h-[30rem]' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" className=' w-[22rem] h-[30rem]' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" className=' w-[22rem] h-[30rem]' />
-                </SwiperSlide> */}
+         
 
-                        <div className="slider-controler">
+                        <div className="lg:block slider-controler hidden">
                             <div className="swiper-button-prev slider-arrow">
                                 <ion-icon name="arrow-back-outline"></ion-icon>
                             </div>

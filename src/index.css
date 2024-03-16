@@ -131,7 +131,7 @@ h1, h2, h3 {
     }
   }
   
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1020px) {
     @keyframes scroll {
       0% {
         transform: translateX(0);

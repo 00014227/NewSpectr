@@ -11,16 +11,17 @@ import TestPage from './pages/TestPage';
 import { useTransition, animated } from 'react-spring';
 import Marketing from './pages/services/Marketing';
 import Smm from './pages/services/Smm';
+import Production from './pages/services/Production';
 
 
 function App() {
 
 
-  useEffect(() => {
-    fetch('https://ahad.spectragency.uz/')
-    .then(res => res.json())
-    .then(data => console.log(data))
-}, []); 
+//   useEffect(() => {
+//     fetch('https://ahad.spectragency.uz/')
+//     .then(res => res.json())
+//     .then(data => console.log(data))
+// }, []); 
 
 
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/services/branding" element={<Branding />} />
             <Route path="/services/marketing" element={<Marketing/>} />
             <Route path='/services/smm' element={<Smm/>} />
+            <Route path='/services/production' element={<Production/>}/>
           </Routes>
           
   
