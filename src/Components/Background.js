@@ -59,7 +59,7 @@ export default function Background() {
               distance: 150,
               enable: true,
               opacity: 0.2,
-              width: 1
+              width: 3
             },
             move: {
               direction: "none",

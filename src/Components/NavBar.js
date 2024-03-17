@@ -5,64 +5,108 @@ import download from '../assets/navbar/DOWNLOAD.svg'
 import connect from '../assets/navbar/CONNECT.svg'
 import phone from '../assets/navbar/PHONE.svg'
 import menu from '../assets/navbar/MENU.svg'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 
-const NavBar = ({navbar}) => {
+const NavBar = ({ navbar }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(navbar);
     const [screen, setScreen] = useState(true)
+    const location = useLocation();
+    const {id} = useParams()
+
+    const getColorClass1 = (pathname) => {
+        if (pathname === '/services/web') {
+            return 'text-teal-500'; // Change to your desired color class
+        } else {
+            return 'text-black'; // Default color
+        }
+    };
+
+    // Function to determine the color class for the second paragraph based on the URL path
+    const getColorClass2 = (pathname) => {
+        if (pathname === '/services/branding') {
+            return 'text-teal-500'; // Change to your desired color class
+        } else {
+            return 'text-black'; // Default color
+        }
+    };
+
+    // Function to determine the color class for the third paragraph based on the URL path
+    const getColorClass3 = (pathname) => {
+        if (pathname === '/services/smm') {
+            return 'text-teal-500'; // Change to your desired color class
+        } else {
+            return 'text-black'; // Default color
+        }
+    };
+
+    const getColorClass4 = (pathname) => {
+        if (pathname === '/services/marketing') {
+            return 'text-teal-500'; // Change to your desired color class
+        } else {
+            return 'text-black'; // Default color
+        }
+    };
+
+    // Function to determine the color class for the third paragraph based on the URL path
+    const getColorClass5 = (pathname) => {
+        if (pathname === '/services/production') {
+            return 'text-teal-500'; // Change to your desired color class
+        } else {
+            return 'text-black'; // Default color
+        }
+    };
 
 
-
-   useEffect(() => {
-    setIsHovered(navbar);
-}, [navbar ]);
+    useEffect(() => {
+        setIsHovered(navbar);
+    }, [navbar]);
 
     const handleHover = () => {
         setIsHovered(true);
     };
 
-    
 
-    const handleLeave = () => { 
+
+    const handleLeave = () => {
         setIsHovered(false);
     };
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-     
+
     };
 
     const checkScreenSize = () => {
         setScreen(window.innerWidth < 1024); // Adjust the breakpoint (1024) based on your design
-      };
-    
-      useEffect(() => { 
+    };
+
+    useEffect(() => {
         // Check screen size on mount
 
         checkScreenSize();
-    
+
         // Attach event listener for window resize
         window.addEventListener('resize', checkScreenSize);
-    
+
         // Cleanup the event listener on component unmount
         return () => {
-          window.removeEventListener('resize', checkScreenSize);
+            window.removeEventListener('resize', checkScreenSize);
         };
-      }, []); 
+    }, []);
 
     return (
         <>
             <div className='flex items-center lg:fixed z-50 lg:w-[120px] w-full'
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}>
-                   {/* <div className='flex items-center' > */}
+                {/* <div className='flex items-center' > */}
 
                 {isHovered ? (
-                    <div className='lg:w-[120px] w-[100%] transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center px-10  z-[100]'>
+                    <div className='lg:w-[120px] w-[100%] transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center px-4  z-[100]'>
                         <div className='lg:w-[120px] w-[100%] flex lg:flex-col flex-row justify-between lg:h-[100%]'>
                             <div className=' space-y-12  '>
-                                <img src={spectr} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={spectr} className="mx-auto lg:w-[64px] lg:h-[64px] w-[45px] mt-4 h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={lang} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={download} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             </div>
@@ -91,7 +135,7 @@ const NavBar = ({navbar}) => {
                                 <img src={phone} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             </div>
                         </div>
-                        <div className='md:hidden flex justify-center  gap-10 mt-10'>
+                        <div className='md:hidden flex justify-center px-4 w-screen  gap-[4rem] mt-10'>
                             <img src={lang} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             <img src={download} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             <img src={connect} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
@@ -108,7 +152,7 @@ const NavBar = ({navbar}) => {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
                     </svg>
                 </div>
-            {/* </div> */}
+                {/* </div> */}
             </div>
 
 
@@ -116,11 +160,7 @@ const NavBar = ({navbar}) => {
             <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] fixed flex-shrink-0 w-[100%] h-screen py-24   flex items-center lg:justify-start justify-center z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
                 <div className='md:flex gap-24 '>
                     <ul className=' space-y-20 lg:ml-52 my-auto'>
-                        <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize flex gap-12">
-                            Услуги
-                            <img src={menu} />
-
-                        </li>
+                   
                         <div className=' border-l border-white h-fit md:hidden block'>
                             <Link to="../services/web">
                                 <div className='flex  h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
@@ -157,6 +197,11 @@ const NavBar = ({navbar}) => {
 
                         </div>
                         <div className=''>
+                                 <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize flex gap-12">
+                            Услуги
+                            <img src={menu} />
+
+                        </li>
                             <Link to="/works">
                                 <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize">Наши работы</li>
                             </Link>
@@ -172,38 +217,57 @@ const NavBar = ({navbar}) => {
 
 
 
-                    <div className=' border-l border-white h-[695px] md:block hidden'>
-                        <Link to="../services/web">
-                            <div className='flex h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
+                    <div className=' border-l  border-white h-[695px] md:block hidden '>
+                    <Link to="../services/smm">
+                            <div className='flex h-fit w-fit -mb-6 z-10  -ml-3 mt-8 cursor-pointer'>
                                 <div className='md:flex hidden h-fit my-auto'>
                                     <div className="w-5 h-5 bg-teal-500 rounded-full  " />
-                             
+                                    {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
                                 </div>
 
-                                <p className="lg:text-[120px] text-[60px] h-fit font-bold z-0 mb-4 capitalize  text-teal-500">Вебсайты</p>
+                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500 w- font-bold mx-auto capitalize font_border ${getColorClass3(location.pathname.toLowerCase())}`}>SMM</p>
+                            </div>
+                        </Link>
+                        <Link to="../services/web">
+                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
+                                <div className='md:flex hidden h-fit my-auto'>
+                                    <div className="w-5 h-5 bg-teal-500 rounded-full  " />
+                                    {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
+                                </div>
+
+                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500 font-bold mx-auto capitalize font_border ${getColorClass1(location.pathname.toLowerCase())}`}>Вебсайты</p>
                             </div>
                         </Link>
 
                         <Link to="../services/branding">
+                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
+                                <div className='md:flex hidden h-fit my-auto'>
+                                    <div className="w-5 h-5 bg-white rounded-full  " />
+                                    {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
+                                </div>
+                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass2(location.pathname.toLowerCase())}`}>Брендинг</p>
+                            </div>
+                        </Link>
+
+                        <Link to="../services/marketing">
                             <div className='flex h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
                                 <div className='md:flex hidden h-fit my-auto'>
                                     <div className="w-5 h-5 bg-white rounded-full  " />
                                     {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
                                 </div>
-                                <p className="lg:text-[120px] text-[60px] ml-24 text-opacity-0 font-bold hover:text-teal-500 mx-auto capitalize font_border ">Брендинг</p>
+                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass4(location.pathname.toLowerCase())}`}>Маркетинг</p>
                             </div>
                         </Link>
 
-                        <Link to="../services/presentation">
-                            <div className='flex h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
+                        <Link to="../services/production">
+                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
                                 <div className='md:flex hidden h-fit my-auto'>
                                     <div className="w-5 h-5 bg-white rounded-full  " />
                                     {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
                                 </div>
-                                <p className="lg:text-[120px] text-[60px] hover:text-teal-500 ml-24 text-opacity-0 font-bold mx-auto capitalize font_border ">Презентации</p>
+                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass5(location.pathname.toLowerCase())}`}>Продакшн</p>
                             </div>
                         </Link>
-
 
 
                     </div>

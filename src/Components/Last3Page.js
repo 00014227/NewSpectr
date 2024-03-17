@@ -6,6 +6,7 @@ import whatsapp from '../assets/whatsapp.svg'
 import telegram from '../assets/telegram.svg'
 import instagram from '../assets/instagram.svg'
 import { DialogDefault, LongDialog } from './Modal'
+import Telegram, { Instagram } from './FooterIcon'
 
 export default function Last3Page({ isBeating }) {
     const [rangeValue, setRangeValue] = useState(0);
@@ -76,20 +77,14 @@ export default function Last3Page({ isBeating }) {
 
 
             <div className=' xl:h-screen lg:h-[80vh] w-auto flex lg:flex-col justify-between px-8 py-12'>
-                <div className='relative'>
-                    <img src={telegram} className=" animate-spin-slow 2xl:w-auto 2xl:h-auto lg:w-[150px] lg:h-[150px] w-[70px] h-[70px]" />
-                    {/* <img src={whatsapp} className=" absolute lg:top-12 lg:left-14 top-[20px] left-5 lg:w-auto lg:h-auto w-8 h-8" /> */}
-                </div>
-                <div className='relative'>
-                    <img src={instagram} className=" animate-spin-slow 2xl:w-auto 2xl:h-auto lg:w-[150px] lg:h-[150px] w-[70px] h-[70px]" />
-                    <img src={whatsapp} className=" absolute lg:top-12 lg:left-14 top-[20px] left-5 lg:w-auto lg:h-auto w-8 h-8" />
-                </div>
-                <div className='relative'>
-                    <img src={whatsup} className=" animate-spin-slow 2xl:w-auto 2xl:h-auto lg:w-[150px] lg:h-[150px] w-[70px] h-[70px]" />
-                    <img src={whatsapp} className=" absolute lg:top-12 lg:left-14 top-[20px] left-5 lg:w-auto lg:h-auto w-8 h-8" />                </div>
+                <Telegram/>
+                <Instagram/>
+                <Telegram/>
 
             </div>
 
+
+            
 
 
             <footer className=' lg:h-screen h-[182px] lg:w-[182px] w-full lg:border-r border-t py-20 border-white lg:rotate-180 flex flex-col justify-between items-center'>

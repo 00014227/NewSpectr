@@ -6,6 +6,9 @@ h1, h2, h3 {
   font-family: 'Jost', sans-serif;
 }
 
+.pcolor {
+ color:  rgba(47, 48, 50, 1)
+}
 
 .font_border {
 
@@ -29,7 +32,7 @@ h1, h2, h3 {
    @media screen and (max-width: 1536px) {
     .pulse, .bloc, .phone {
       position: absolute;
-      width: 380px;
+      width: 450px;
       height: 300px;
       color: #fff;
       
