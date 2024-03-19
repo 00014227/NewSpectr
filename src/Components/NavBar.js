@@ -6,6 +6,7 @@ import connect from '../assets/navbar/CONNECT.svg'
 import phone from '../assets/navbar/PHONE.svg'
 import menu from '../assets/navbar/MENU.svg'
 import { Link, useLocation, useParams } from 'react-router-dom';
+import DropDowm from './DropDowm';
 
 const NavBar = ({ navbar }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -157,60 +158,28 @@ const NavBar = ({ navbar }) => {
 
 
 
-            <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] fixed flex-shrink-0 w-[100%] h-screen py-24   flex items-center lg:justify-start justify-center z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
+            <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] fixed flex-shrink-0 w-[100%] h-screen py-24   flex lg:items-center lg:justify-start  z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
                 <div className='md:flex gap-24 '>
-                    <ul className=' space-y-20 lg:ml-52 my-auto'>
-                    <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize flex gap-12">
+                    <ul className='  lg:ml-52 my-auto pl-4'>
+                    <li className=" text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize lg:flex hidden  gap-12">
                             Услуги
                             <img src={menu} />
 
                         </li>
-                        <div className=' border-l border-white h-fit md:hidden block'>
-                            <Link to="../services/web">
-                                <div className='flex  h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
-                                    <div className='md:flex hidden h-fit my-auto'>
-                                        <div className="w-5 h-5 bg-teal-500 rounded-full  " />
-                                        <div className="w-[102px] h-0.5 my-auto bg-teal-500 " />
-                                    </div>
 
-                                    <p className="lg:text-[120px] text-[40px] md:ml-0 ml-24 h-fit font-bold z-0 mb-4 capitalize  text-teal-500">Вебсайты</p>
-                                </div>
-                            </Link>
-
-                            <Link to="../services/branding">
-                                <div className='flex h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
-                                    <div className='md:flex hidden h-fit my-auto'>
-                                        <div className="w-5 h-5 bg-white rounded-full  " />
-                                        {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
-                                    </div>
-                                    <p className="lg:text-[120px] text-[40px] ml-24 text-opacity-0 font-bold hover:text-teal-500 mx-auto capitalize font_border ">Брендинг</p>
-                                </div>
-                            </Link>
-
-                            <Link to="../services/presentation">
-                                <div className='flex h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
-                                    <div className='md:flex hidden h-fit my-auto'>
-                                        <div className="w-5 h-5 bg-white rounded-full  " />
-                                        {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
-                                    </div>
-                                    <p className="lg:text-[120px] text-[40px] hover:text-teal-500 ml-24 text-opacity-0 font-bold mx-auto capitalize font_border ">Презентации</p>
-                                </div>
-                            </Link>
-
-
-
-                        </div>
+                        <DropDowm/>
+                       
                         <div className=''>
                    
                                        
                             <Link to="/works">
-                                <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize">Наши работы</li>
+                                <li className="text-white lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">Наши работы</li>
                             </Link>
                             <Link to="/blog">
-                                <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize">блог</li>
+                                <li className="text-white lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">блог</li>
                             </Link>
                             <Link>
-                                <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize">контакты</li>
+                                <li className="text-white lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">контакты</li>
                             </Link>
 
                         </div>
