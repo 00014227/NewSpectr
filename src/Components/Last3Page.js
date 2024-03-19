@@ -14,12 +14,12 @@ export default function Last3Page({ isBeating }) {
         setRangeValue(parseInt(event.target.value));
       };
         return (
-        <section className='flex-shrink-0  w-auto lg:pl-40  lg:h-screen  lg:flex 2xl:py-12 items-center gap-36 bg-black'>
+        <section className='flex-shrink-0  w-auto lg:pl-40  lg:h-screen  lg:flex 2xl:py-12 items-center  gap-36 bg-black'>
 
-            <div className=' '>
-                <form className='flex lg:flex-row flex-col items-center gap-20'>
+            <div className=''>
+                <form className='flex lg:flex-row flex-col items-center gap-20 '>
                     <div className=' space-y-10'>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col '>
                             <label className=' text-white text-xl'>Название вашей компании</label>
                             <input type='text'
                                 className=' w-[25rem] h-[3rem] bg-black border-2 text-white rounded-xl border-teal-500' />

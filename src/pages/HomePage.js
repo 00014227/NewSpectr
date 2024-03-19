@@ -73,7 +73,7 @@ const HomePage = () => {
     return (
 
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} 
-            className="  relative z-50 lg:flex items-center  lg:overflow-y-hidden  block lg:overflow-x-hidden bg-black md:pr-0 pr-10 h-[100vh]">
+            className="  relative z-50 lg:flex items-center  lg:overflow-y-hidden  block lg:overflow-x-hidden bg-black h-[100vh]">
             <NavBar navbar={navbar}/>
             <div className='w-full h-[100vh] -z-10 absolute top-0 left-0'>
                 <Background />
@@ -112,7 +112,7 @@ const HomePage = () => {
                     {/* <h3 className="text-white text-[56px] font-bold  capitalize">about</h3> */}
                     <div className='lg:flex 2xl:gap-44 gap-9 items-center'>
                         <h1 className="text-white xl:text-[120px] lg:text[150px] md:text-[100px] text-[56px] font-bold font-['Jost'] uppercase ">spectr <span className='lg:hidden flex justify-end  '>agency</span> </h1>
-                        <p className="text-white xl:text-xl text-2xl hidden lg:block font-normal font-['Evolventa'] capitalize leading-9 2xl:max-w-[810px] max-w-[670px]">
+                        <p className="text-white xl:text-xl text-2xl hidden lg:block font-normal  font-['Evolventa'] capitalize leading-9 2xl:max-w-[810px] max-w-[670px]">
                             Маркетинговое агентство «Спектр» (Ташкент) специализируется на комплексном развитии успешных корпоративных, продуктовых и розничных брендов от построения стратегии бренда, разработки имени, создания логотипа, создания фирменного стиля до разработки сайта любого сложность. Также мы поможем вам рассказать о компании, товаре или услуге посредством презентации.
                         </p>
                     </div>
@@ -120,19 +120,19 @@ const HomePage = () => {
                     <div className='md:flex '>
                         <div class="pulse flex items-center justify-center 2xl:ml-32 mr-32 ">
                             <div
-                                className={` lg:ml-9  transition-transform transform ${isBeating ? 'scale-110' : 'scale-100'}`}
+                                className={` md:ml-9  transition-transform transform ${isBeating ? 'scale-110' : 'scale-100'}`}
                             >
 
                                 <img
                                     src={heart}
                                     alt="Heart"
-                                    className="  lg:w-[185px] lg:h-[257px] w-[95px] h-[157px]"
+                                    className="  md:w-[185px] md:h-[257px] w-[95px] h-[157px]"
 
                                 />
                             </div>
 
                         </div>
-                        <p className="text-white  text-xl block lg:hidden font-normal font-['Evolventa']  lg:w-auto  leading-9 max-w-[810px]">
+                        <p className="text-white  text-xl block lg:hidden font-normal font-['Evolventa'] md:w-[500px] w-auto lg:w-auto capitalize leading-9 max-w-[810px]">
                             Маркетинговое агентство «Спектр» (Ташкент) специализируется на комплексном развитии успешных корпоративных, продуктовых и розничных брендов от построения стратегии бренда, разработки имени, создания логотипа, создания фирменного стиля до разработки сайта любого сложность. Также мы поможем вам рассказать о компании, товаре или услуге посредством презентации.
                         </p>
                         <h1 className="text-white xl:text-[120px] text-[140px] hidden lg:block font-bold font-['Jost'] uppercase leading-[150px] 2xl:leading-[200px]">marketing <br /> agency</h1>
@@ -149,11 +149,11 @@ const HomePage = () => {
 
                     <div className=' 2xl:space-y-[70px] lg:space-y-[30px] md:mt-0 items-center relative'>
                         <Eye />
-                        <h2 className="text-white flex flex-col lg:absolute top-[20rem] items-end 2xl:text-[140px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase lg:leading-[240px] ">работы</h2>
+                        <h2 className="text-white flex flex-col lg:absolute top-[20rem] px-4 items-end 2xl:text-[140px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase lg:leading-[240px] ">работы</h2>
                     </div>
                 </div>
                 {/* Cards */}
-                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20  md:space-y-0 space-y-8 py-5 px-11'>
+                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20  md:space-y-0 space-y-8 py-5 px-6'>
                     <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
                         <div className='   hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
                         <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
@@ -204,7 +204,7 @@ const HomePage = () => {
             </section>
             <Services />
 
-            {/* <Last3Page isBeating={isBeating} /> */}
+            <Last3Page isBeating={isBeating} />
         </div>
     );
 };

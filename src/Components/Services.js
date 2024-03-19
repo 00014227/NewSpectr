@@ -25,7 +25,7 @@ export default function Services() {
 
                         </ul>
                     </div>
-                    <div className='flex items-end lg:justify-end md:justify-center'>
+                    <div className='flex items-end lg:justify-end md:justify-center justify-end'>
                         <Link to='/services/web'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
@@ -80,7 +80,7 @@ export default function Services() {
                         </ul>
                     </div>
 
-                    <div className='flex items-end lg:justify-end md:justify-center'>
+                    <div className='flex items-end lg:justify-end md:justify-center justify-end'>
                         <Link to='/services/marketing'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
@@ -121,7 +121,7 @@ export default function Services() {
                 <div className='lg:flex'>
                     <div className=' space-y-4'>
                         <ButtonModal text={'Продакшн'} />
-                        <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
+                        <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px] '>
                             <li>профессиональный видеоролик</li>
                             <li>создание контента</li>
                             <li> проведении фотосессии</li>
@@ -132,7 +132,7 @@ export default function Services() {
                         </ul>
                     </div>
 
-                    <div className='flex items-end lg:justify-end md:justify-center'>
+                    <div className='flex items-end lg:justify-end md:justify-center justify-end'>
                         <Link to='/services/production'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />

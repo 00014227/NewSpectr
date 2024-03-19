@@ -12,8 +12,8 @@ import eye from '../../assets/eye.png'
 import service from '../../assets/service.png'
 
 export default function Branding() {
-    const [navbar, setNavbar] = useState(true);  
-    const scrollContainerRef = useRef(null); 
+    const [navbar, setNavbar] = useState(true);
+    const scrollContainerRef = useRef(null);
 
 
 
@@ -21,29 +21,32 @@ export default function Branding() {
     const handleWheelScroll = (e) => {
         // Specify the scroll distance for horizontal scrolling
         const scrollDistanceX = 100;
-       
+
         // Check if scrolling down
         if (e.deltaY > 0) {
             // Scroll to the right by 'scrollDistanceX' pixels
             scrollContainerRef.current.scrollLeft += scrollDistanceX;
-           
-           
+
+
         } else if (e.deltaY < 0) {
             scrollContainerRef.current.scrollLeft -= scrollDistanceX;
         }
-
-        setNavbar(false)
+        if (window.innerWidth < 1024) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
     };
 
     return (
 
         <div
-        ref={scrollContainerRef} onWheel={handleWheelScroll} 
-        className='lg:flex items-center block lg:overflow-x-auto bg-black overflow-x-hidden h-[100vh]' >
-            <NavBar navbar={navbar}/>
-            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto    lg:flex items-center  px-12'>
+            ref={scrollContainerRef} onWheel={handleWheelScroll}
+            className='lg:flex block bg-black lg:overflow-x-hidden  lg:overflow-y-hidden items-center  h-[100vh] ' >
+            <NavBar navbar={navbar} />
+            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto    lg:flex items-center md:px-10 px-4'>
                 <div className='lg:flex '>
-                    <div className='  flex lg:flex-col items-center justify-center md:mt-4 mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
+                    <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
                         <svg className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M139.749 73.7703L139.189 79.1331C139.078 80.194 138.749 81.0337 138.202 81.6522C137.664 82.2824 136.918 82.5476 135.963 82.4479C135.433 82.3925 134.975 82.2052 134.59 81.8862C134.216 81.5682 133.947 81.1595 133.785 80.6599C133.248 81.998 132.253 82.5912 130.8 82.4394C129.728 82.3274 128.933 81.8797 128.415 81.0962C127.907 80.3139 127.711 79.3657 127.827 78.2518L128.419 72.5866L139.749 73.7703ZM137.571 75.988L134.913 75.7103L134.677 77.97C134.547 79.2219 134.921 79.8938 135.802 79.9858C136.322 80.0401 136.69 79.907 136.905 79.5863C137.132 79.2668 137.275 78.8206 137.335 78.2477L137.571 75.988ZM133.227 75.5341L130.139 75.2116L129.878 77.71C129.811 78.3571 129.864 78.8775 130.037 79.2709C130.209 79.675 130.598 79.9087 131.203 79.9718C131.818 80.0361 132.247 79.8772 132.491 79.4951C132.744 79.1248 132.907 78.5948 132.979 77.9052L133.227 75.5341Z" fill="#0ABAB5" />
                             <path d="M137.766 88.6031L135.917 93.9566C135.548 95.0252 134.994 95.8102 134.257 96.3116C133.519 96.8129 132.636 96.8859 131.608 96.5306C130.983 96.3147 130.486 95.9736 130.116 95.5074C129.757 95.0447 129.569 94.5114 129.552 93.9074C129.04 94.7687 128.02 95.0089 126.493 94.6279C126.443 94.6105 126.283 94.5666 126.014 94.4962C125.745 94.4258 125.526 94.3728 125.358 94.3373C125.199 94.3052 125.004 94.2659 124.772 94.2196C124.54 94.1732 124.338 94.1541 124.165 94.1623C123.993 94.1706 123.858 94.2028 123.76 94.2591L124.606 91.8092C124.795 91.7843 125.018 91.7935 125.274 91.8367C125.54 91.8835 125.869 91.9579 126.263 92.06C126.667 92.1656 126.889 92.2254 126.929 92.2393C127.713 92.4199 128.303 92.4095 128.7 92.2081C129.094 92.0167 129.421 91.543 129.682 90.7868L130.408 88.6847L126.189 87.227L126.999 84.8829L137.766 88.6031ZM135.096 90.3045L132.117 89.2751L131.344 91.5133C131.118 92.1687 131.042 92.7126 131.119 93.1452C131.202 93.5914 131.545 93.919 132.15 94.128C132.715 94.3231 133.161 94.274 133.488 93.9807C133.811 93.6975 134.078 93.2534 134.287 92.6485L135.096 90.3045Z" fill="#0ABAB5" />
@@ -104,12 +107,12 @@ export default function Branding() {
                             <path d="M135.788 48.984L136.362 51.4296L129.239 54.9741L137.236 55.1525L137.773 57.4423L130.59 61.149L138.654 61.1964L139.216 63.5953L127.424 63.2064L126.854 60.7764L133.978 57.0999L125.969 57.0068L125.388 54.53L135.788 48.984Z" fill="white" />
                         </svg>
 
-                       
+
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                     </div>
                     <div className=' space-y-[10%]'>
                         <div className='lg:ml-[14rem] '>
-                            <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px]  font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">дизайн <span className='font-extralight ml-3'>и</span> брендинг</h1>
+                            <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] text-end  font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">дизайн <span className='font-extralight ml-3'>и</span> брендинг</h1>
 
                         </div>
 
@@ -121,16 +124,16 @@ export default function Branding() {
             </section>
 
             <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center  lg:pt-0 md:pt-24'>
-                <div className=' lg:h-screen lg:w-[182px] h-[182px] w-full lg:border-r lg:border-l border-t border-b py-20 border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[70px] md:text-[60px] text-4xl  font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">what kind of branding</h3>
+                <div className=' lg:h-screen lg:w-[182px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
+                    <h3 className="font_border horizon-text 2xl:text-[70px] md:text-[60px] text-3xl  font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">Какие виды юрендинга</h3>
                 </div>
-                <div className=' 2xl:max-w-[2688px] lg:ml-24 px-10 relative'>
-                    <h2 className="text-white 2xl:text-[240px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">types <br /> of <br />branding</h2>
-                    <p className="2xl:w-[600px] lg:absolute top-36 lg:right-[-80px] right-[200px] w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
+                    <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">виды <br />брендинга</h2>
+                    <p className="2xl:w-[600px] lg:absolute top-36 lg:right-[-17rem] right-[200px] w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
                         We draw prototypes, create layouts, make up for different types of devices. We implement the necessary CMS,integrate CRM.</p>
                 </div>
 
-                <div className=' lg:ml-32 lg:block md:flex justify-between'>
+                <div className=' lg:ml-[30rem] pl-[2rem] lg:block md:flex justify-between'>
                     <div>
                         <Button text={'дизайн упаковки'} />
                         <div className='lg:block flex justify-end'>
@@ -139,7 +142,7 @@ export default function Branding() {
 
 
                     </div>
-                    <div className=' mr-11'>
+                    <div className=' md:mr-11'>
                         <Button text={'разработка нейминга'} />
                         <div className='lg:block flex justify-end'>
                             <Button text={'разработка логатипа'} />
@@ -150,7 +153,7 @@ export default function Branding() {
                 <div className='lg:hidden hidden  md:flex flex-col justify-center items-center'>
                     <SnakeBox />
                 </div>
-                <div className=' lg:ml-32   '>
+                <div className=' lg:ml-32  pl-[2rem] '>
                     <div className='lg:block md:flex justify-between'>
                         <div className=''>
 
@@ -159,7 +162,7 @@ export default function Branding() {
                             <div className='lg:block flex justify-end'>   <Button text={'фудбрендинг'} /></div>
 
                         </div>
-                        <div className=' mr-11'>
+                        <div className=' md:mr-11'>
 
                             <Button text={'финбрендинг'} />
                             <div className='lg:block flex justify-end'>
@@ -173,30 +176,32 @@ export default function Branding() {
                     </div>
                 </div>
 
-                <div className=' lg:ml-32   '>
+                <div className=' lg:ml-32   pl-[2rem]'>
                     <div className='lg:block md:flex justify-between'>
                         <div className=''>
+                            <div className='lg:block flex justify-end'>
+                                <Button text={'разработка ценностей'} />
 
-                            <Button text={'разработка ценностей'} />
+                            </div>
 
-                            <div className='lg:block flex justify-end'>   <Button text={'миссия компании'} /></div>
+                            <div className=''>   <Button text={'миссия компании'} /></div>
 
                         </div>
-                        <div className=' mr-11'>
-
-                            <Button text={'управление брендом'} />
-                            <div className='lg:block flex justify-end'>
+                        <div className=' md:mr-11'>
+                        <div className='lg:block flex justify-end'>
                                 <Button text={'графические элементы'} />
                             </div>
+                            <Button text={'управление брендом'} />
+                         
 
                         </div>
                     </div>
-                    <div className='lg:block flex md:justify-center md:items-center'>
-                        <Button text={'идентичность бренда'} />
+                    <div className='lg:block flex md:justify-center justify-end md:items-center'>
+                        <Button text={'голос бренда'} />
                     </div>
                 </div>
 
-                <div className=' lg:ml-32 lg:block md:flex justify-between'>
+                <div className=' lg:ml-32 pl-[2rem] lg:block md:flex justify-between'>
                     <div>
                         <Button text={'ребрендинг'} />
                         <div className='lg:block flex justify-end'>
@@ -205,7 +210,7 @@ export default function Branding() {
 
 
                     </div>
-                    <div className=' mr-11'>
+                    <div className=' md:mr-11'>
                         <Button text={'коммуникации и продвижение'} />
                         <div className='lg:block flex justify-end'>
                             <Button text={'разработка фирменного стиля'} />
@@ -214,15 +219,15 @@ export default function Branding() {
                     </div>
                 </div>
 
-                <div className=' md:flex lg:flex-col lg:justify-center space-y-12 ml-20 items-center'>
-                    <div className='lg:block flex justify-end'>
+                <div className=' md:flex lg:flex-col lg:justify-center space-y-12 md:ml-20 items-center '>
+                    <div className=''>
                         <Button text={'персональный брендинг'} />
                     </div>
 
                     <div className='lg:block hidden'>
                         <SnakeBox />
                     </div>
-                    <div className=' mr-11'>
+                    <div className=' md:mr-11 lg:block flex justify-end'>
                         <Button text={'корпоративный брендинг'} />
                     </div>
 
@@ -238,7 +243,7 @@ export default function Branding() {
 
 
 
-  
+
 
 
 

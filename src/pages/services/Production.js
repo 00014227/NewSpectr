@@ -31,7 +31,7 @@ export default function Production() {
     return (
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-y-hidden  overflow-x-hidden h-[100vh]'>
             <NavBar navbar={navbar} />
-            <section className=' flex-shrink-0  w-screen lg:h-screen h-auto lg:flex items-center '>
+            <section className=' flex-shrink-0  w-screen lg:h-screen h-auto lg:flex items-center md:px-10 px-4'>
                 <div className='lg:flex gap-40'>
                     <div className='lg:flex relative justify-center'>
                         <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
@@ -66,7 +66,8 @@ export default function Production() {
                 </div>
                 
                 <div className='lg:flex lg:ml-48 gap-16'>
-                    <div className=' space-y-10'>
+                    <div className=' space-y-10 pl-[2rem]'>
+                        
                         <Button text={'профессиональные видеоролики'}/>
                         <div className='flex justify-end'>
                         <Button text={'создание контента'}/>
@@ -85,7 +86,7 @@ export default function Production() {
                     <div className='lg:block hidden'>
                         <SnakeBox />
                     </div>
-                    <div className=''>
+                    <div className='ml-[2rem]'>
                         <Button text={'голос бренда'} />
                     </div>
 

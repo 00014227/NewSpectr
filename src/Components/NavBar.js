@@ -97,15 +97,15 @@ const NavBar = ({ navbar }) => {
 
     return (
         <>
-            <div className='flex items-center lg:fixed z-50 lg:w-[120px] w-full'
+            <div className='flex items-center lg:fixed z-50 lg:w-[120px] w-screen'
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}>
                 {/* <div className='flex items-center' > */}
 
                 {isHovered ? (
-                    <div className='lg:w-[120px] w-[100%] transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center px-4  z-[100]'>
-                        <div className='lg:w-[120px] w-[100%] flex lg:flex-col flex-row justify-between lg:h-[100%]'>
-                            <div className=' space-y-12  '>
+                    <div className='lg:w-[120px] w-screen transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center  z-[100]'>
+                        <div className='lg:w-[120px] w-screen flex lg:flex-col flex-row justify-between lg:h-[100%]'>
+                            <div className=' space-y-12 pl-4'>
                                 <img src={spectr} className="mx-auto lg:w-[64px] lg:h-[64px] w-[45px] mt-4 h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={lang} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={download} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
@@ -119,7 +119,7 @@ const NavBar = ({ navbar }) => {
 
                             </div>
 
-                            <div className='lg:mx-auto my-auto'>
+                            <div className='lg:mx-auto my-auto pr-4'>
                                 <button
                                     className="w-[60px] h-8 focus:outline-none"
                                     onClick={toggleMenu}
@@ -135,7 +135,7 @@ const NavBar = ({ navbar }) => {
                                 <img src={phone} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             </div>
                         </div>
-                        <div className='md:hidden flex justify-center px-4 w-screen  gap-[4rem] mt-10'>
+                        <div className='md:hidden flex justify-center px-4 w-screen  gap-[3.3rem] mt-10'>
                             <img src={lang} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             <img src={download} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             <img src={connect} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
@@ -160,7 +160,11 @@ const NavBar = ({ navbar }) => {
             <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] fixed flex-shrink-0 w-[100%] h-screen py-24   flex items-center lg:justify-start justify-center z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
                 <div className='md:flex gap-24 '>
                     <ul className=' space-y-20 lg:ml-52 my-auto'>
-                   
+                    <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize flex gap-12">
+                            Услуги
+                            <img src={menu} />
+
+                        </li>
                         <div className=' border-l border-white h-fit md:hidden block'>
                             <Link to="../services/web">
                                 <div className='flex  h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
@@ -197,11 +201,8 @@ const NavBar = ({ navbar }) => {
 
                         </div>
                         <div className=''>
-                                 <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize flex gap-12">
-                            Услуги
-                            <img src={menu} />
-
-                        </li>
+                   
+                                       
                             <Link to="/works">
                                 <li className="text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize">Наши работы</li>
                             </Link>
