@@ -7,33 +7,33 @@
     },
     {
       "id": 2,
-      "title": "50% PAYMENT",
-      "description": "AFTER THE BRIEF WE SIGN THE CONTRACT AND ACCEPT HALF OF THE PAYMENT"
+      "title": "50% ОПЛАТА",
+      "description": "ПОСЛЕ БРИФА ПОДПИСЫВАЕМ ДОГОВОР И ПРИНИМАЕМ ПОЛОВИНУ ОПЛАТЫ."
     },
     {
       "id": 3,
-      "title": "DEVELOPMENT",
-      "description": "AFTER THE DESIGN IS APPROVED, OUR DEVELOPERS BEGIN CODE THE WEBSITE AND ENLIVEN IT"
+      "title": "РАЗРАБОТКА",
+      "description": "ПОСЛЕ УТВЕРЖДЕНИЯ ДИЗАЙНА НАШИ РАЗРАБОТЧИКИ НАЧИНАЮТ КОДИРОВАТЬ САЙТ И Оживлять его."
     },
     {
       "id": 4,
-      "title": "PROTOTYPING",
-      "description": "WE WORK ON DESIGN OF THE WEBSITE THROUGH STEP-BY-STEP ITERATIONS"
+      "title": "ПРОТОТИПИРОВАНИЕ",
+      "description": "РАБОТАЕМ НАД ДИЗАЙНОМ САЙТА ПО ПОШАГОВЫМ ИТЕРАЦИЯМ."
     },
     {
         "id": 5,
-        "title": "CONTENT FILLING",
-        "description": "AS WE FINISH DEVELOPING THE PRODUCT WE HAVE TO FILL IT WITH THE REAL TEXT AND PHOTOS"
+        "title": "НАПОЛНЕНИЕ",
+        "description": "после завершение, НАМ НУЖНО НАПОЛНИТЬ ЕГО РЕАЛЬНЫМ ТЕКСТОМ И ФОТОГРАФИЯМИ."
       },
       {
         "id": 6,
-        "title": "TESTING",
-        "description": "AFTER THE WEBSITE IS READY WE TEST IT IN ALL TERMS FROM THE UX TO ITS LOADING SPEED"
+        "title": "ТЕСТИРОВАНИЕ",
+        "description": "ПОСЛЕ ГОТОВНОСТИ САЙТА МЫ ТЕСТИРУЕМ ЕГО ПО ВСЕМ УСЛОВИЯМ: ОТ UX ДО СКОРОСТИ ЗАГРУЗКИ."
       },
       {
         "id": 7,
-        "title": "DELIVERY",
-        "description": "AFTER THE PRODUCT PASSES ALL THE CHECK UPS WE CAN BRAVELY HAND IT TO YOU"
+        "title": "ДОСТАВКА",
+        "description": "ПОСЛЕ ТОГО, КАК ПРОДУКТ ПРОЙДЕТ ВСЕ ПРОВЕРКИ, МЫ МОЖЕМ СМЕЛОСТНО ВРУЧИТЬ ЕГО ВАМ."
       }
   ]
 }

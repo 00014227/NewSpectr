@@ -10,10 +10,13 @@ import DropDowm from './DropDowm';
 
 const NavBar = ({ navbar }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpenMenu, setIsOpenMenu] = useState(true);
     const [isHovered, setIsHovered] = useState(navbar);
     const [screen, setScreen] = useState(true)
     const location = useLocation();
-    const {id} = useParams()
+    const { id } = useParams()
+
+
 
     const getColorClass1 = (pathname) => {
         if (pathname === '/services/web') {
@@ -21,6 +24,7 @@ const NavBar = ({ navbar }) => {
         } else {
             return 'text-black'; // Default color
         }
+
     };
 
     // Function to determine the color class for the second paragraph based on the URL path
@@ -30,6 +34,7 @@ const NavBar = ({ navbar }) => {
         } else {
             return 'text-black'; // Default color
         }
+
     };
 
     // Function to determine the color class for the third paragraph based on the URL path
@@ -52,7 +57,7 @@ const NavBar = ({ navbar }) => {
     // Function to determine the color class for the third paragraph based on the URL path
     const getColorClass5 = (pathname) => {
         if (pathname === '/services/production') {
-            return 'text-teal-500'; // Change to your desired color class
+            return 'text-teal-500 '; // Change to your desired color class
         } else {
             return 'text-black'; // Default color
         }
@@ -87,7 +92,7 @@ const NavBar = ({ navbar }) => {
 
         checkScreenSize();
 
-        // Attach event listener for window resize
+        // Attach event listener for window resize 
         window.addEventListener('resize', checkScreenSize);
 
         // Cleanup the event listener on component unmount
@@ -98,15 +103,15 @@ const NavBar = ({ navbar }) => {
 
     return (
         <>
-            <div className='flex items-center lg:fixed z-50 lg:w-[120px] w-screen'
+            <div className='flex items-center fixed z-50 lg:w-[120px] w-screen'
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}>
                 {/* <div className='flex items-center' > */}
 
                 {isHovered ? (
-                    <div className='lg:w-[120px] w-screen transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center  z-[100]'>
+                    <div className='lg:w-[120px] w-screen  transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center  z-[100]'>
                         <div className='lg:w-[120px] w-screen flex lg:flex-col flex-row justify-between lg:h-[100%]'>
-                            <div className=' space-y-12 pl-4'>
+                            <div className=' space-y-12 lg:pl-0 pl-4'>
                                 <img src={spectr} className="mx-auto lg:w-[64px] lg:h-[64px] w-[45px] mt-4 h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={lang} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={download} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
@@ -120,7 +125,7 @@ const NavBar = ({ navbar }) => {
 
                             </div>
 
-                            <div className='lg:mx-auto my-auto pr-4'>
+                            <div className='lg:mx-auto my-auto lg:pr-0 pr-4'>
                                 <button
                                     className="w-[60px] h-8 focus:outline-none"
                                     onClick={toggleMenu}
@@ -159,83 +164,89 @@ const NavBar = ({ navbar }) => {
 
 
             <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] fixed flex-shrink-0 w-[100%] h-screen py-24   flex lg:items-center lg:justify-start  z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
-                <div className='md:flex gap-24 '>
-                    <ul className='  lg:ml-52 my-auto pl-4'>
-                    <li className=" text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize lg:flex hidden  gap-12">
+                <div className='md:flex gap-24 my-auto'>
+                    <ul className='  lg:ml-52 lg:my-auto space-y-10  md:mt-8 pl-4'>
+                        <li className=" text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize md:flex hidden  gap-12">
                             Услуги
                             <img src={menu} />
 
                         </li>
-
-                        <DropDowm/>
-                       
-                        <div className=''>
-                   
-                                       
-                            <Link to="/works">
-                                <li className="text-white lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">Наши работы</li>
-                            </Link>
-                            <Link to="/blog">
-                                <li className="text-white lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">блог</li>
-                            </Link>
-                            <Link>
-                                <li className="text-white lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">контакты</li>
-                            </Link>
+                        <div className='md:hidden w-fit h-fit'>
+                            <DropDowm />
 
                         </div>
+
+
+
+
+                        <Link to="/works">
+                            <li className="text-white lg:mt-0 md:mt-20 lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">Наши работы</li>
+                        </Link>
+                        <Link to="/blog">
+                            <li className="text-white lg:mt-0 md:mt-20 lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">блог</li>
+                        </Link>
+                        <Link>
+                            <li className="text-white lg:mt-0 md:mt-20 lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">контакты</li>
+                        </Link>
+
+
                     </ul>
 
 
 
-                    <div className=' border-l  border-white h-[695px] md:block hidden '>
-                    <Link to="../services/smm">
-                            <div className='flex h-fit w-fit -mb-6 z-10  -ml-3 mt-8 cursor-pointer'>
+                    <div className=' border-l  border-white h-[50%] md:block hidden '>
+                        <Link to="../services/marketing">
+                            <div className='flex h-fit -mb-6 z-10 -ml-3  space-x-12 cursor-pointer'>
                                 <div className='md:flex hidden h-fit my-auto'>
-                                    <div className="w-5 h-5 bg-teal-500 rounded-full  " />
+                                    <div className="w-5 h-5 bg-white rounded-full  " />
                                     {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
                                 </div>
-
-                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500 w- font-bold mx-auto capitalize font_border ${getColorClass3(location.pathname.toLowerCase())}`}>SMM</p>
+                                <p className={` 2xl:text-[80px]  text-[70px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass4(location.pathname.toLowerCase())}`}>Маркетинг</p>
                             </div>
                         </Link>
+
                         <Link to="../services/web">
-                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
+                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 space-x-12 cursor-pointer'>
                                 <div className='md:flex hidden h-fit my-auto'>
-                                    <div className="w-5 h-5 bg-teal-500 rounded-full  " />
+                                    <div className={`w-5 h-5  rounded-full bg-white`} />
                                     {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
                                 </div>
 
-                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500 font-bold mx-auto capitalize font_border ${getColorClass1(location.pathname.toLowerCase())}`}>Вебсайты</p>
+                                <p className={` 2xl:text-[80px]  text-[70px] hover:text-teal-500 font-bold mx-auto capitalize font_border ${getColorClass1(location.pathname.toLowerCase())}`}>Вебсайты</p>
                             </div>
                         </Link>
+
+                        <Link to="../services/smm">
+                            <div className='flex h-fit w-fit -mb-6 z-10 mt-8  -ml-3 space-x-12  cursor-pointer'>
+                                <div className='md:flex hidden h-fit my-auto'>
+                                    <div className={`w-5 h-5  rounded-full bg-white`} />
+                                    {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
+                                </div>
+
+                                <p className={` 2xl:text-[80px]  text-[70px] hover:text-teal-500 w- font-bold mx-auto capitalize font_border ${getColorClass3(location.pathname.toLowerCase())}`}>SMM</p>
+                            </div>
+                        </Link>
+          
 
                         <Link to="../services/branding">
-                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
+                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 space-x-12 cursor-pointer'>
                                 <div className='md:flex hidden h-fit my-auto'>
                                     <div className="w-5 h-5 bg-white rounded-full  " />
                                     {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
                                 </div>
-                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass2(location.pathname.toLowerCase())}`}>Брендинг</p>
+                                <p className={` 2xl:text-[80px]  text-[70px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass2(location.pathname.toLowerCase())}`}>Брендинг</p>
                             </div>
                         </Link>
 
-                        <Link to="../services/marketing">
-                            <div className='flex h-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
-                                <div className='md:flex hidden h-fit my-auto'>
-                                    <div className="w-5 h-5 bg-white rounded-full  " />
-                                    {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
-                                </div>
-                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass4(location.pathname.toLowerCase())}`}>Маркетинг</p>
-                            </div>
-                        </Link>
+
 
                         <Link to="../services/production">
-                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 cursor-pointer'>
+                            <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 space-x-12 cursor-pointer'>
                                 <div className='md:flex hidden h-fit my-auto'>
                                     <div className="w-5 h-5 bg-white rounded-full  " />
                                     {/* <div className="w-[102px] h-0.5 my-auto bg-teal-500 " /> */}
                                 </div>
-                                <p className={` lg:text-[80px] text-[60px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass5(location.pathname.toLowerCase())}`}>Продакшн</p>
+                                <p className={` 2xl:text-[80px]  text-[70px] hover:text-teal-500  font-bold mx-auto capitalize font_border ${getColorClass5(location.pathname.toLowerCase())}`}>Продакшн</p>
                             </div>
                         </Link>
 

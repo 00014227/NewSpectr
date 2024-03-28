@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import { EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel } from 'swiper';
 import slide_image_1 from '../assets/service.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom'
@@ -49,15 +49,18 @@ export default function DetailWorks() {
 
                     <Swiper
                         effect={'coverflow'}
-                        spaceBetween={50}
+                        direction='horizontal'
+                        scrollbar={true}
+                        mousewheel={true}
+                        spaceBetween={160}
                         grabCursor={true}
                         centeredSlides={true}
                         loop={true}
                         slidesPerView={slidesPerView}
                         coverflowEffect={{
-                            rotate: 50,
-                            stretch: -100,
-                            depth: 500,
+                            rotate: 0,
+                            stretch: 320,
+                            depth: 400,
                             modifier: 1,
                         }}
                         pagination={{ el: '.swiper-pagination', clickable: true }}
@@ -66,8 +69,8 @@ export default function DetailWorks() {
                             prevEl: '.swiper-button-prev',
                             clickable: true,
                         }}
-                        modules={[EffectCoverflow, Pagination, Navigation]}
-                        className="swiper_container flex items-center justify-center"
+                        modules={[EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel]}
+                        className="swiper_container  flex items-center justify-center"
                     >
                         {portfolioData.portfolio.map((work) => (
                             <SwiperSlide className='relarive' key={work.id}>
@@ -95,15 +98,6 @@ export default function DetailWorks() {
 
 
 
-                        <div className="lg:block slider-controler hidden">
-                            <div className="swiper-button-prev slider-arrow">
-                                <ion-icon name="arrow-back-outline"></ion-icon>
-                            </div>
-                            <div className="swiper-button-next slider-arrow">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                            {/* <div className="swiper-pagination"></div> */}
-                        </div>
                     </Swiper>
                 </div>
             </section>

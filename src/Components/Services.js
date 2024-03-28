@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import ButtonModal from './Button'
 import readbtn from '../assets/readbtn.png'
 import next from '../assets/next.svg'
 import { Link } from 'react-router-dom'
+import {motion, useScroll} from 'framer-motion'
 
 export default function Services() {
+    const scrollRef = useRef(null)
     return (
         <section className='flex-shrink-0  w-auto lg:h-screen h-auto lg:flex block items-center lg:pb-0 pb-[50px]'>
             <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[70px]  w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                <h3 className="font_border horizon-text 2xl:text-[70px] my-auto md:text-[60px] text-5xl  font-bold  font-['HelveticaNeueCyr'] leading-snug tracking-wider">наши услуги</h3>
+                <h3 className=" text-white uppercase horizon-text  my-auto  2xl:text-[70px] md:text-[50px] text-xl  font-bold   leading-snug tracking-wider">наши услуги</h3>
             </div>
-            <div className=' lg:ml-20 px-8 lg:flex lg:space-x-20'>
+         
+            <div className=' lg:ml-20 px-8 lg:flex lg:space-x-20' >
                 <div className='lg:flex'>
                     <div className=' space-y-4'>
                         <ButtonModal text={'WEB РАЗРАБОТКИ'} />
@@ -29,7 +32,7 @@ export default function Services() {
                         <Link to='/services/web'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
-                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute xl:left-[3rem] xl:top-[3.2rem] top-9 left-7" />
+                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute 2xl:left-[3rem] 2xl:top-[3.2rem]  top-9 left-7" />
                             </div>
                         </Link>
                     </div>
@@ -58,7 +61,7 @@ export default function Services() {
                         <Link to='/services/branding'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
-                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute xl:left-[3rem] xl:top-[3.2rem] top-9 left-7" />
+                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute 2xl:left-[3rem] 3xl:top-[3.2rem] top-9 left-7" />
                             </div>
                         </Link>
                     </div>
@@ -84,7 +87,7 @@ export default function Services() {
                         <Link to='/services/marketing'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
-                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute xl:left-[3rem] xl:top-[3.2rem] top-9 left-7" />
+                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute 2xl:left-[3rem] 2xl:top-[3.2rem] top-9 left-7" />
                             </div>
                         </Link>
                     </div>
@@ -111,7 +114,7 @@ export default function Services() {
                         <Link to='/services/smm'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
-                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute xl:left-[3rem] xl:top-[3.2rem] top-9 left-7" />
+                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute 2xl:left-[3rem] 2xl:top-[3.2rem] top-9 left-7" />
                             </div>
                         </Link>
                     </div>
@@ -136,13 +139,12 @@ export default function Services() {
                         <Link to='/services/production'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
-                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute xl:left-[3rem] xl:top-[3.2rem] top-9 left-7" />
+                                <img src={next} className=" 2xl:w-[44px] 2xl:h-[40px] w-[35px] h-[30px]  absolute 2xl:left-[3rem] 2xl:top-[3.2rem] top-9 left-7" />
                             </div>
                         </Link>
                     </div>
                 </div>
             </div>
-
 
         </section>
     )

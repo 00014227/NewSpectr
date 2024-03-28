@@ -133,7 +133,7 @@ export default function Branding() {
                         We draw prototypes, create layouts, make up for different types of devices. We implement the necessary CMS,integrate CRM.</p>
                 </div>
 
-                <div className=' lg:ml-[30rem] pl-[2rem] lg:block md:flex justify-between'>
+                <div className=' lg:ml-[30rem] pl-[2rem]  lg:block md:flex justify-between'>
                     <div>
                         <Button text={'дизайн упаковки'} />
                         <div className='lg:block flex justify-end'>

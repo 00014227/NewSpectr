@@ -3,20 +3,14 @@ import NavBar from '../Components/NavBar';
 import txt from '../assets/text.svg'
 import heart from '../assets/heart.png'
 import Slider from '../Components/Slider';
-import Button from '../Components/Button';
-import eye from '../assets/eye.png'
 import service from '../assets/service.png'
 import next from '../assets/next.svg'
-import brain from '../assets/brain.png'
-import readbtn from '../assets/readbtn.png'
 import Last3Page from '../Components/Last3Page';
-import MovingFigure3 from '../Components/MovingFigure3';
-import MovingFigure1 from '../Components/MovingFigure1';
-import MovingFigure2 from '../Components/MovingFigure2';
 import Eye from '../Components/Eye';
 import Services from '../Components/Services';
 import Background from '../Components/Background';
 import { Link } from 'react-router-dom';
+import SwiperHome from '../Components/SwiperHome';
 
 const HomePage = () => {
     const [isBeating, setIsBeating] = useState(false);
@@ -112,7 +106,7 @@ const HomePage = () => {
                     {/* <h3 className="text-white text-[56px] font-bold  capitalize">about</h3> */}
                     <div className='lg:flex 2xl:gap-44 gap-9 items-center'>
                         <h1 className="text-white xl:text-[120px] lg:text[150px] md:text-[100px] text-[56px] font-bold font-['Jost'] uppercase ">spectr <span className='lg:hidden flex justify-end  '>agency</span> </h1>
-                        <p className="text-white xl:text-xl text-2xl hidden lg:block font-normal  font-['Evolventa'] capitalize leading-9 2xl:max-w-[810px] max-w-[670px]">
+                        <p className="text-white xl:text-xl text-2xl hidden lg:block font-normal  font-['Evolventa']  leading-9 2xl:max-w-[810px] max-w-[670px]">
                             Маркетинговое агентство «Спектр» (Ташкент) специализируется на комплексном развитии успешных корпоративных, продуктовых и розничных брендов от построения стратегии бренда, разработки имени, создания логотипа, создания фирменного стиля до разработки сайта любого сложность. Также мы поможем вам рассказать о компании, товаре или услуге посредством презентации.
                         </p>
                     </div>
@@ -153,7 +147,11 @@ const HomePage = () => {
                     </div>
                 </div>
                 {/* Cards */}
-                <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20  md:space-y-0 space-y-8 py-5 px-6'>
+                <div className=' md:ml-60 ml-[25%] '>
+                <SwiperHome/>
+
+                </div>
+                {/* <div className=' lg:gap-28 md:gap-5 lg:flex md:grid grid-cols-2 lg:ml-20  md:space-y-0 space-y-8 py-5 px-6'>
                     <div className='relative 2xl:w-[600px] lg:w-[480px]  '>
                         <div className='   hover:bg-teal-500 absolute opacity-50 2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full '></div>
                         <img src={service} className="2xl:w-[500px] lg:w-[400px] 2xl:h-[800px] lg:h-[600px] w-[300px] h-full" />
@@ -194,7 +192,7 @@ const HomePage = () => {
                     </div>
 
 
-                </div>
+                </div> */}
                 <Link to={'/works'}>
                     <div className=' md:ml-56 flex flex-col justify-center items-center'>
                         <img src={next} className="md:w-200 md:h-200 w-[120px] h-[100px]" />

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Jost', sans-serif;
 }
 
@@ -219,7 +219,7 @@ h1, h2, h3 {
 .back{
   box-shadow: 0 0 0 #aaa;
 }
-.flipped, .hovercard:hover{
+.flipped, .hovered:hover{
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);}
   .front{

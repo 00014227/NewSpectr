@@ -34,7 +34,7 @@ export default function Smm() {
     return (
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-x-auto overflow-x-hidden lg:overflow-y-hidden h-[100vh]'>
             <NavBar navbar={navbar} />
-            <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh]   flex items-center '>
+            <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] flex items-center '>
                 <div className='lg:flex '>
                     <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />

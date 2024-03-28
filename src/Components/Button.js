@@ -16,7 +16,7 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
 
   const getPortfolio = async () => {
     const result = infoData.info.find(item => item.id === documentId);
-  
+
     setPopupContent(result)
   };
 
@@ -50,36 +50,81 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
           {/* Third Element */}
           <div
 
-            className={`element absolute w-[320px] 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-40 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px] ${shouldAnimate ? 'animated-button' : ''} ${style}`}
+            className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-40 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px] ${shouldAnimate ? 'animated-button' : ''} ${style}`}
           >
             {text}
           </div>
         </div>
       </button>
-    <div className='flex items-center justify-center'>
-      <Dialog open={open} handler={handleOpen} className="w-[70vw] h-[80vh] mx-auto my-auto flex">
-      {popupContent && (
-        <>
-      <img loading='lazy' role="presentation" decoding='async' fetchpriority = 'high' className='h-[80vh] w-[50%]' src={popupContent.imageUrl} alt="Portfolio" />
 
-      <DialogBody className="h-[42rem]">
-        <DialogHeader>{popupContent.serviceTitle}</DialogHeader>
-        <Typography className="font-normal">
-          {popupContent.description}
-        </Typography>
-      </DialogBody>
-      <DialogFooter className="space-x-2">
-        <Button variant="text" color="blue-gray" onClick={handleOpen}>
-          cancel
-        </Button>
-        <Button variant="gradient" color="green" onClick={handleOpen}>
-          confirm
-        </Button>
-      </DialogFooter>
-      </>
-    )}
-</Dialog>
-</div>
+      <Dialog open={open} handler={handleOpen}
+       PaperProps={{
+        style: {
+          backgroundColor: "white",
+          boxShadow: "none"
+        },
+      }}
+        style={{
+          base: {
+            backdrop: {
+              display: "grid",
+              placeItems: "place-items-center",
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "w-screen",
+              height: "h-screen",
+              backgroundColor: "white",
+              backgroundOpacity: "bg-opacity-60",
+              
+            },
+            
+          },
+        }}
+        animate={{
+          mount: { scale: 1, y: 0 },
+          unmount: { scale: 0.9, y: -100 },
+        }}
+        className="lg:w-[70vw] lg:h-[80vh] h-[80vh]  mx-auto mt-auto lg:my-auto lg:flex lg:items-center lg:justify-center items-end justify-end bg-white">
+        {popupContent && (
+          <>
+          <div className='lg:hidden flex pr-6 '>
+                <DialogHeader className=' text-[36px] leading-[4rem] w-auto'>{popupContent.serviceTitle}</DialogHeader>
+
+                <svg onClick={handleOpen} className='' width="40" height="40" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="5.06828" height="92.6265" transform="matrix(0.697572 -0.716514 0.697572 0.716514 0 3.63184)" fill="#121212" />
+                  <rect width="5.06828" height="92.6265" transform="matrix(-0.697572 -0.716514 0.697572 -0.716514 5.38672 70)" fill="#121212" />
+                </svg>
+
+              </div>
+            <img loading='lazy' role="presentation" decoding='async' fetchpriority='high' className='lg:h-[80vh] lg:w-[50%] w-full h-[30vh]' src={popupContent.imageUrl} alt="Portfolio" />
+
+            <DialogBody className=" h-fit">
+              <div className='lg:flex hidden pr-6 '>
+                <DialogHeader className=' text-[70px] leading-[4rem] w-auto'>{popupContent.serviceTitle}</DialogHeader>
+
+                <svg onClick={handleOpen} className='' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="5.06828" height="92.6265" transform="matrix(0.697572 -0.716514 0.697572 0.716514 0 3.63184)" fill="#121212" />
+                  <rect width="5.06828" height="92.6265" transform="matrix(-0.697572 -0.716514 0.697572 -0.716514 5.38672 70)" fill="#121212" />
+                </svg>
+
+              </div>
+              <Typography className="font-normal">
+                {popupContent.description}
+              </Typography>
+              <DialogFooter className="space-x-2">
+                <Button variant="text" color="blue-gray" onClick={handleOpen}>
+                  cancel
+                </Button>
+
+              </DialogFooter>
+            </DialogBody>
+
+
+          </>
+        )}
+      </Dialog>
+
     </>
   );
 };

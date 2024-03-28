@@ -13,7 +13,7 @@ import service from '../../assets/service.png'
 import Last3Page from '../../Components/Last3Page'
 
 export default function Web() {
-    const [navbar, setNavbar] = useState(true); 
+    const [navbar, setNavbar] = useState(false); 
     const scrollContainerRef = useRef(null); 
 
 
@@ -32,7 +32,7 @@ export default function Web() {
         } else if (e.deltaY < 0) {
             scrollContainerRef.current.scrollLeft -= scrollDistanceX;
         }
-        if (window.innerWidth < 1024) {
+        if (window.innerWidth < 1200) {
             setNavbar(true)
         } else{
         setNavbar(false) }
@@ -61,8 +61,9 @@ export default function Web() {
                     </div>
                 </div>  
             </section>
-            <section className='bg-black flex-shrink-0  w-auto lg:h-screen h-auto block lg:flex items-center  md:px-11 px-4'>
+            <section className='bg-black flex-shrink-0  w-auto lg:h-screen h-auto block lg:flex items-center  md:px-11 '>
                 <Slider text={'Вебсайты'} />
+                <div className='px-4'>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24  relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> сайтов любой<br /> сложности</h2>
                     <p className="2xl:w-[600px] lg:absolute lg:top-9 lg:right-[-300px] top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
@@ -102,6 +103,7 @@ export default function Web() {
                         <img src={readbtn} className=" animate-spin-slow" />
                         <img src={next} className=" w-[44px] h-[40px] absolute top-12 left-12" />
                     </div>
+                </div>
                 </div>
             </section>
 
@@ -145,7 +147,7 @@ export default function Web() {
 
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
                     <h2 className="text-white 2xl:text-[140px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> мобильных <br />приложений</h2>
-                    <p className="2xl:w-[600px] lg:w-[540px] w-[400px] lg:absolute top-[-45px] 2xl:right-[-350px] lg:right-[-370px] right-[20px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
+                    <p className="2xl:w-[600px] lg:w-[540px] w-auto lg:absolute top-[-45px] 2xl:right-[-350px] lg:right-[-370px] right-[20px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Мы предлагаем разработку приложений для мобильных устройств на платформе iOS и Android с гарантией. Создаем с нуля полезные функциональные программы, превращающие обычный телефон в незаменимый девайс. С мобильным приложением ваш бизнес всегда «под рукой» у клиентов.  </p>
                 </div>
 
@@ -183,7 +185,7 @@ export default function Web() {
                                 <p className='md:text-[450px] text-[200px] text-white font-bold'>{service.id}</p>
                                 <div className='mt-auto'>
                                     <p className="text-white 2xl:text-[100px] md:text-[60px] text-[28px] font-bold uppercase">{service.title}</p>
-                                    <p className="text-white 2xl:text-[28px] 2xl:w-[800px] md:w-[500px] w-[300px] md:text-[18px] text-sm font-normal font-['Evolventa'] capitalize">{service.description}</p>
+                                    <p className="text-white 2xl:text-[28px] 2xl:w-[800px] md:w-[500px] w-auto md:text-[18px] text-sm font-normal font-['Evolventa'] md:leading-[2rem] uppercase">{service.description}</p>
                                 </div>
                           
 

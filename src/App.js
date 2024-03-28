@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation,  } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import DetailWorks from './pages/DetailWorks';
 import Blog from './pages/Blog';
@@ -12,10 +12,10 @@ import { useTransition, animated } from 'react-spring';
 import Marketing from './pages/services/Marketing';
 import Smm from './pages/services/Smm';
 import Production from './pages/services/Production';
+import Contact from './pages/Contact';
 
 
 function App() {
-
 
 //   useEffect(() => {
 //     fetch('https://ahad.spectragency.uz/')
@@ -32,6 +32,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/works" element={<DetailWorks />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact/>} />
             <Route path="/test" element={<TestPage />} />
             <Route path="/services/web" element={<Web />} />
             <Route path="/services/branding" element={<Branding />} />

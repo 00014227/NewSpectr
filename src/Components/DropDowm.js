@@ -1,17 +1,16 @@
-
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { Link } from "react-router-dom";
 import menu from '../assets/navbar/MENU.svg'
 
 const DropDowm = () => {
-    const [open, setOpen] = useState(false);
+    const [open1, setopen1] = useState(false);
 
     return (
 
-        <motion.div animate={open ? "open" : "closed"} className="lg:hidden">
+        <motion.div animate={open1 ? "open1" : "closed"} className={`lg:hidden [w-5rem] ${open1 ? 'h-[25rem]' : 'h-[5rem]'} `}>
             <button
-                onClick={() => setOpen((pv) => !pv)}
+                onClick={() => setopen1((pv) => !pv)}
                 className=" text-[36px] lg:hidden flex items-center gap-4 text-white transition-colors"
             >
                 <span className="font-medium ">Услуги</span>
@@ -24,36 +23,39 @@ const DropDowm = () => {
 
                 </motion.span>
             </button>
-
             <motion.ul
                 initial={wrapperVariants.closed}
                 variants={wrapperVariants}
                 style={{ originY: "top", translateX: "-50%" }}
                 className="flex flex-col gap-2 p-2 rounded-lg  shadow-xl justify-center items-center ml-40  overflow-hidden"
             >
-                <Link to="../services/smm">
-
-
-                    <Option setOpen={setOpen} text="SMM" />                </Link>
-                <Link to="../services/web">
-
-                    <Option setOpen={setOpen} text="Вебсайты" />
-
-                </Link>
-
-                <Link to="../services/branding">
-
-                    <Option setOpen={setOpen} text="Брендинг" />
-                </Link>
+                
 
                 <Link to="../services/marketing">
 
-                    <Option setOpen={setOpen} text="Маркетинг" />
+                    <Option setopen1={setopen1} text="Маркетинг" />
 
                 </Link>
 
+                <Link to="../services/web">
+
+                    <Option setopen1={setopen1} text="Вебсайты" />
+
+                </Link>
+
+                <Link to="../services/smm">
+
+
+                    <Option setopen1={setopen1} text="SMM" />                </Link>
+                
+
+                <Link to="../services/branding">
+
+                    <Option setopen1={setopen1} text="Брендинг" />
+                </Link>
+
                 <Link to="../services/production">
-                    <Option setOpen={setOpen} text="Продакшн" />
+                    <Option setopen1={setopen1} text="Продакшн" />
 
 
                 </Link>
@@ -64,11 +66,11 @@ const DropDowm = () => {
     );
 };
 
-const Option = ({ text, Icon, setOpen }) => {
+const Option = ({ text, Icon, setopen1 }) => {
     return (
         <motion.li
             variants={itemVariants}
-            onClick={() => setOpen(false)}
+            onClick={() => setopen1(false)}
             className="text-[36px] hover:text-teal-500  font-bold mx-auto capitalize font_border text-teal-500 transition-colors cursor-pointer"
         >
             <motion.span variants={actionIconVariants}>
@@ -82,7 +84,7 @@ const Option = ({ text, Icon, setOpen }) => {
 export default DropDowm;
 
 const wrapperVariants = {
-    open: {
+    open1: {
         scaleY: 1,
         transition: {
             when: "beforeChildren",
@@ -99,12 +101,12 @@ const wrapperVariants = {
 };
 
 const iconVariants = {
-    open: { rotate: 180 },
+    open1: { rotate: 180 },
     closed: { rotate: 0 },
 };
 
 const itemVariants = {
-    open: {
+    open1: {
         opacity: 1,
         y: 0,
         transition: {
@@ -121,6 +123,6 @@ const itemVariants = {
 };
 
 const actionIconVariants = {
-    open: { scale: 1, y: 0 },
+    open1: { scale: 1, y: 0 },
     closed: { scale: 0, y: -7 },
 };
