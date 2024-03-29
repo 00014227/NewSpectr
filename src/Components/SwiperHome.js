@@ -8,11 +8,25 @@ import {EffectCoverflow, Pagination, Navigation,  FreeMode, Scrollbar, Mousewhee
 
 export default function SwiperHome() {
     const [slidesPerView, setSlidesPerView] = useState(10);
- 
+    const [swiperSize, setSwiperSize] = useState()
+
+
+    const getInitialSwiperSize = () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 768) {
+          return 'max-w-[100vw]';
+        } else if (screenWidth > 1536) {
+          return 'max-w-[40vw]';
+        } else {
+          return 'max-w-[55vw]';
+        }
+      };
 
     const checkScreenSize = () => {
         // Adjust the breakpoint value (768) based on your design
         setSlidesPerView(window.innerWidth < 768 ? 2 : 3);
+        setSwiperSize(getInitialSwiperSize())
+  
     };
 
     useEffect(() => {
@@ -53,7 +67,7 @@ export default function SwiperHome() {
             clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel]}
-        className="swiper_container max-w-[40vw] flex items-center justify-center"
+        className={`swiper_container ${swiperSize} flex items-center justify-center`}
     >
         {portfolioData.portfolio.map((work) => (
             <SwiperSlide className='relarive' key={work.id}>

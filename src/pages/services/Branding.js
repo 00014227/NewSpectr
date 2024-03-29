@@ -44,7 +44,7 @@ export default function Branding() {
             ref={scrollContainerRef} onWheel={handleWheelScroll}
             className='lg:flex block bg-black lg:overflow-x-hidden  lg:overflow-y-hidden items-center  h-[100vh] ' >
             <NavBar navbar={navbar} />
-            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto    lg:flex items-center md:px-10 px-4'>
+            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto    lg:flex items-center md:px-10 px-4 md:pt-0 pt-32'>
                 <div className='lg:flex '>
                     <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
                         <svg className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +123,7 @@ export default function Branding() {
                 </div>
             </section>
 
-            <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center  lg:pt-0 md:pt-24'>
+            <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center pb-10  lg:pt-0 md:pt-24'>
                 <div className=' lg:h-screen lg:w-[182px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                     <h3 className="font_border horizon-text 2xl:text-[70px] md:text-[60px] text-3xl  font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">Какие виды юрендинга</h3>
                 </div>
@@ -133,7 +133,7 @@ export default function Branding() {
                         We draw prototypes, create layouts, make up for different types of devices. We implement the necessary CMS,integrate CRM.</p>
                 </div>
 
-                <div className=' lg:ml-[30rem] pl-[2rem]  lg:block md:flex justify-between'>
+                <div className=' lg:ml-[30rem] pl-[0.7rem]  lg:block md:flex justify-between'>
                     <div>
                         <Button text={'дизайн упаковки'} />
                         <div className='lg:block flex justify-end'>
@@ -153,7 +153,7 @@ export default function Branding() {
                 <div className='lg:hidden hidden  md:flex flex-col justify-center items-center'>
                     <SnakeBox />
                 </div>
-                <div className=' lg:ml-32  pl-[2rem] '>
+                <div className=' lg:ml-32  pl-[0.7rem] '>
                     <div className='lg:block md:flex justify-between'>
                         <div className=''>
 
@@ -176,7 +176,7 @@ export default function Branding() {
                     </div>
                 </div>
 
-                <div className=' lg:ml-32   pl-[2rem]'>
+                <div className=' lg:ml-32  pl-[0.7rem]'>
                     <div className='lg:block md:flex justify-between'>
                         <div className=''>
                             <div className='lg:block flex justify-end'>
@@ -201,7 +201,7 @@ export default function Branding() {
                     </div>
                 </div>
 
-                <div className=' lg:ml-32 pl-[2rem] lg:block md:flex justify-between'>
+                <div className=' lg:ml-32 pl-[0.7rem] lg:block md:flex justify-between'>
                     <div>
                         <Button text={'ребрендинг'} />
                         <div className='lg:block flex justify-end'>
@@ -219,7 +219,7 @@ export default function Branding() {
                     </div>
                 </div>
 
-                <div className=' md:flex lg:flex-col lg:justify-center space-y-12 md:ml-20 items-center '>
+                <div className=' md:flex lg:flex-col pl-[0.7rem] lg:justify-center md:justify-between space-y-12  items-center '>
                     <div className=''>
                         <Button text={'персональный брендинг'} />
                     </div>

@@ -45,12 +45,12 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
           <div className="element absolute lg:w-[56.50px] w-[46px] lg:h-[1.7rem] h-[30px] border border-teal-500 z-10 lg:left-[16.5rem] left-[18rem] bottom-[68px] "></div>
 
           {/* Second Element */}
-          <div className="element absolute lg:w-[113px] w-[80px] h-[2.5rem]  border border-teal-500 ml-16 lg:left-[8.3rem] left-[11rem] lg:top-[-0.5rem] top-[-0.7rem] z-30"></div>
+          <div className="element absolute lg:w-[113px] w-[80px] h-[2.5rem]  border border-teal-500 ml-16 lg:left-[8.3rem] left-[11rem] lg:top-[-0.5rem] top-[-0.7rem] z-10"></div>
 
           {/* Third Element */}
           <div
 
-            className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-40 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px] ${shouldAnimate ? 'animated-button' : ''} ${style}`}
+            className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-10 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px] ${shouldAnimate ? 'animated-button' : ''} ${style}`}
           >
             {text}
           </div>

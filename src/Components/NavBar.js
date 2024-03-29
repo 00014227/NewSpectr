@@ -153,7 +153,7 @@ const NavBar = ({ navbar }) => {
                 ) : ''}
                 <div
 
-                    className={`cursor-pointer lg:block hidden transition-transform z-50 transform ${isHovered ? 'hover:scale-110' : ''}`}>
+                    className={`cursor-pointer lg:block hidden transition-transform z-[100] transform ${isHovered ? 'hover:scale-110' : ''}`}>
                     <svg class="w-20 h-20 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
                     </svg>

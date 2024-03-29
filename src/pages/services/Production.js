@@ -31,7 +31,7 @@ export default function Production() {
     return (
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-y-hidden  overflow-x-hidden h-[100vh]'>
             <NavBar navbar={navbar} />
-            <section className=' flex-shrink-0  w-screen lg:h-screen h-auto lg:flex items-center md:px-10 px-4'>
+            <section className=' flex-shrink-0  w-screen lg:h-screen h-auto lg:flex items-center md:px-10 px-4 md:pt-0 pt-32'>
                 <div className='lg:flex gap-40'>
                     <div className='lg:flex relative justify-center'>
                         <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
@@ -55,18 +55,18 @@ export default function Production() {
                 </div>
             </section>
 
-            <section className='bg-black flex-shrink-0 xl:ml-0 lg:ml-44  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center  lg:pt-0 md:pt-24 '>
+            <section className='bg-black flex-shrink-0 xl:ml-0 lg:ml-44  w-auto lg:h-screen lg:pr:0 md:pr-16 pr-10 h-auto lg:flex items-center  lg:pt-0 md:pt-24 '>
                 <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px]  w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                     <h3 className="font_border horizon-text 2xl:text-[70px] my-auto md:text-[60px] text-3xl  font-bold  font-['HelveticaNeueCyr'] leading-snug tracking-wider">Какие виды продакшена</h3>
                 </div>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-5 relative h-fit md:mt-8'>
                     <h2 className="text-white 2xl:text-[200px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px] md:leading-[200px]">Виды <br />продакшена</h2>
-                    <p className=" md:absolute lg:top-0 lg:-right-[10rem] bottom-[180px] right-[0px] md:w-[60%] w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
+                    <p className=" md:absolute lg:top-0 lg:-right-[10rem] bottom-[180px] right-[0px] md:w-[60%] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Продакшен - это процесс создания продукции или услуги, включающий в себя планирование, организацию и контроль всех этапов производства. Эффективный продакшен основан на оптимизации процессов, ресурсов и технологий для достижения высокого качества и экономической эффективности.</p>
                 </div>
                 
                 <div className='lg:flex lg:ml-48 gap-16'>
-                    <div className=' space-y-10 pl-[2rem]'>
+                    <div className=' space-y-10 ml-[0.9rem]'>
                         
                         <Button text={'профессиональные видеоролики'}/>
                         <div className='flex justify-end'>
@@ -86,7 +86,7 @@ export default function Production() {
                     <div className='lg:block hidden'>
                         <SnakeBox />
                     </div>
-                    <div className='ml-[2rem]'>
+                    <div className='ml-[0.9rem]'>
                         <Button text={'голос бренда'} />
                     </div>
 

@@ -74,7 +74,7 @@ const HomePage = () => {
             </div>
 
 
-            <section className=" flex-shrink-0  w-auto 2xl:h-screen h-auto  flex flex-col lg:items-center justify-center   ">
+            <section className=" flex-shrink-0  w-auto 2xl:h-screen h-auto  flex flex-col lg:items-center justify-center md:pt-0 pt-32">
                 <div className='lg:w-screen'>
                     <div className=' w-auto mx-auto py-14 lg:ml-36 px-4'>
                         <h2 className=" text-white font-black hidden lg:block 2xl:text-[7rem]  xl:text-6xl lg:text-[80px] text-[50px] uppercase xl:leading-[152px] ">Мы <span className=" font-light lg:leading-[152px]">маркетинговое Агенство  и здесь чтобы создать</span> будущее для вашего бизнеса</h2>
@@ -134,7 +134,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center '>
+            <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center pr-10 '>
                 <Slider text={'ПОРТФОЛИО'} />
                 <div className='md:flex gap-3 items-center lg:mb-[17rem]'>
                     <div className=' md:mb-40 lg:ml-16 px-4'>
@@ -147,7 +147,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 {/* Cards */}
-                <div className=' md:ml-60 ml-[25%] '>
+                <div className=' md:ml-28  '>
                 <SwiperHome/>
 
                 </div>
@@ -194,9 +194,9 @@ const HomePage = () => {
 
                 </div> */}
                 <Link to={'/works'}>
-                    <div className=' md:ml-56 flex flex-col justify-center items-center'>
-                        <img src={next} className="md:w-200 md:h-200 w-[120px] h-[100px]" />
-                        <p className="text-teal-500 md:text-[60px] text-[56px] font-bold font-['Jost'] capitalize">see more</p>
+                    <div className=' md:ml-12 flex flex-col justify-center py-6 items-center'>
+                        <img src={next} className="md:w-200 md:h-200 w-[60px] h-[50px]" />
+                        <p className="text-teal-500 md:text-[60px] text-[26px] font-bold font-['Jost'] capitalize">see more</p>
                     </div>
                 </Link>
             </section>

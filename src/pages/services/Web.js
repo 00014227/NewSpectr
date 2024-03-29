@@ -42,7 +42,7 @@ export default function Web() {
         ref={scrollContainerRef} onWheel={handleWheelScroll} 
         className='lg:flex block bg-black lg:overflow-x-hidden  lg:overflow-y-hidden items-center  h-[100vh]'>
             <NavBar navbar={navbar}/>
-            <section className='bg-black flex-shrink-0  w-auto lg:h-[100vh] md:h-[80vh]  flex items-center md:px-11 px-4'>
+            <section className='bg-black flex-shrink-0  w-auto lg:h-[100vh] md:h-[80vh]  flex items-center md:px-11 px-4 md:pt-0 pt-32'>
                 <div className='lg:flex '>
                 <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
@@ -63,18 +63,18 @@ export default function Web() {
             </section>
             <section className='bg-black flex-shrink-0  w-auto lg:h-screen h-auto block lg:flex items-center  md:px-11 '>
                 <Slider text={'Вебсайты'} />
-                <div className='px-4'>
+                <div className='px-4 lg:flex items-center justify-center'>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24  relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> сайтов любой<br /> сложности</h2>
                     <p className="2xl:w-[600px] lg:absolute lg:top-9 lg:right-[-300px] top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
                     Рисуем прототипы, создаём макеты, верстаем для разных типов устройств. Внедряем необходимую CMS, интегрируем CRM.</p>
                 </div>
-                <div className='lg:block md:hidden lg:ml-40'>
+                <div className='lg:block hidden lg:ml-40'>
                     <SnakeBox />
                 </div>
 
 
-                <div className='lg:block  justify-center items-center px-4 md:mt-0 mt-9 space-y-9'>
+                <div className='lg:block  justify-center items-center pr-4 md:mt-0 mt-9 space-y-9'>
                     <div className='lg:space-y-0 lg:block md:flex justify-between'>
                         <div className=' lg:ml-0 md:ml-[4rem] '>
                             <Button text={'Landing Page'} category={'web'} documentId = {1}/>
@@ -120,7 +120,7 @@ export default function Web() {
 
 
                 <div className=' flex flex-col lg:justify-center  lg:ml-[30rem] lg:items-center space-y-16'>
-                    <div className='flex justify-start items-start lg:ml-0 md:ml-[4rem] ml-8'>
+                    <div className='flex justify-start items-start lg:ml-0 md:ml-[4rem] ml-[0.9rem]'>
                         <Button text={'SYSTEMS FOR BUSINESS'} documentId={5} />
                     </div>
                     <div className='md:flex justify-center items-center  hidden'>
@@ -153,7 +153,7 @@ export default function Web() {
 
 
                 <div className=' flex flex-col lg:justify-center lg:items-center lg:ml-[30rem]  space-y-10'>
-                    <div className='flex justify-start items-start lg:ml-0 md:ml-[4rem] ml-8'>
+                    <div className='flex justify-start items-start lg:ml-0 md:ml-[4rem] ml-[0.9rem]'>
                         <Button text={'IOS development'} documentId={6}/>
                     </div>
                     <div className='md:flex justify-center items-center  hidden'>
