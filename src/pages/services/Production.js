@@ -57,7 +57,7 @@ export default function Production() {
 
             <section className='bg-black flex-shrink-0 xl:ml-0 lg:ml-44  w-auto lg:h-screen lg:pr:0 md:pr-16 pr-10 h-auto lg:flex items-center  lg:pt-0 md:pt-24 '>
                 <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px]  w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[70px] my-auto md:text-[60px] text-3xl  font-bold  font-['HelveticaNeueCyr'] leading-snug tracking-wider">Какие виды продакшена</h3>
+                    <h3 className="text-white uppercase horizon-text 2xl:text-[70px] my-auto md:text-[50px] text-3xl  font-bold   leading-snug tracking-wider"> виды продакшена</h3>
                 </div>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-5 relative h-fit md:mt-8'>
                     <h2 className="text-white 2xl:text-[200px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px] md:leading-[200px]">Виды <br />продакшена</h2>

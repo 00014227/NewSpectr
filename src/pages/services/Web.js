@@ -66,10 +66,10 @@ export default function Web() {
                 <div className='px-4 lg:flex items-center justify-center'>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24  relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> сайтов любой<br /> сложности</h2>
-                    <p className="2xl:w-[600px] lg:absolute lg:top-9 lg:right-[-300px] top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <p className="2xl:w-[600px] lg:absolute 2xl:top-9 2xl:right-[-300px] lg:-top-8 lg:right-[-200px]  top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
                     Рисуем прототипы, создаём макеты, верстаем для разных типов устройств. Внедряем необходимую CMS, интегрируем CRM.</p>
                 </div>
-                <div className='lg:block hidden lg:ml-40'>
+                <div className='lg:block hidden lg:ml-[14rem]'>
                     <SnakeBox />
                 </div>
 
@@ -98,18 +98,18 @@ export default function Web() {
                     </div>
 
                 </div>
-                <div className=' items-end h-[90vh] ml-20 hidden lg:flex'>
+                {/* <div className=' items-end h-[90vh] ml-20 hidden lg:flex'>
                     <div className='relative'>
                         <img src={readbtn} className=" animate-spin-slow" />
                         <img src={next} className=" w-[44px] h-[40px] absolute top-12 left-12" />
                     </div>
-                </div>
+                </div> */}
                 </div>
             </section>
 
             <section className='bg-black flex-shrink-0  w-auto  lg:h-screen h-auto  lg:flex items-center'>
             <div className=' lg:h-screen 2xl:w-[180px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[70px] my-auto md:text-[60px] text-4xl  font-bold  font-['HelveticaNeueCyr'] leading-snug tracking-wider">онлайн сервисы</h3>
+                    <h3 className="font_border horizon-text 2xl:text-[70px] my-auto md:text-[50px] text-4xl  font-bold uppercase leading-snug tracking-wider">онлайн сервисы</h3>
                 </div>
 
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
@@ -174,7 +174,7 @@ export default function Web() {
 
             <section className='bg-black flex-shrink-0  w-auto   lg:h-screen h-auto  lg:flex items-center'>
                 <div className=' lg:h-screen lg:w-[102px] h-[100px] w-full lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[80px] my-auto md:text-[50px] text-4xl font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">Как мы работаем?</h3>
+                    <h3 className="font_border horizon-text 2xl:text-[80px] my-auto md:text-[50px] text-4xl font-bold  leading-snug tracking-wider">Как мы работаем?</h3>
                 </div>
 
                 <h3 className="text-white 2xl:text-[240px] uppercase md:text-[120px] text-[44px] font-bold">наш <br /> <span className=' md:ml-40'>процесс</span></h3>

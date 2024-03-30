@@ -123,13 +123,13 @@ export default function Branding() {
                 </div>
             </section>
 
-            <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center pb-10  lg:pt-0 md:pt-24'>
-                <div className=' lg:h-screen lg:w-[182px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[70px] md:text-[60px] text-3xl  font-bold  font-['HelveticaNeueCyr'] capitalize leading-snug tracking-wider">Какие виды юрендинга</h3>
+            <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center lg:pb-0 pb-10  lg:pt-0 md:pt-24'>
+            <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
+                    <h3 className=" text-white horizon-text 2xl:text-[70px] md:text-[40px] text-4xl my-auto  font-bold uppercase  leading-snug tracking-wider">Какие виды брендинга</h3>
                 </div>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">виды <br />брендинга</h2>
-                    <p className="2xl:w-[600px] lg:absolute top-36 lg:right-[-17rem] right-[200px] w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <p className="2xl:w-[600px] lg:absolute 2xl:top-36 top-7 2xl:right-[-17rem] lg:right-[-5rem] right-[200px] w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
                         We draw prototypes, create layouts, make up for different types of devices. We implement the necessary CMS,integrate CRM.</p>
                 </div>
 

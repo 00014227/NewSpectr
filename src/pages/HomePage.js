@@ -134,9 +134,9 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center pr-10 '>
+            <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center md:pr-10 '>
                 <Slider text={'ПОРТФОЛИО'} />
-                <div className='md:flex gap-3 items-center lg:mb-[17rem]'>
+                <div className='md:flex gap-3 items-center mb-16'>
                     <div className=' md:mb-40 lg:ml-16 px-4'>
                         <h2 className="text-white 2xl:text-[140px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase md:leading-[240px]">Наши  <span className='hidden'>работы</span></h2>
                     </div>

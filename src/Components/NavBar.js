@@ -109,12 +109,12 @@ const NavBar = ({ navbar }) => {
                 {/* <div className='flex items-center' > */}
 
                 {isHovered ? (
-                    <div className='lg:w-[120px] w-screen  transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white md:bg-neutral-900 bg-black lg:py-[60px] md:flex justify-center items-center  z-[100]'>
+                    <div className='lg:w-[120px] w-screen  transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white bg-black lg:py-[60px] md:flex justify-center items-center  z-[100]'>
                         <div className='lg:w-[120px] w-screen flex lg:flex-col flex-row justify-between lg:h-[100%]'>
                             <div className=' space-y-12 lg:pl-0 pl-4'>
-                                <img src={spectr} className="mx-auto lg:w-[64px] lg:h-[64px] w-[45px] mt-4 h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                                <img src={lang} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                                <img src={download} className="mx-auto lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={spectr} className="mx-auto 2xl:w-[64px] 2xl:h-[64px] lg:w-[45px] lg:h-[45px] w-[45px] mt-4 h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={lang} className="mx-auto 2xl:w-full 2xl:h-full lg:w-[45px] lg:h-[45px] lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={download} className="mx-auto 2xl:w-full 2xl:h-full lg:w-[45px] lg:h-[45px] lg:block hidden transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             </div>
 
                             <div className=' lg:hidden md:flex hidden gap-10'>
@@ -137,8 +137,8 @@ const NavBar = ({ navbar }) => {
                             </div>
 
                             <div className=' space-y-12 lg:block hidden'>
-                                <img src={connect} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                                <img src={phone} className="mx-auto transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={connect} className="mx-auto 2xl:w-full 2xl:h-full lg:w-[45px] lg:h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <img src={phone} className="mx-auto 2xl:w-full 2xl:h-full lg:w-[45px] lg:h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             </div>
                         </div>
                         <div className='md:hidden flex justify-center px-4 w-screen  gap-[3.3rem] mt-10'>
@@ -163,7 +163,7 @@ const NavBar = ({ navbar }) => {
 
 
 
-            <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] fixed flex-shrink-0 w-[100%] h-screen py-24   flex lg:items-center lg:justify-start  z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
+            <div className={`bg-neutral-900 bg-opacity-35 backdrop-blur-[50px] fixed flex-shrink-0 w-[100%] h-screen 2xl:py-24   flex lg:items-center lg:justify-start  z-20 duration-1000 transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} ${isOpen ? ' visible' : ' hidden'}`}>
                 <div className='md:flex gap-24 my-auto'>
                     <ul className='  lg:ml-52 lg:my-auto space-y-10  md:mt-8 pl-4'>
                         <li className=" text-white lg:text-[56px] md:text-[28px] font-bold font-['Jost'] capitalize md:flex hidden  gap-12">

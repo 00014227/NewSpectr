@@ -58,7 +58,7 @@ export default function Smm() {
 
             <section className='bg-black flex-shrink-0 xl:ml-0 ml-0 lg:ml-[8rem] md:w-auto w-screen lg:h-screen lg:pr-0 md:pr-12 pr-12 pb-9 h-auto lg:flex items-center  lg:pt-0 md:pt-24 '>
                 <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[70px] md:text-[60px] text-4xl my-auto  font-bold  font-['HelveticaNeueCyr'] leading-snug tracking-wider">Какие виды Смм</h3>
+                    <h3 className=" text-white horizon-text 2xl:text-[70px] md:text-[50px] text-4xl my-auto  font-bold uppercase  leading-snug tracking-wider">Какие виды CMM</h3>
                 </div>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-4 relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">виды смм<br /> продвижение <br /></h2>
