@@ -58,7 +58,7 @@ export default function Marketing() {
                     </div>
                 </div>
             </section>
-            <section className='bg-black flex-shrink-0  w-auto lg:h-screen h-auto  lg:flex items-center md:pr-0 pr-10 xl:ml-0 lg:ml-[8rem]'>
+            <section className='bg-black flex-shrink-0 pb-10 w-auto lg:h-screen h-auto  lg:flex items-center md:pr-0 pr-10 xl:ml-0 lg:ml-[8rem]'>
                 <Slider text={'MARKETING'} />
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-5 relative h-fit'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px] md:leading-[200px]">Виды <br />маркетинга</h2>

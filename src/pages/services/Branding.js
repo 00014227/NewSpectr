@@ -44,7 +44,7 @@ export default function Branding() {
             ref={scrollContainerRef} onWheel={handleWheelScroll}
             className='lg:flex block bg-black lg:overflow-x-hidden  lg:overflow-y-hidden items-center  h-[100vh] ' >
             <NavBar navbar={navbar} />
-            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto    lg:flex items-center md:px-10 px-4 md:pt-0 pt-32'>
+            <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto lg:flex items-center md:px-10 px-4 md:pt-0 pt-32'>
                 <div className='lg:flex '>
                     <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
                         <svg className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +124,7 @@ export default function Branding() {
             </section>
 
             <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center lg:pb-0 pb-10  lg:pt-0 md:pt-24'>
-            <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
+                <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                     <h3 className=" text-white horizon-text 2xl:text-[70px] md:text-[40px] text-2xl my-auto  font-bold uppercase  leading-snug tracking-wider">Какие виды брендинга</h3>
                 </div>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
@@ -135,17 +135,17 @@ export default function Branding() {
 
                 <div className=' lg:ml-[30rem] pl-[0.7rem]  lg:block md:flex justify-between'>
                     <div>
-                        <Button text={'дизайн упаковки'} documentId={16}/>
+                        <Button text={'дизайн упаковки'} documentId={16} />
                         <div className='lg:block flex justify-end'>
-                            <Button text={'создание брендбука'} documentId={11}/>
+                            <Button text={'создание брендбука'} documentId={11} />
                         </div>
 
 
                     </div>
                     <div className=' md:mr-11'>
-                        <Button text={'разработка нейминга'} documentId={9}/>
+                        <Button text={'разработка нейминга'} documentId={9} />
                         <div className='lg:block flex justify-end'>
-                            <Button text={'разработка логатипа'} documentId={10}/>
+                            <Button text={'разработка логатипа'} documentId={10} />
 
                         </div>
                     </div>
@@ -153,33 +153,33 @@ export default function Branding() {
                 <div className='lg:hidden hidden  md:flex flex-col justify-center items-center'>
                     <SnakeBox />
                 </div>
-          
+
 
                 <div className=' lg:ml-32  pl-[0.7rem]'>
                     <div className='lg:block md:flex justify-between'>
                         <div className=''>
-                          
 
-                            <div className=''>   <Button text={'миссия компании'} documentId={7}/></div>
+
+                            <div className=''>   <Button text={'миссия компании'} documentId={7} /></div>
 
                         </div>
                         <div className=' md:mr-11'>
-                        <div className='lg:block flex justify-end'>
+                            <div className='lg:block flex justify-end'>
                                 <Button text={'графические элементы'} />
                             </div>
-                            <Button text={'управление брендом'} documentId={8}/>
-                         
+                            <Button text={'управление брендом'} documentId={8} />
+
 
                         </div>
                     </div>
                     <div className='lg:block flex md:justify-center justify-end md:items-center'>
-                        <Button text={'голос бренда'} documentId={14}/>
+                        <Button text={'голос бренда'} documentId={14} />
                     </div>
                 </div>
 
                 <div className=' lg:ml-32 pl-[0.7rem] lg:block md:flex justify-between'>
                     <div>
-                        <Button text={'ребрендинг'} documentId={3}/>
+                        <Button text={'ребрендинг'} documentId={3} />
                         <div className='lg:block flex justify-end'>
                             <Button text={'позиционирование на рынке'} documentId={4} />
                         </div>
@@ -187,7 +187,7 @@ export default function Branding() {
 
                     </div>
                     <div className=' md:mr-11'>
-                        <Button text={'коммуникации и продвижение'} documentId={5}/>
+                        <Button text={'коммуникации и продвижение'} documentId={5} />
                         <div className='lg:block flex justify-end'>
                             <Button text={' фирменный шрифт'} documentId={13} />
 
@@ -197,14 +197,14 @@ export default function Branding() {
 
                 <div className='lg:ml-32 md:flex lg:flex-col pl-[0.7rem] lg:justify-center md:justify-between space-y-12  items-center '>
                     <div className=''>
-                    <Button text={'создание бренда'} documentId={11}/>
+                        <Button text={'создание бренда'} documentId={11} />
                     </div>
 
                     <div className='lg:block hidden'>
                         <SnakeBox />
                     </div>
                     <div className=' md:mr-11 lg:block flex justify-end'>
-                    <Button text={'идентичность бренда'} documentId={6}/>
+                        <Button text={'идентичность бренда'} documentId={6} />
                     </div>
 
                 </div>

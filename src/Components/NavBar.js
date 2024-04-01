@@ -14,7 +14,7 @@ const NavBar = ({ navbar }) => {
     const [isHovered, setIsHovered] = useState(navbar);
     const [screen, setScreen] = useState(true)
     const location = useLocation();
-    const { id } = useParams()
+
 
 
 
@@ -108,7 +108,7 @@ const NavBar = ({ navbar }) => {
                 onMouseLeave={handleLeave}>
                 {/* <div className='flex items-center' > */}
 
-                {isHovered ? (
+                {isHovered || window.innerWidth < 850 ? (
                     <div className='lg:w-[120px] w-screen  transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white bg-black lg:py-[60px] md:flex justify-center items-center  z-[100]'>
                         <div className='lg:w-[120px] w-screen flex lg:flex-col flex-row justify-between lg:h-[100%]'>
                             <div className=' space-y-12 lg:pl-0 pl-4'>
@@ -121,7 +121,10 @@ const NavBar = ({ navbar }) => {
                                 <img src={lang} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={download} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={connect} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                                <img src={phone} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <a href='tel: +998999444744'>
+                                    <img src={phone} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+
+                                </a>
 
                             </div>
 
@@ -138,15 +141,22 @@ const NavBar = ({ navbar }) => {
 
                             <div className=' space-y-12 lg:block hidden'>
                                 <img src={connect} className="mx-auto 2xl:w-auto 2xl:h-auto lg:w-[45px] lg:h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                                <img src={phone} className="mx-auto 2xl:w-auto 2xl:h-auto lg:w-[45px] lg:h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <div>
+                                    <a href='tel: +998999444744'>
+                                        <img src={phone} className="mx-auto 2xl:w-auto 2xl:h-auto lg:w-[45px] lg:h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div className='md:hidden flex justify-center px-4 w-screen  gap-[3.3rem] mt-10'>
-                            <img src={lang} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                            <img src={download} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                            <img src={connect} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-                            <img src={phone} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
-
+                            <img src={lang} className="w-[45px] h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            <img src={download} className=" w-[45px] h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            <img src={connect} className="w-[45px] h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            <div>
+                                <a href='tel: +998999444744'>
+                                    <img src={phone} className="w-[45px] h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -172,12 +182,12 @@ const NavBar = ({ navbar }) => {
 
                         </li>
                         <div className='md:hidden w-fit h-fit'>
-                            <DropDowm 
-                            getColorClass1={getColorClass1}
-                            getColorClass2={getColorClass2}
-                            getColorClass3={getColorClass3}
-                            getColorClass4={getColorClass4}
-                            getColorClass5={getColorClass5} />
+                            <DropDowm
+                                getColorClass1={getColorClass1}
+                                getColorClass2={getColorClass2}
+                                getColorClass3={getColorClass3}
+                                getColorClass4={getColorClass4}
+                                getColorClass5={getColorClass5} />
 
                         </div>
 
@@ -231,7 +241,7 @@ const NavBar = ({ navbar }) => {
                                 <p className={` 2xl:text-[80px]  text-[70px] hover:text-teal-500 w- font-bold mx-auto capitalize font_border ${getColorClass3(location.pathname.toLowerCase())}`}>SMM</p>
                             </div>
                         </Link>
-          
+
 
                         <Link to="../services/branding">
                             <div className='flex h-fit w-fit -mb-6 z-10 -ml-3 mt-8 space-x-12 cursor-pointer'>

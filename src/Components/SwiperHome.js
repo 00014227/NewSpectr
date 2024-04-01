@@ -71,10 +71,10 @@ export default function SwiperHome() {
     >
         {portfolioData.portfolio.map((work) => (
             <SwiperSlide className='relarive' key={work.id}>
-                <div className='deck lg:w-[22rem] lg:h-[30rem] w-[13rem] h-[18rem]'>
+                <div className='deck lg:w-[22rem] lg:h-[30rem] md:w-[20rem] md:h-[28rem] w-[13rem] h-[18rem]'>
                     <div class="card hovercard">
                         <div class="front face">
-                            <img src={slide_image_1} alt="slide_image" className='lg:w-[22rem] lg:h-[30rem] w-[13rem] h-[18rem]' />
+                            <img src={slide_image_1} alt="slide_image" className='lg:w-[22rem] lg:h-[30rem] md:w-[20rem] md:h-[28rem] w-[13rem] h-[18rem]' />
                             <h3 className="absolute top-0 text-white lg:text-[46px] text-[20px] font-bold font-['Jost'] capitalize">{work.company_name}</h3>
                         </div>
 

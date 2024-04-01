@@ -61,7 +61,7 @@ export default function Production() {
                 </div>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-5 relative h-fit md:mt-8'>
                     <h2 className="text-white 2xl:text-[200px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px] md:leading-[200px]">Виды <br />продакшена</h2>
-                    <p className=" md:absolute lg:top-0 lg:-right-[10rem] bottom-[180px] right-[0px] md:w-[60%] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
+                    <p className=" md:absolute lg:top-0 lg:-right-[10rem] bottom-[180px] -right-[4rem] md:w-[60%] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Продакшен - это процесс создания продукции или услуги, включающий в себя планирование, организацию и контроль всех этапов производства. Эффективный продакшен основан на оптимизации процессов, ресурсов и технологий для достижения высокого качества и экономической эффективности.</p>
                 </div>
                 

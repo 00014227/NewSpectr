@@ -73,7 +73,7 @@ const HomePage = () => {
             </div>
 
 
-            <section className=" flex-shrink-0  w-auto 2xl:h-screen h-auto  flex flex-col lg:items-center justify-center md:pt-0 pt-32">
+            <section className=" flex-shrink-0  w-auto 2xl:h-screen h-auto  flex flex-col lg:items-center justify-center lg:pt-0 pt-32">
                 <div className='lg:w-screen'>
                     <div className=' w-auto mx-auto py-14 lg:ml-36 px-4'>
                         <h2 className=" text-white font-black hidden lg:block 2xl:text-[7rem]  xl:text-6xl lg:text-[80px] text-[50px] uppercase xl:leading-[152px] ">Мы <span className=" font-light lg:leading-[152px]">маркетинговое Агенство  и здесь чтобы создать</span> будущее для вашего бизнеса</h2>
@@ -135,8 +135,8 @@ const HomePage = () => {
 
             <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center md:pr-10 '>
                 <Slider text={'ПОРТФОЛИО'} />
-                <div className='md:flex gap-3 items-center mb-16'>
-                    <div className=' md:mb-40 lg:ml-16 px-4'>
+                <div className='md:flex gap-3 items-center md:mb-0 mb-16'>
+                    <div className=' lg:mb-40 md:mb-0 lg:ml-16 px-4'>
                         <h2 className="text-white 2xl:text-[140px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase md:leading-[240px]">Наши  <span className='hidden'>работы</span></h2>
                     </div>
 
