@@ -3,7 +3,7 @@ import { Dispatch, SetStateAction, useState } from "react";
 import { Link } from "react-router-dom";
 import menu from '../assets/navbar/MENU.svg'
 
-const DropDowm = () => {
+const DropDowm = ({getColorClass1, getColorClass2, getColorClass3, getColorClass4, getColorClass5}) => {
     const [open1, setopen1] = useState(false);
 
     return (
@@ -33,7 +33,7 @@ const DropDowm = () => {
 
                 <Link to="../services/marketing">
 
-                    <Option setopen1={setopen1} text="Маркетинг" />
+                    <Option setopen1={setopen1} text="Маркетинг" className='text-white' />
 
                 </Link>
 
@@ -71,7 +71,7 @@ const Option = ({ text, Icon, setopen1 }) => {
         <motion.li
             variants={itemVariants}
             onClick={() => setopen1(false)}
-            className="text-[36px] hover:text-teal-500  font-bold mx-auto capitalize font_border text-teal-500 transition-colors cursor-pointer"
+            className="text-[36px] hover:text-teal-500  font-bold mx-auto capitalize font_border  transition-colors cursor-pointer"
         >
             <motion.span variants={actionIconVariants}>
                 {/* <Icon /> */}

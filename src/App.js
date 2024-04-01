@@ -17,11 +17,6 @@ import Contact from './pages/Contact';
 
 function App() {
 
-//   useEffect(() => {
-//     fetch('https://ahad.spectragency.uz/')
-//     .then(res => res.json())
-//     .then(data => console.log(data))
-// }, []); 
 
 
   return (

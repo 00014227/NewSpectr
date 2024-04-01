@@ -3,7 +3,6 @@ import NavBar from '../Components/NavBar';
 import txt from '../assets/text.svg'
 import heart from '../assets/heart.png'
 import Slider from '../Components/Slider';
-import service from '../assets/service.png'
 import next from '../assets/next.svg'
 import Last3Page from '../Components/Last3Page';
 import Eye from '../Components/Eye';

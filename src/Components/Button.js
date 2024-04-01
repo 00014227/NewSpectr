@@ -7,18 +7,26 @@ import {
   DialogFooter,
   Typography,
 } from "@material-tailwind/react";
-import infoData from '../data/info.json'
 
 const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
   const shouldAnimate = isAnimating && !!style; // Check if isAnimating is true and style prop is provided
   const [open, setOpen] = React.useState(false);
-  const [popupContent, setPopupContent] = useState(null);
+  const [popupContent, setPopupContent] = useState(null); 
+  const [infoData, setInfoData] = useState(null)
+  console.log(infoData, 'ddddddddddddd')
+  useEffect(() => {
+    fetch('https://ahad.spectragency.uz/services')
+    .then(res => res.json())
+    .then(data => setInfoData(data))
+}, []); 
+
 
   const getPortfolio = async () => {
-    const result = infoData.info.find(item => item.id === documentId);
+    const result = infoData.find(item => item.id === documentId);
 
     setPopupContent(result)
   };
+
 
   const handleOpen = () => setOpen(!open);
 
@@ -88,8 +96,8 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
         className="lg:w-[70vw] lg:h-[80vh] h-[80vh]  mx-auto mt-auto lg:my-auto lg:flex lg:items-center lg:justify-center items-end justify-end bg-white">
         {popupContent && (
           <>
-          <div className='lg:hidden flex pr-6 '>
-                <DialogHeader className=' text-[36px] leading-[4rem] w-auto'>{popupContent.serviceTitle}</DialogHeader>
+          <div className='lg:hidden flex justify-between items-center px-4  '>
+                <DialogHeader className=' text-[36px] leading-[4rem] w-auto'>{popupContent.title}</DialogHeader>
 
                 <svg onClick={handleOpen} className='' width="40" height="40" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="5.06828" height="92.6265" transform="matrix(0.697572 -0.716514 0.697572 0.716514 0 3.63184)" fill="#121212" />
@@ -97,11 +105,11 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
                 </svg>
 
               </div>
-            <img loading='lazy' role="presentation" decoding='async' fetchpriority='high' className='lg:h-[80vh] lg:w-[50%] w-full h-[30vh]' src={popupContent.imageUrl} alt="Portfolio" />
+            <img loading='lazy' role="presentation" decoding='async' fetchpriority='high' className='lg:h-[80vh] lg:w-[50%] w-full h-[30vh]' src={popupContent.imgUrl} alt="Portfolio" />
 
             <DialogBody className=" h-fit">
               <div className='lg:flex hidden pr-6 '>
-                <DialogHeader className=' text-[70px] leading-[4rem] w-auto'>{popupContent.serviceTitle}</DialogHeader>
+                <DialogHeader className=' text-[70px] leading-[4rem] w-auto'>{popupContent.title}</DialogHeader>
 
                 <svg onClick={handleOpen} className='' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="5.06828" height="92.6265" transform="matrix(0.697572 -0.716514 0.697572 0.716514 0 3.63184)" fill="#121212" />
@@ -109,7 +117,7 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
                 </svg>
 
               </div>
-              <Typography className="font-normal">
+              <Typography className="font-normal px-4">
                 {popupContent.description}
               </Typography>
               <DialogFooter className="space-x-2">

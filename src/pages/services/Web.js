@@ -8,8 +8,6 @@ import Button from '../../Components/Button'
 import readbtn from '../../assets/readbtn.png'
 import next from '../../assets/next.svg'
 import servicesData from '../../data/services.json'
-import eye from '../../assets/eye.png'
-import service from '../../assets/service.png'
 import Last3Page from '../../Components/Last3Page'
 
 export default function Web() {
@@ -77,10 +75,10 @@ export default function Web() {
                 <div className='lg:block  justify-center items-center pr-4 md:mt-0 mt-9 space-y-9'>
                     <div className='lg:space-y-0 lg:block md:flex justify-between'>
                         <div className=' lg:ml-0 md:ml-[4rem] '>
-                            <Button text={'Landing Page'} category={'web'} documentId = {1}/>
+                            <Button text={'Landing Page'} category={'web'} documentId = {17}/>
                         </div>
-                        <div className='lg:ml-20 md:block flex justify-end mr-3' documentId={4}>
-                            <Button text={'E-Commerce'} />
+                        <div className='lg:ml-20 md:block flex justify-end mr-3' >
+                            <Button text={'E-Commerce'} documentId={20}/>
                         </div>
                     </div>
                     <div className=' lg:hidden md:flex hidden  justify-center items-center'>
@@ -89,11 +87,11 @@ export default function Web() {
 
                     <div className='lg:space-y-0  lg:block md:flex justify-between'>
                         <div className=' lg:ml-48  md:ml-[4rem]'>
-                            <Button text={'Корпоративный сайт'} documentId = {2} />
+                            <Button text={'Корпоративный сайт'} documentId = {18} />
                         </div>
 
                         <div className=' lg:ml-72  md:block flex justify-end mr-3'>
-                            <Button text={'Сайт каталог'} documentId = {3}/>
+                            <Button text={'Сайт каталог'} documentId = {19}/>
                         </div>
                     </div>
 
@@ -121,13 +119,13 @@ export default function Web() {
 
                 <div className=' flex flex-col lg:justify-center  lg:ml-[30rem] lg:items-center space-y-16'>
                     <div className='flex justify-start items-start lg:ml-0 md:ml-[4rem] ml-[0.9rem]'>
-                        <Button text={'SYSTEMS FOR BUSINESS'} documentId={5} />
+                        <Button text={'Маркетплейс'} documentId={21} />
                     </div>
                     <div className='md:flex justify-center items-center  hidden'>
                         <SnakeBox />
                     </div>
                     <div className='flex justify-end items-end lg:mr-0 md:mr-[4rem] mr-[3rem]'>
-                        <Button text={'SYSTEMS FOR BUSINESS'} />
+                        <Button text={'Системы для бизнеса'} documentId={22}/>
                     </div>
                 </div>
 
@@ -148,19 +146,19 @@ export default function Web() {
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
                     <h2 className="text-white 2xl:text-[140px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> мобильных <br />приложений</h2>
                     <p className="2xl:w-[600px] lg:w-[540px] w-auto lg:absolute top-[-45px] 2xl:right-[-350px] lg:right-[-370px] right-[20px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
-                    Мы предлагаем разработку приложений для мобильных устройств на платформе iOS и Android с гарантией. Создаем с нуля полезные функциональные программы, превращающие обычный телефон в незаменимый девайс. С мобильным приложением ваш бизнес всегда «под рукой» у клиентов.  </p>
+                    Приложения для смартфонов экономят время и деньги благодаря простоте использования. Наши специалисты будут сопровождать Вас в создании интерфейса и необходимых шагов покупки подходящего для типа бизнеса. </p>
                 </div>
 
 
                 <div className=' flex flex-col lg:justify-center lg:items-center lg:ml-[30rem]  space-y-10'>
                     <div className='flex justify-start items-start lg:ml-0 md:ml-[4rem] ml-[0.9rem]'>
-                        <Button text={'IOS development'} documentId={6}/>
+                        <Button text={'IOS разработка'} documentId={23}/>
                     </div>
                     <div className='md:flex justify-center items-center  hidden'>
                         <SnakeBox />
                     </div>
                     <div className='flex justify-end items-end lg:mr-0 md:mr-[4rem] mr-[3rem]'>
-                        <Button text={'ANDROID DEVELOPMENT'} documentId={7} />
+                        <Button text={'ANDROID разработка'} documentId={24} />
                     </div>
                 </div>
 
