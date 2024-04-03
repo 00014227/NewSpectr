@@ -40,7 +40,7 @@ export default function Web() {
         ref={scrollContainerRef} onWheel={handleWheelScroll} 
         className='lg:flex items-center bg-black block lg:overflow-x-auto overflow-x-hidden lg:overflow-y-hidden h-[100vh]'>
             <NavBar navbar={navbar}/>
-            <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] md:h-[80vh]  flex items-center  md:pt-0 pt-32'>
+            <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] md:h-[80vh] px-4 flex items-center  md:pt-0 pt-32'>
                 <div className='lg:flex'>
                 <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
@@ -64,7 +64,7 @@ export default function Web() {
                 <div className='px-4 lg:flex items-center justify-center md:px-11 '>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24  relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> сайтов любой<br /> сложности</h2>
-                    <p className="2xl:w-[600px] lg:absolute 2xl:top-9 2xl:right-[-300px] lg:-top-8 lg:right-[-200px]  top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <p className="2xl:w-[600px] lg:absolute 2xl:top-9 2xl:right-[-300px] lg:-top-8 lg:right-[-200px]  top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Рисуем прототипы, создаём макеты, верстаем для разных типов устройств. Внедряем необходимую CMS, интегрируем CRM.</p>
                 </div>
                 <div className='lg:block hidden lg:ml-[14rem]'>
@@ -112,7 +112,7 @@ export default function Web() {
 
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[200px]">Создание <br /> онлайн <br /> сервиса</h2>
-                    <p className="2xl:w-[600px] md:absolute lg:top-[164px] lg:right-[-450px] md:ml-0 right-0 top-60 md:w-[350px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <p className="2xl:w-[600px] md:absolute lg:top-[164px] lg:right-[-450px] md:ml-0 right-0 top-60 md:w-[350px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Проектируем, разрабатываем и развиваем сервисы для ваших клиентов или для внутреннего использования.</p>
                 </div>
 
@@ -175,7 +175,7 @@ export default function Web() {
                     <h3 className="font_border horizon-text 2xl:text-[80px] my-auto md:text-[50px] text-4xl font-bold  leading-snug tracking-wider">Как мы работаем?</h3>
                 </div>
 
-                <h3 className="text-white 2xl:text-[240px] uppercase md:text-[120px] text-[44px] font-bold">наш <br /> <span className=' md:ml-40'>процесс</span></h3>
+                <h3 className="text-white 2xl:text-[240px] px-4 uppercase md:text-[120px] text-[44px] font-bold">наш <br /> <span className=' ml-32'>процесс</span></h3>
                 <div className='lg:flex py-8'>
                     {servicesData.services.map((service) => (
                         <div className='flex mb-[5.5rem] md:h-[400px] h-[200px]  items-center' key={service.id}>

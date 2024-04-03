@@ -124,98 +124,133 @@ export default function Branding() {
             </section>
 
             <section className='bg-black flex-shrink-0  w-auto lg:h-screen md:pr-0 pr-10 h-auto lg:flex items-center lg:pb-0 pb-10  lg:pt-0 md:pt-24'>
-                <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className=" text-white horizon-text 2xl:text-[70px] md:text-[40px] text-2xl my-auto  font-bold uppercase  leading-snug tracking-wider">Какие виды брендинга</h3>
-                </div>
-                <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
-                    <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">виды <br />брендинга</h2>
-                    <p className="2xl:w-[600px] lg:absolute 2xl:top-36 top-7 2xl:right-[-17rem] lg:right-[-5rem] right-[200px] w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
-                        We draw prototypes, create layouts, make up for different types of devices. We implement the necessary CMS,integrate CRM.</p>
+
+            <div className='lg:ml-[6rem]'>
+                <Slider text={'БРЕНДИНГ'}/>
+
                 </div>
 
-                <div className=' lg:ml-[30rem] pl-[0.7rem]  lg:block md:flex justify-between'>
-                    <div>
-                        <Button text={'дизайн упаковки'} documentId={16} />
-                        <div className='lg:block flex justify-end'>
-                            <Button text={'создание брендбука'} documentId={11} />
-                        </div>
-
-
-                    </div>
-                    <div className=' md:mr-11'>
-                        <Button text={'разработка нейминга'} documentId={9} />
-                        <div className='lg:block flex justify-end'>
-                            <Button text={'разработка логатипа'} documentId={10} />
-
-                        </div>
-                    </div>
-                </div>
-                <div className='lg:hidden hidden  md:flex flex-col justify-center items-center'>
-                    <SnakeBox />
-                </div>
-
-
-                <div className=' lg:ml-32  pl-[0.7rem]'>
-                    <div className='lg:block md:flex justify-between'>
-                        <div className=''>
-
-
-                            <div className=''>   <Button text={'миссия компании'} documentId={7} /></div>
-
-                        </div>
-                        <div className=' md:mr-11'>
-                            <div className='lg:block flex justify-end'>
-                                <Button text={'графические элементы'} />
-                            </div>
-                            <Button text={'управление брендом'} documentId={8} />
-
-
-                        </div>
-                    </div>
-                    <div className='lg:block flex md:justify-center justify-end md:items-center'>
-                        <Button text={'голос бренда'} documentId={14} />
-                    </div>
-                </div>
-
-                <div className=' lg:ml-32 pl-[0.7rem] lg:block md:flex justify-between'>
-                    <div>
-                        <Button text={'ребрендинг'} documentId={3} />
-                        <div className='lg:block flex justify-end'>
-                            <Button text={'позиционирование на рынке'} documentId={4} />
-                        </div>
-
-
-                    </div>
-                    <div className=' md:mr-11'>
-                        <Button text={'коммуникации и продвижение'} documentId={5} />
-                        <div className='lg:block flex justify-end'>
-                            <Button text={' фирменный шрифт'} documentId={13} />
-
-                        </div>
-                    </div>
-                </div>
-
-                <div className='lg:ml-32 md:flex lg:flex-col pl-[0.7rem] lg:justify-center md:justify-between space-y-12  items-center '>
-                    <div className=''>
-                        <Button text={'создание бренда'} documentId={11} />
-                    </div>
-
+                <div className=''>
                     <div className='lg:block hidden'>
-                        <SnakeBox />
+                        <h3 className=' text-white 2xl:text-[70px] md:text-[70px] text-center font-[jost] uppercase text-2xl'>создание</h3>
                     </div>
-                    <div className=' md:mr-11 lg:block flex justify-end'>
-                        <Button text={'идентичность бренда'} documentId={6} />
-                    </div>
+                    <div className='lg:flex '>
+                        <div className=' lg:mx-14 pl-[0.7rem]  lg:block md:flex justify-between'>
+                            <div>
+                                <Button text={'стратегия бренда'} documentId={16} />
+                                <div className='lg:block flex justify-end'>
+                                    <Button text={'разработка нейминга'} documentId={9} />
 
+                                </div>
+
+
+                            </div>
+                            <div className=' md:mr-11'>
+                                <Button text={'стратегия комуникации'} documentId={11} />
+                                <div className='lg:block flex justify-end'>
+                                    <Button text={'брендбук и гайдлайн'} documentId={10} />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className='lg:hidden hidden  md:flex flex-col justify-center items-center'>
+                            <SnakeBox />
+                        </div>
+
+
+                        <div className=' lg:ml-[2rem]  pl-[0.7rem]'>
+                            <div className='lg:block md:flex justify-between'>
+                                <div className=''>
+
+
+                                    <div className=''>   <Button text={'позиционирование бренда'} documentId={7} /></div>
+                                    <div className='lg:block flex md:justify-center justify-end md:items-center'>
+                                        <Button text={'голос бренда'} documentId={14} />
+                                    </div>
+                                </div>
+                                <div className=' md:mr-11'>
+                                    <div className='lg:block flex justify-end'>
+                                        <Button text={'ценности и миссия'} />
+                                    </div>
+                                    <Button text={'платформа бренда'} documentId={8} />
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div className='lg:ml-12 md:flex lg:flex-col pl-[0.7rem] lg:justify-center md:justify-between space-y-6  items-center '>
+                            <div className=''>
+                                <Button text={'контент стратегия'} documentId={11} />
+                            </div>
+
+                            <div className='lg:block hidden'>
+                                <SnakeBox />
+                            </div>
+                            <div className=' md:mr-11 lg:block flex justify-end'>
+                                <Button text={'презентация компании'} documentId={6} />
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div className=' items-end h-screen ml-20 pb-12 lg:flex hidden'>
-                    <div className='relative'>
-                        <img src={readbtn} className=" animate-spin-slow" />
-                        <img src={next} className=" w-[44px] h-[40px] absolute top-12 left-12" />
+
+                <div className='lg:ml-[6rem]'>
+                <Slider text={'АЙДЕНТИКА'}/>
+
+                </div>
+                <div>
+                    <div className=' lg:block hidden'>
+                        <h3 className=' text-white 2xl:text-[70px] md:text-[70px] text-center font-[jost] uppercase text-2xl'>бренда</h3>
+                    </div>
+                    <div className='lg:flex justify-between'>
+
+
+                        <div className=' lg:mx-14 pl-[0.7rem] lg:block  justify-between'>
+                            <div>
+                            <div className='lg:block flex justify-end'>
+                                <Button text={'создание логотипа'} documentId={3} />
+                                </div> 
+                                    <Button text={'фирменные цвета'} documentId={4} />
+                               
+
+
+                            </div>
+                            <div className=' md:mr-11'>
+                                 <div className='lg:block flex justify-end'>
+                                <Button text={'дизайн мерча'} documentId={5} />
+                                </div>
+                                    <Button text={'дизайн упаковки'} documentId={13} />
+
+                                
+                            </div>
+                        </div>
+
+                        <div className='lg:ml-32 lg:flex-col pl-[0.7rem] lg:justify-center md:justify-between  items-center '>
+                            <div className='flex justify-end'>
+                                <Button text={'фирменные шрифты'} documentId={11} />
+                            </div>
+
+                            <div className=''>
+                                <Button text={'фирменный паттерн'} documentId={11} />
+                            </div>
+                            <div className=' md:mr-11 lg:block flex justify-end'>
+                                <Button text={'дизайн поста'} documentId={6} />
+                            </div>
+
+                            <Button text={'маскот компании'} documentId={6} />
+
+
+                        </div>
                     </div>
                 </div>
             </section>
+
 
 
 

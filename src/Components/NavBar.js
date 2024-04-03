@@ -120,7 +120,9 @@ const NavBar = ({ navbar }) => {
                             <div className=' lg:hidden md:flex hidden gap-10'>
                                 <img src={lang} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                                 <img src={download} className="  transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                <Link to='https://t.me/spectrmarketing'>
                                 <img src={connect} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                </Link>
                                 <a href='tel: +998999444744'>
                                     <img src={phone} className=" transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
 
@@ -140,7 +142,9 @@ const NavBar = ({ navbar }) => {
                             </div>
 
                             <div className=' space-y-12 lg:block hidden'>
+                                <Link to='https://t.me/spectrmarketing'>
                                 <img src={connect} className="mx-auto 2xl:w-auto 2xl:h-auto lg:w-[45px] lg:h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                                </Link>
                                 <div>
                                     <a href='tel: +998999444744'>
                                         <img src={phone} className="mx-auto 2xl:w-auto 2xl:h-auto lg:w-[45px] lg:h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
@@ -151,7 +155,9 @@ const NavBar = ({ navbar }) => {
                         <div className='md:hidden flex justify-center px-4 w-screen  gap-[3.3rem] mt-10'>
                             <img src={lang} className="w-[45px] h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
                             <img src={download} className=" w-[45px] h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            <Link to='https://t.me/spectrmarketing'>
                             <img src={connect} className="w-[45px] h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />
+                            </Link>
                             <div>
                                 <a href='tel: +998999444744'>
                                     <img src={phone} className="w-[45px] h-[45px] transition-transform transform hover:scale-110 text-green-500 hover:text-blue-500" />

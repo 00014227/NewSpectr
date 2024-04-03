@@ -115,7 +115,7 @@ export default function Last3Page({ isBeating }) {
                                 min='0' max='20000'
                                 value={formData.budget}
                                 onChange={handleInputChange}
-                                className=' md:w-[25rem] w-[90vw] text-teal-500 appearance-none rounded-lg ' />
+                                className=' md:w-[25rem] w-[90vw] text-teal-500 bg-black border border-teal-500 appearance-none rounded-lg ' />
                         </div>
 
 

@@ -106,18 +106,19 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
 
               </div>
             <img loading='lazy' role="presentation" decoding='async' fetchpriority='high' className='lg:h-[80vh] lg:w-[50%] w-full h-[30vh]' src={popupContent.imgUrl} alt="Portfolio" />
+            {/* <img loading='lazy' role="presentation" decoding='async' fetchpriority='high' className='lg:h-[80vh] lg:w-[50%] w-full h-[30vh]' src="https://i.ibb.co/Vw2R9N6/photo-2024-04-02-16-37-53.jpg" alt="Portfolio" /> */}
 
-            <DialogBody className=" h-fit">
-              <div className='lg:flex hidden pr-6 '>
-                <DialogHeader className=' text-[70px] leading-[4rem] w-auto'>{popupContent.title}</DialogHeader>
+            <DialogBody className=" lg:h-full h-fit">
+              <div className='lg:flex justify-between items-center hidden px-4 '>
+                <DialogHeader className=' 2xl:text-[70px] text-[50px] leading-[4rem] w-auto'>{popupContent.title}</DialogHeader>
 
-                <svg onClick={handleOpen} className='' width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg onClick={handleOpen} className=' 2xl:w-[4rem] w-[2rem] 2xl:h-[4rem] h-[2rem]'  viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="5.06828" height="92.6265" transform="matrix(0.697572 -0.716514 0.697572 0.716514 0 3.63184)" fill="#121212" />
                   <rect width="5.06828" height="92.6265" transform="matrix(-0.697572 -0.716514 0.697572 -0.716514 5.38672 70)" fill="#121212" />
                 </svg>
 
               </div>
-              <Typography className="font-normal px-4">
+              <Typography className="font-normal px-4 lg:mt-11">
                 {popupContent.description}
               </Typography>
               <DialogFooter className="space-x-2">
