@@ -281,7 +281,7 @@ const HomePage = () => {
             </section>
             <Services />
 
-            <section className='flex-shrink-0  w-auto 2xl:h-screen h-auto  lg:flex  lg:items-center justify-center lg:pt-0 pt-32 pb-9'>
+            <section className='flex-shrink-0  w-auto 2xl:h-screen h-auto  lg:flex  lg:items-center justify-center lg:pt-0  md:pt-32 pb-9'>
                 <div className=' lg:h-screen 2xl:w-[180px] lg:w-[102px] h-[70px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                     <h3 className="text-white horizon-text 2xl:text-[70px] my-auto md:text-[50px] text-2xl  font-bold uppercase leading-snug tracking-wider">наши партнеры</h3>
                 </div>

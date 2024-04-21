@@ -8,7 +8,7 @@ import {motion, useScroll} from 'framer-motion'
 export default function Services() {
     const scrollRef = useRef(null)
     return (
-        <section className='flex-shrink-0  w-auto lg:h-screen px-4 h-auto lg:flex block items-center lg:pb-0 pb-[50px]'>
+        <section className='flex-shrink-0  w-auto lg:h-screen  h-auto lg:flex block items-center lg:pb-0 pb-[50px]'>
             <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[70px]  w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                 <h3 className=" text-white uppercase horizon-text  my-auto  2xl:text-[70px] md:text-[50px] text-xl  font-bold   leading-snug tracking-wider">наши услуги</h3>
             </div>
