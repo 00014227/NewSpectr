@@ -7,6 +7,7 @@ import SnakeBox from '../../Components/SnakeBox'
 import readbtn from '../../assets/readbtn.png'
 import next from '../../assets/next.svg'
 import Last3Page from '../../Components/Last3Page'
+import Circles from '../../Components/Circles'
 
 export default function Smm() {
     const [navbar, setNavbar] = useState(true);
@@ -36,11 +37,12 @@ export default function Smm() {
             <NavBar navbar={navbar} />
             <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] flex items-center md:pt-0 pt-32'>
                 <div className='lg:flex '>
-                    <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
+                    <Circles/>
+                    {/* <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                    </div>
+                    </div> */}
                     <div className=''>
 
                         <div className='lg:ml-[5rem] w-full md:pr-4 pr-2'>
@@ -62,7 +64,7 @@ export default function Smm() {
                 </div>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-4 relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">виды смм<br /> продвижение <br /></h2>
-                    <p className="2xl:w-[800px] lg:w-[900px] top-36 lg:right-[-80px] right-[200px] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] capitalize leading-[42px]">
+                    <p className="2xl:w-[800px] lg:w-[900px] top-36 lg:right-[-80px] right-[200px] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] leading-[42px]">
                         SMM (социальные медиа-маркетинг) - это стратегия продвижения бренда или продукта через социальные платформы, такие как Facebook, Instagram, Twitter и LinkedIn. Он включает в себя создание и распространение контента, взаимодействие с аудиторией, а также использование рекламных инструментов для достижения целей маркетинговой кампании.</p>
                 </div>
 
@@ -74,20 +76,20 @@ export default function Smm() {
                     <div className='lg:block md:flex justify-between'>
                         <div className=''>
                             <div className='ml-[0.9rem]'>
-                            <Button text={'SMM стратегия'} />
+                            <Button text={'SMM стратегия'}  documentId={56} />
                             </div>
                     
 
-                            <div className='lg:block flex justify-end'>   <Button text={'SMM продвижение'} /></div>
+                            <div className='lg:block flex justify-end'>   <Button text={'SMM продвижение'}  documentId={57} /></div>
 
                         </div>
                         <div className=' lg:mr-11'>
                             <div className='ml-[0.9rem]'>
-                            <Button text={'Создание контента'} />
+                            <Button text={'Создание контента'}  documentId={58} />
                             </div>
                       
                             <div className='lg:block flex justify-end'>
-                                <Button text={'Инфлюенс маркетинг'} />
+                                <Button text={'Инфлюенс маркетинг'}  documentId={59}/>
                             </div>
 
                         </div>
@@ -97,24 +99,18 @@ export default function Smm() {
 
                 <div className=' md:flex lg:flex-col lg:justify-center justify-between space-y-9 lg:ml-20 items-center'>
                     <div className='ml-[0.9rem]'>
-                        <Button text={'Фирменный стиль страниц'} />
+                        <Button text={'Фирменный стиль страниц'}  documentId={60}/>
                     </div>
 
                     {/* <div className='lg:block hidden'>
                         <SnakeBox />
                     </div> */}
                     <div className=' lg:mr-11 flex justify-end'>
-                        <Button text={'таргетированная реклама'} />
+                        <Button text={'Таргетированная реклама'}  documentId={61}/>
                     </div>
 
                 </div>
 
-                <div className=' items-end h-screen ml-20 pb-12 lg:flex hidden'>
-                    <div className='relative'>
-                        <img src={readbtn} className=" animate-spin-slow" />
-                        <img src={next} className=" w-[44px] h-[40px] absolute top-12 left-12" />
-                    </div>
-                </div>
             </section>
             <Last3Page />
 

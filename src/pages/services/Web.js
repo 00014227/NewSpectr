@@ -9,6 +9,7 @@ import readbtn from '../../assets/readbtn.png'
 import next from '../../assets/next.svg'
 import servicesData from '../../data/services.json'
 import Last3Page from '../../Components/Last3Page'
+import Circles from '../../Components/Circles'
 
 export default function Web() {
     const [navbar, setNavbar] = useState(false); 
@@ -42,11 +43,12 @@ export default function Web() {
             <NavBar navbar={navbar}/>
             <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] md:h-[80vh] px-4 flex items-center  md:pt-0 pt-32'>
                 <div className='lg:flex'>
-                <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
+                    <Circles/>
+                {/* <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                    </div>
+                    </div> */}
                     <div className=''>
                         
                         <div className=' lg:ml-[17rem]'>
@@ -64,7 +66,7 @@ export default function Web() {
                 <div className='px-4 lg:flex items-center justify-center md:px-11 '>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24  relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> сайтов любой<br /> сложности</h2>
-                    <p className="2xl:w-[600px] lg:absolute 2xl:top-9 2xl:right-[-300px] lg:-top-8 lg:right-[-200px]  top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
+                    <p className="2xl:w-[500px] lg:absolute 2xl:top-9 2xl:right-[-300px] lg:-top-8 lg:right-[-200px]  top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Рисуем прототипы, создаём макеты, верстаем для разных типов устройств. Внедряем необходимую CMS, интегрируем CRM.</p>
                 </div>
                 <div className='lg:block hidden lg:ml-[14rem]'>
@@ -75,10 +77,10 @@ export default function Web() {
                 <div className='lg:block  justify-center items-center pr-4 md:mt-0 mt-9 space-y-9'>
                     <div className='lg:space-y-0 lg:block md:flex justify-between'>
                         <div className=' lg:ml-0 '>
-                            <Button text={'Landing Page'} category={'web'} documentId = {17}/>
+                            <Button text={'Одностроничный сайт'} category={'web'} documentId = {17}/>
                         </div>
                         <div className='lg:ml-20 md:block flex justify-end mr-3'>
-                            <Button text={'E-Commerce'} documentId={20}/>
+                            <Button text={'Онлайн магазин'} documentId={20}/>
                         </div>
                     </div>
                     <div className=' lg:hidden md:flex hidden  justify-center items-center'>
@@ -112,7 +114,7 @@ export default function Web() {
 
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[200px]">Создание <br /> онлайн <br /> сервиса</h2>
-                    <p className="2xl:w-[600px] md:absolute lg:top-[164px] lg:right-[-450px] md:ml-0 right-0 top-60 md:w-[350px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
+                    <p className="2xl:w-[600px] md:absolute 2xl:top-[234px] lg:top-[164px] 2xl:right-[-450px] lg:right-[-250px]  md:ml-0 right-0 top-60 md:w-[350px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Проектируем, разрабатываем и развиваем сервисы для ваших клиентов или для внутреннего использования.</p>
                 </div>
 
@@ -129,23 +131,18 @@ export default function Web() {
                     </div>
                 </div>
 
-                <div className='lg:flex hidden items-start h-screen ml-20'>
-                    <div className='relative'>
-                        <img src={readbtn} className=" animate-spin-slow" />
-                        <img src={next} className=" w-[44px] h-[40px] absolute top-12 left-12" />
-                    </div>
-                </div>
+           
 
             </section>
 
-            <section className='bg-black flex-shrink-0  w-auto  lg:h-screen lg:pb-0 pb-4   lg:flex items-center'>
+            <section className='bg-black flex-shrink-0  w-auto lg:ml-[10rem]  lg:h-screen lg:pb-0 pb-4   lg:flex items-center'>
                 <Slider text={'MOBILE APPS'} />
 
 
 
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
                     <h2 className="text-white 2xl:text-[140px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> мобильных <br />приложений</h2>
-                    <p className="2xl:w-[600px] lg:w-[540px] w-auto lg:absolute top-[-45px] 2xl:right-[-350px] lg:right-[-370px] right-[20px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
+                    <p className="2xl:w-[600px] lg:w-[470px] w-auto lg:absolute 2xl:top-[205px] lg:top-[130px] 2xl:right-[-500px] lg:right-[-470px] right-[20px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Приложения для смартфонов экономят время и деньги благодаря простоте использования. Наши специалисты будут сопровождать Вас в создании интерфейса и необходимых шагов покупки подходящего для типа бизнеса. </p>
                 </div>
 
@@ -172,7 +169,7 @@ export default function Web() {
 
             <section className='bg-black flex-shrink-0  w-auto   lg:h-screen h-auto  lg:flex items-center'>
                 <div className=' lg:h-screen lg:w-[102px] h-[70px] w-full lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
-                    <h3 className="font_border horizon-text 2xl:text-[80px] my-auto md:text-[50px] text-4xl font-bold  leading-snug tracking-wider">Как мы работаем?</h3>
+                    <h3 className=" text-white horizon-text 2xl:text-[80px] my-auto md:text-[50px] text-4xl font-bold  leading-snug tracking-wider">Как мы работаем?</h3>
                 </div>
 
                 <h3 className="text-white 2xl:text-[240px] px-4 uppercase md:text-[120px] text-[44px] font-bold">наш <br /> <span className=' ml-32'>процесс</span></h3>

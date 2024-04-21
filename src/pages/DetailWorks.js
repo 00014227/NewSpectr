@@ -1,107 +1,58 @@
-import React, { useEffect, useState } from 'react'
-import NavBar from '../Components/NavBar'
-import service from '../assets/service.png'
-import Last3Page from '../Components/Last3Page'
-// import '../pages/DetailWorks/detail.css'
-import portfolioData from '../data/potfolio.json'
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel } from 'swiper';
-import slide_image_1 from '../assets/service.png'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom'
-export default function DetailWorks() {
-    const [slidesPerView, setSlidesPerView] = useState(10);
-
-    const checkScreenSize = () => {
-        // Adjust the breakpoint value (768) based on your design
-        setSlidesPerView(window.innerWidth < 768 ? 2 : 3);
-    };
-
-    useEffect(() => {
-        // Check screen size on mount
-        checkScreenSize();
-
-        // Attach event listener for window resize
-        window.addEventListener('resize', checkScreenSize);
-
-        // Cleanup the event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', checkScreenSize);
-        };
-    }, []);
+import React, { useRef, useState } from "react";
+import Slider from "react-slick";
+import potfolios from '../data/potfolio.json'
 
 
-    return (
-        <div className='lg:flex items-center block overflow-y-hidden overflow-x-hidden  bg-black h-[100vh]'>
-            <NavBar />
-            <section className="bg-black flex-shrink-0 relative  w-screen lg:h-screen h-[60vh] flex flex-col lg:items-start justify-center">
-                <div>
-                    <Link to={'/'}>
-                        <h1 className="heading absolute right-0 top-5 text-white text-6xl text-right">Наши работы</h1>
+function DetailWorks() {
+  const [isHovered, setIsHovered] = useState(false);
+  const [imageSrc, setImageSrc] = useState(''); 
+  
 
-                    </Link>
+
+  const handleMouseEnter = (src1) => {
+    setIsHovered(true);
+    setImageSrc(src1)
+};
+
+// Handle mouse leave to change image source back to original
+const handleMouseLeave = (src) => {
+    setIsHovered(false);
+    setImageSrc(src);
+};
+
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
+
+  };
+  return (
+    <div className=" ">
+             <Slider          {...settings}    className="flex   mx-auto">
+        
+      {potfolios.portfolio.map((item, index) => (
+          
+  
+ 
+                      <div 
+                      onMouseEnter={() => handleMouseEnter(item.image)}
+                      onMouseLeave={() => handleMouseLeave(item.geyLogo)}
+                       key={item.id} className='w-[12rem] h-[8rem] bg-white rounded-2xl py-3 mt-4 ml-4 flex justify-center items-center px-4'>
+                            <img className="w-full h-full object-contain" src={ isHovered && imageSrc === item.image ? item.image : item.geyLogo} />
+                      </div>
+
+     
+                ))}
+                </Slider>
+
                 </div>
-
-                <div className="container mx-auto ">
-
-                    <Swiper
-                        effect={'coverflow'}
-                        direction='horizontal'
-                        scrollbar={true}
-                        mousewheel={true}
-                        spaceBetween={160}
-                        grabCursor={true}
-                        centeredSlides={true}
-                        loop={true}
-                        slidesPerView={slidesPerView}
-                        coverflowEffect={{
-                            rotate: 0,
-                            stretch: 320,
-                            depth: 400,
-                            modifier: 1,
-                        }}
-                        pagination={{ el: '.swiper-pagination', clickable: true }}
-                        navigation={{
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                            clickable: true,
-                        }}
-                        modules={[EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel]}
-                        className="swiper_container  flex items-center justify-center"
-                    >
-                        {portfolioData.portfolio.map((work) => (
-                            <SwiperSlide className='relarive' key={work.id}>
-                                <div className='deck lg:w-[22rem] lg:h-[30rem] w-[13rem] h-[18rem]'>
-                                    <div class="card hovercard">
-                                        <div class="front face">
-                                            <img src={slide_image_1} alt="slide_image" className='lg:w-[22rem] lg:h-[30rem] w-[13rem] h-[18rem]' />
-                                            <h3 className="absolute top-0 text-white lg:text-[46px] text-[20px] font-bold font-['Jost'] capitalize">{work.company_name}</h3>
-                                        </div>
-
-                                        <div class="back face flex justify-center items-center">
-                                            <p className="text-white text-center mt-[22%] xl:text-[50px] text-[20px] font-bold font-['Jost'] uppercase">{work.company_name}</p>
-                                            <ul className='text-white lg:text-2xl list-disc'>
-                                                <li>Открытие</li>
-                                                <li>Маркетинг стратегия</li>
-                                                <li>Многостраничный сайт</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </SwiperSlide>
-                        ))}
-
-
-
-                    </Swiper>
-                </div>
-            </section>
-            <Last3Page />
-        </div>
-    )
+    
+  );
 }
+export default DetailWorks;

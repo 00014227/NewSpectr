@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
-import Telegram, { Instagram } from './FooterIcon'
+import Telegram, { FaceBook, Instagram } from './FooterIcon'
 
 export default function Last3Page({ isBeating }) {
     const [rangeValue, setRangeValue] = useState(0);
@@ -11,7 +11,6 @@ export default function Last3Page({ isBeating }) {
         contactNumber: '',
         budget: rangeValue,
     });
-    console.log(formData, 'fffffffffffffffff')
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -76,12 +75,13 @@ export default function Last3Page({ isBeating }) {
                                 value={formData.serviceInterest}
                                 onChange={handleInputChange}
                                 name='serviceInterest'
-                                class="bg-black border-2 md:w-[25rem] w-[90vw] border-teal-500 text-white text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option selected>Выберите услугу</option>
-                                <option value="US">United States</option>
-                                <option value="CA">Canada</option>
-                                <option value="FR">France</option>
-                                <option value="DE">Germany</option>
+                                className="bg-black border-2 md:w-[25rem] w-[90vw] border-teal-500 text-white text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option className='text-gray-400' selected>Выберите услугу</option>
+                                <option >Маркетинг</option>
+                                <option >Создание вебсайта</option>
+                                <option >СММ</option>
+                                <option >Брендинг</option>
+                                <option >Продакшн</option>
                             </select>
                         </div>
                     </div>
@@ -89,11 +89,11 @@ export default function Last3Page({ isBeating }) {
                     <div className=' space-y-14'>
 
 
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col lg:items-start items-center'>
                             <label className=' text-white text-xl'>Контактный номер</label>
-                            <div class="relative ">
-                                <div class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
-                                    <svg class="w-4 h-4 text-white dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+                            <div className="relative ">
+                                <div className="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg className="w-4 h-4 text-white dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
                                         <path d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
                                     </svg>
                                 </div>
@@ -104,11 +104,11 @@ export default function Last3Page({ isBeating }) {
                                     value={formData.contactNumber}
                                     onChange={handleInputChange}
                                     id="phone-input"
-                                    aria-describedby="helper-text-explanation" class="bg-black h-[3rem] border-2 md:w-[25rem] w-[90vw] border-teal-500 text-white text-sm rounded-lg placeholder:text-white focus:ring-blue-500 focus:border-blue-500 block ps-10 p-2.5   dark:focus:ring-blue-500 dark:focus:border-blue-500"  placeholder="123-456-7890" required />
+                                    aria-describedby="helper-text-explanation" className="bg-black h-[3rem] border-2 md:w-[25rem] w-[90vw] border-teal-500 text-white text-sm rounded-lg  focus:ring-blue-500 focus:border-blue-500 block ps-10 p-2.5   dark:focus:ring-blue-500 dark:focus:border-blue-500"  placeholder="+998 94-059-97-79" required />
                             </div>
                         </div>
 
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col lg:items-start items-center'>
                             <label className=' text-white text-xl'>Ваш бюджет: <span>{formData.budget}</span> $</label>
                             <input type='range'
                                 name='budget'
@@ -129,8 +129,8 @@ export default function Last3Page({ isBeating }) {
             <div className=' xl:h-screen lg:h-[80vh] w-auto flex lg:flex-col justify-between px-8 py-12'>
                 <Telegram />
                 <Instagram />
-                <Telegram />
-
+                <FaceBook/>
+                
             </div>
 
 

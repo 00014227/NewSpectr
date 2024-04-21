@@ -170,8 +170,8 @@ const NavBar = ({ navbar }) => {
                 <div
 
                     className={`cursor-pointer lg:block hidden transition-transform z-[100] transform ${isHovered ? 'hover:scale-110' : ''}`}>
-                    <svg class="w-20 h-20 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+                    <svg className="w-20 h-20 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
                     </svg>
                 </div>
                 {/* </div> */}
@@ -200,10 +200,10 @@ const NavBar = ({ navbar }) => {
 
 
 
-                        <Link to="/works">
+                        <Link to="">
                             <li className="text-white lg:mt-0 md:mt-20 lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">Наши работы</li>
                         </Link>
-                        <Link to="/blog">
+                        <Link to="">
                             <li className="text-white lg:mt-0 md:mt-20 lg:text-[56px] md:text-[28px] text-[36px] font-bold font-['Jost'] capitalize">блог</li>
                         </Link>
                         <Link>

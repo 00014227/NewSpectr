@@ -10,6 +10,12 @@ h1, h2 {
  color:  rgba(47, 48, 50, 1)
 }
 
+.popup {
+  background-image: url("./assets/bg1.PNG");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .font_border {
 
     text-shadow: -1px 1px 0 rgb(255, 255, 255), 

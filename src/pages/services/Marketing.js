@@ -8,6 +8,7 @@ import ButtonModal from '../../Components/Button'
 import readbtn from '../../assets/readbtn.png'
 import next from '../../assets/next.svg'
 import Last3Page from '../../Components/Last3Page'
+import Circles from '../../Components/Circles'
 
 export default function Marketing() {
     const scrollContainerRef = useRef(null);
@@ -38,11 +39,12 @@ export default function Marketing() {
             <section className=' flex-shrink-0 px-4  lg:h-screen h-auto lg:flex items-center lg:w-[100vw] w-auto md:pt-0 pt-32'>
                 <div className='lg:flex gap-40'>
                     <div className='lg:flex relative justify-center'>
-                        <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
+                        <Circles/>
+                        {/* <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
                             <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                             <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                             <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                        </div>
+                        </div> */}
                         <div className=''>
 
                             <div className=' xl:ml-[17rem] lg:ml-[10rem] w-full'>
@@ -62,7 +64,7 @@ export default function Marketing() {
                 <Slider text={'MARKETING'} />
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-5 relative h-fit'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px] md:leading-[200px]">Виды <br />маркетинга</h2>
-                    <p className=" md:absolute lg:top-0 lg:-right-[22rem] bottom-[180px] md:-right-0 right-[0px] lg:w-[90%] md:w-[460px] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  lg:leading-[42px] leading-[30px]">
+                    <p className=" md:absolute lg:top-0 2xl:-right-[22rem] lg:-right-[19rem] bottom-[180px] md:-right-0 right-[0px] lg:w-[90%] md:w-[460px] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  lg:leading-[42px] leading-[30px]">
                         Существует множество видов маркетинга, каждый из которых имеет свои особенности и преимущества. Они включают традиционный маркетинг, основанный на использовании традиционных каналов коммуникации, таких как ТВ и пресса, а также цифровой маркетинг, ориентированный на интернет-платформы и социальные сети для привлечения и взаимодействия с аудиторией.</p>
                 </div>
 
@@ -73,11 +75,11 @@ export default function Marketing() {
 
                 <div className='lg:block md:flex justify-between items-center lg:ml-[10rem] '>
                     <div className='xl:space-y-0 lg:space-y-60 '>
-                        <div className=' lg:mr-14 ml-[0.9rem]'>
+                        {/* <div className=' lg:mr-14 ml-[0.9rem]'>
                             <ButtonModal text={'Традиционный маркетинг'} category={'web'} documentId={1} />
-                        </div>
+                        </div> */}
                         <div className='lg:ml-20 md:block flex justify-end ml-[2rem]'>
-                            <ButtonModal text={'Диджитал маркетинг'} documentId={2} />
+                            <ButtonModal text={'Диджитал маркетинг'} documentId={65} />
                         </div>
                     </div>
                     <div className='md:hidden block py-10'>
@@ -86,11 +88,11 @@ export default function Marketing() {
 
                     <div className='xl:space-y-0 lg:space-y-60 md:mr-[3rem]'>
                         <div className=' lg:ml-48 ml-[0.9rem]'>
-                            <ButtonModal text={'Маркетинг стратегия'} documentId={3} />
+                            <ButtonModal text={'Маркетинг стратегия'} documentId={1} />
                         </div>
 
                         <div className=' lg:ml-72 md:block flex justify-end'>
-                            <ButtonModal text={'Маркетинг анализ'} />
+                            <ButtonModal text={'Маркетинг анализ'} documentId={63} />
                         </div>
                     </div>
 
@@ -104,21 +106,21 @@ export default function Marketing() {
                 <div className='lg:block md:flex justify-between items-center '>
                     <div className='xl:space-y-0 lg:space-y-60'>
                         <div className=' lg:mr-14 ml-[0.9rem]'>
-                            <ButtonModal text={'разработка маркетинг плана'} category={'web'} documentId={1} />
+                            <ButtonModal text={'Разработка маркетинг плана'} category={'web'} documentId={2} />
                         </div>
                         <div className='lg:ml-20 md:block flex justify-end ml-[2rem]'>
-                            <ButtonModal text={'маркетинг продвижение'} documentId={2} />
+                            <ButtonModal text={'Маркетинг продвижение'} documentId={62} />
                         </div>
                     </div>
                  
                     <div className='xl:space-y-0 lg:space-y-60 md:mr-[3rem]'>
                         <div className=' lg:ml-48 ml-[0.9rem]'>
-                            <ButtonModal text={'Маркетинг событий'} documentId={3} />
+                            <ButtonModal text={'Оффлайн маркетинг'} documentId={66} />
                         </div>
 
-                        <div className=' lg:ml-72  md:block flex justify-end'>
+                        {/* <div className=' lg:ml-72  md:block flex justify-end'>
                             <ButtonModal text={'оффлайн Маркетинг'} />
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

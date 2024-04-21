@@ -2,73 +2,104 @@
     "portfolio": [
       {
         "id": 1,
-        "image": "../assets/service.png",
-        "company_name": "ABC Corporation",
-        "works": [
-          "Social Media Campaign",
-          "Website Redesign",
-          "Print Advertisements"
-        ]
+        "image": "https://1000logos.net/wp-content/uploads/2022/08/Tommy-Hilfiger-logo.png",
+        "geyLogo": "https://i.ibb.co/tXB5wss/image.png",
+        "company_name": "Therma House"
       },
       {
         "id": 2,
-        "image": "../assets/service.png",
-        "company_name": "XYZ Company",
-        "works": [
-          "Email Marketing",
-          "Brand Strategy",
-          "Event Promotion"
-        ]
+        "image": "https://chinamotors.uz/wp-content/uploads/2023/10/logo_280.webp",
+        "geyLogo": "https://i.ibb.co/3zdXmj1/image-1.png",
+        "company_name": "Global Interior"
       },
       {
         "id": 3,
-        "image": "../assets/service.png",
-        "company_name": "123 Enterprises",
-        "works": [
-          "Content Marketing",
-          "SEO Optimization",
-          "Video Production"
-        ]
+        "image": "https://www.paulandshark.com/on/demandware.static/Sites-PS_APAC-Site/-/default/dwce66b481/images/logo/logo-bright.svg",
+        "geyLogo": "https://i.ibb.co/qjcgncQ/image-2.png",
+        "company_name": "New Millenium"
       },
       {
         "id": 4,
-        "image": "../assets/service.png",
-        "company_name": "Acme Innovations",
-        "works": [
-          "Product Launch Campaign",
-          "Digital Advertising",
-          "Market Research"
-        ]
+        "image": "https://bellissimo.uz/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75",
+        "geyLogo": "https://i.ibb.co/T1S7Vmm/image-3.png",
+        "company_name": "New Millenium"
       },
       {
         "id": 5,
-        "image": "../assets/service.png",
-        "company_name": "Acme Innovations",
-        "works": [
-          "Product Launch Campaign",
-          "Digital Advertising",
-          "Market Research"
-        ]
+        "image": "https://i.ibb.co/4RxNkSd/1.png",
+        "geyLogo": "https://i.ibb.co/tQXFX1S/image-4.png",
+        "company_name": "New Millenium"
       },
       {
         "id": 6,
-        "image": "../assets/service.png",
-        "company_name": "Acme Innovations",
-        "works": [
-          "Product Launch Campaign",
-          "Digital Advertising",
-          "Market Research"
-        ]
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Levi%27s_logo.svg/2560px-Levi%27s_logo.svg.png",
+        "geyLogo": "https://i.ibb.co/RC79PLM/image-5.png",
+        "company_name": "New Millenium"
       },
       {
         "id": 7,
-        "image": "../assets/service.png",
-        "company_name": "Acme Innovations",
-        "works": [
-          "Product Launch Campaign",
-          "Digital Advertising",
-          "Market Research"
-        ]
+        "image": "https://static.natuzzi.com/production/natuzzi/public/assets/natuzzi_editions.svg",
+        "geyLogo": "https://static.natuzzi.com/production/natuzzi/public/assets/natuzzi_editions.svg",
+        "company_name": "New Millenium"
+      },
+      {
+        "id": 8,
+        "image": "https://www.afisha.uz/uploads/media/2020/05/0509004.jpeg",
+        "geyLogo": "https://i.ibb.co/cN29QdY/image-7.png",
+        "company_name": "New Millenium"
+      },
+      {
+        "id": 9,
+        "image": "https://marketing.uz/uploads/articles/1192/article-original.png",
+        "geyLogo": "https://i.ibb.co/5YDhwBY/image-8.png",
+        "company_name": "New Millenium"
+      
+      }, 
+      {
+        "id": 10,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDAkmWokFIreNIEvzd5jXFRj9Lk2SJXAahuVN9UTFqg&s",
+        "geyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDAkmWokFIreNIEvzd5jXFRj9Lk2SJXAahuVN9UTFqg&s",
+        "company_name": "New Millenium"
+      },
+      {
+        "id": 11,
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Beeline.svg/1200px-Beeline.svg.png",
+        "geyLogo": "https://i.ibb.co/L5bDyq9/image-9.png",
+        "company_name": "New Millenium"
+      },
+      {
+        "id": 12,
+        "image": "data:image/jpeg;base64,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",
+        "geyLogo": "https://i.ibb.co/s9t0sKs/image-13.png",
+        "company_name": "New Millenium"
+      
+      },
+
+      {
+        "id": 13,
+        "image": "https://i.ibb.co/mqFDgJk/nm-logo-2-1.png",
+        "geyLogo": "https://i.ibb.co/mqFDgJk/nm-logo-2-1.png",
+        "company_name": "New Millenium"
+      
+      }, 
+      {
+        "id": 14,
+        "image": "https://static.tildacdn.com/tild3633-6265-4535-b230-613632383834/_32x.png",
+        "geyLogo": "https://i.ibb.co/KV6w3cV/image-10.png",
+        "company_name": "New Millenium"
+      },
+      {
+        "id": 15,
+        "image": "https://archa.uz/image/cache/catalog/artel/artel_logo-600x315w.png",
+        "geyLogo": "https://i.ibb.co/br9yPqM/image-11.png",
+        "company_name": "New Millenium"
+      },
+      {
+        "id": 16,
+        "image": "https://marketing.uz/tafest-konkurs-2022/uz/uploads/works/covers/e49d190f99fe5a5d763929c11203af9f.jpg",
+        "geyLogo": "https://i.ibb.co/VCVv7LH/image-12.png",
+        "company_name": "New Millenium"
+      
       }
     ]
   }

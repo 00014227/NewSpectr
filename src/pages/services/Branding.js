@@ -1,15 +1,13 @@
 import React, { useRef, useState } from 'react'
 import branding from "../../assets/services/branding.svg"
-import web from "../../assets/services/web.svg"
 import Button from '../../Components/Button'
 import NavBar from '../../Components/NavBar'
 import SnakeBox from '../../Components/SnakeBox'
-import readbtn from '../../assets/readbtn.png'
-import next from '../../assets/next.svg'
+
 import Last3Page from '../../Components/Last3Page'
 import Slider from '../../Components/Slider'
-import eye from '../../assets/eye.png'
-import service from '../../assets/service.png'
+import Circles from '../../Components/Circles'
+
 
 export default function Branding() {
     const [navbar, setNavbar] = useState(true);
@@ -46,7 +44,8 @@ export default function Branding() {
             <NavBar navbar={navbar} />
             <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto lg:flex items-center md:px-10 px-4 md:pt-0 pt-32'>
                 <div className='lg:flex '>
-                    <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
+                    <Circles/>
+                    {/* <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
                         <svg className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M139.749 73.7703L139.189 79.1331C139.078 80.194 138.749 81.0337 138.202 81.6522C137.664 82.2824 136.918 82.5476 135.963 82.4479C135.433 82.3925 134.975 82.2052 134.59 81.8862C134.216 81.5682 133.947 81.1595 133.785 80.6599C133.248 81.998 132.253 82.5912 130.8 82.4394C129.728 82.3274 128.933 81.8797 128.415 81.0962C127.907 80.3139 127.711 79.3657 127.827 78.2518L128.419 72.5866L139.749 73.7703ZM137.571 75.988L134.913 75.7103L134.677 77.97C134.547 79.2219 134.921 79.8938 135.802 79.9858C136.322 80.0401 136.69 79.907 136.905 79.5863C137.132 79.2668 137.275 78.8206 137.335 78.2477L137.571 75.988ZM133.227 75.5341L130.139 75.2116L129.878 77.71C129.811 78.3571 129.864 78.8775 130.037 79.2709C130.209 79.675 130.598 79.9087 131.203 79.9718C131.818 80.0361 132.247 79.8772 132.491 79.4951C132.744 79.1248 132.907 78.5948 132.979 77.9052L133.227 75.5341Z" fill="#0ABAB5" />
                             <path d="M137.766 88.6031L135.917 93.9566C135.548 95.0252 134.994 95.8102 134.257 96.3116C133.519 96.8129 132.636 96.8859 131.608 96.5306C130.983 96.3147 130.486 95.9736 130.116 95.5074C129.757 95.0447 129.569 94.5114 129.552 93.9074C129.04 94.7687 128.02 95.0089 126.493 94.6279C126.443 94.6105 126.283 94.5666 126.014 94.4962C125.745 94.4258 125.526 94.3728 125.358 94.3373C125.199 94.3052 125.004 94.2659 124.772 94.2196C124.54 94.1732 124.338 94.1541 124.165 94.1623C123.993 94.1706 123.858 94.2028 123.76 94.2591L124.606 91.8092C124.795 91.7843 125.018 91.7935 125.274 91.8367C125.54 91.8835 125.869 91.9579 126.263 92.06C126.667 92.1656 126.889 92.2254 126.929 92.2393C127.713 92.4199 128.303 92.4095 128.7 92.2081C129.094 92.0167 129.421 91.543 129.682 90.7868L130.408 88.6847L126.189 87.227L126.999 84.8829L137.766 88.6031ZM135.096 90.3045L132.117 89.2751L131.344 91.5133C131.118 92.1687 131.042 92.7126 131.119 93.1452C131.202 93.5914 131.545 93.919 132.15 94.128C132.715 94.3231 133.161 94.274 133.488 93.9807C133.811 93.6975 134.078 93.2534 134.287 92.6485L135.096 90.3045Z" fill="#0ABAB5" />
@@ -109,7 +108,7 @@ export default function Branding() {
 
 
                         <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                    </div>
+                    </div> */}
                     <div className=' space-y-[10%]'>
                         <div className='lg:ml-[14rem] '>
                             <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] text-end  font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">дизайн <span className='font-extralight ml-3'>и</span> брендинг</h1>
@@ -137,18 +136,18 @@ export default function Branding() {
                     <div className='lg:flex '>
                         <div className=' lg:mx-14 pl-[0.7rem]  lg:block md:flex justify-between'>
                             <div>
-                                <Button text={'стратегия бренда'} documentId={16} />
+                                <Button text={'Cтратегия бренда'} documentId={39} />
                                 <div className='lg:block flex justify-end'>
-                                    <Button text={'разработка нейминга'} documentId={9} />
+                                    <Button text={'Pазработка нейминга'} documentId={31} />
 
                                 </div>
 
 
                             </div>
                             <div className=' md:mr-11'>
-                                <Button text={'стратегия комуникации'} documentId={11} />
+                                <Button text={'Cтратегия комуникации'} documentId={27} />
                                 <div className='lg:block flex justify-end'>
-                                    <Button text={'брендбук и гайдлайн'} documentId={10} />
+                                    <Button text={'Брендбук и гайдлайн'} documentId={33} />
 
                                 </div>
 
@@ -166,16 +165,16 @@ export default function Branding() {
                                 <div className=''>
 
 
-                                    <div className=''>   <Button text={'позиционирование бренда'} documentId={7} /></div>
+                                    <div className=''>   <Button text={'Позиционирование бренда'} documentId={26} /></div>
                                     <div className='lg:block flex md:justify-center justify-end md:items-center'>
-                                        <Button text={'голос бренда'} documentId={14} />
+                                        <Button text={'Голос бренда'} documentId={36} />
                                     </div>
                                 </div>
                                 <div className=' md:mr-11'>
                                     <div className='lg:block flex justify-end'>
-                                        <Button text={'ценности и миссия'} />
+                                        <Button text={'Ценности и миссия'} documentId={29}/>
                                     </div>
-                                    <Button text={'платформа бренда'} documentId={8} />
+                                    <Button text={'Платформа бренда'} documentId={55} />
 
 
                                 </div>
@@ -185,14 +184,14 @@ export default function Branding() {
                         </div>
                         <div className='lg:ml-12 md:flex lg:flex-col pl-[0.7rem] lg:justify-center md:justify-between space-y-6  items-center '>
                             <div className=''>
-                                <Button text={'контент стратегия'} documentId={11} />
+                                <Button text={'Контент стратегия'} documentId={41} />
                             </div>
 
                             <div className='lg:block hidden'>
                                 <SnakeBox />
                             </div>
                             <div className=' md:mr-11 lg:block flex justify-end'>
-                                <Button text={'презентация компании'} documentId={6} />
+                                <Button text={'Презентация компании'} documentId={42} />
                             </div>
 
                         </div>
@@ -214,36 +213,36 @@ export default function Branding() {
                         <div className=' lg:mx-14 pl-[0.7rem] lg:block  justify-between'>
                             <div>
                             <div className='lg:block flex justify-end'>
-                                <Button text={'создание логотипа'} documentId={3} />
+                                <Button text={'Создание логотипа'} documentId={32} />
                                 </div> 
-                                    <Button text={'фирменные цвета'} documentId={4} />
+                                    <Button text={'Фирменные цвета'} documentId={34} />
                                
 
 
                             </div>
                             <div className=' md:mr-11'>
                                  <div className='lg:block flex justify-end'>
-                                <Button text={'дизайн мерча'} documentId={5} />
+                                <Button text={'Дизайн мерча'} documentId={44} />
                                 </div>
-                                    <Button text={'дизайн упаковки'} documentId={13} />
+                                    <Button text={'Дизайн упаковки'} documentId={38} />
 
                                 
                             </div>
                         </div>
 
                         <div className='lg:ml-32 lg:flex-col pl-[0.7rem] lg:justify-center md:justify-between  items-center '>
-                            <div className='flex justify-end'>
-                                <Button text={'фирменные шрифты'} documentId={11} />
+                            <div className='flex'>
+                                <Button text={'Фирменные шрифты'} documentId={35} />
                             </div>
 
                             <div className=''>
-                                <Button text={'фирменный паттерн'} documentId={11} />
+                                <Button text={'Фирменный паттерн'} documentId={45} />
                             </div>
                             <div className=' md:mr-11 lg:block flex justify-end'>
-                                <Button text={'дизайн поста'} documentId={6} />
+                                <Button text={'Дизайн поста'} documentId={46} />
                             </div>
 
-                            <Button text={'маскот компании'} documentId={6} />
+                            <Button text={'Маскот компании'} documentId={47} />
 
 
                         </div>

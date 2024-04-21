@@ -5,6 +5,7 @@ import web from "../../assets/services/web.svg"
 import Button from '../../Components/Button';
 import SnakeBox from '../../Components/SnakeBox';
 import Last3Page from '../../Components/Last3Page';
+import Circles from '../../Components/Circles';
 
 export default function Production() {
     const scrollContainerRef = useRef(null);
@@ -34,11 +35,12 @@ export default function Production() {
             <section className=' flex-shrink-0  w-screen lg:h-screen h-auto lg:flex items-center md:px-10 px-4 md:pt-0 pt-32'>
                 <div className='lg:flex gap-40'>
                     <div className='lg:flex relative justify-center'>
-                        <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
+                        <Circles/>
+                        {/* <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
                             <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                             <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
                             <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                        </div>
+                        </div> */}
                         <div className=''>
 
                             <div className=' lg:ml-[8rem] w-full'>
@@ -68,26 +70,26 @@ export default function Production() {
                 <div className='lg:flex lg:ml-48 gap-16'>
                     <div className=' space-y-10 ml-[0.9rem]'>
                         
-                        <Button text={'профессиональные видеоролики'}/>
+                        <Button text={'Профессиональные видеоролики'} documentId={83}/>
                         <div className='flex justify-end'>
-                        <Button text={'создание контента'}/>
+                        <Button text={'Создание контента'} documentId={87}/>
 
                         </div>
 
-                        <Button text={'проведении фотосессии'}/>
+                        <Button text={'Проведении фотосессии'} documentId={84}/>
 
                     </div>
 
                 <div className=' lg:flex lg:flex-col lg:justify-center space-y-9 lg:ml-20 items-center'>
                     <div className='lg:block flex justify-end'>
-                        <Button text={'Мобилография'} />
+                        <Button text={'Мобилография'} documentId={85}/>
                     </div>
 
                     <div className='lg:block hidden'>
                         <SnakeBox />
                     </div>
                     <div className='ml-[0.9rem]'>
-                        <Button text={'голос бренда'} />
+                        <Button text={'Голос бренда'} documentId={86}/>
                     </div>
 
                 </div>
