@@ -2,7 +2,6 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { loadImageShape } from "tsparticles-shape-image";
- import {as} from '../assets/figure.png'
  import logo from '../assets/Logo.svg'
 export default function Background() {
     const particlesInit = useCallback(async engine => {

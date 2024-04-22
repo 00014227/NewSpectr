@@ -1,13 +1,12 @@
 import React, { useRef, useState } from 'react'
 import NavBar from '../../Components/NavBar'
-import branding from "../../assets/services/branding.svg"
-import web from "../../assets/services/web.svg"
+
 import Button from '../../Components/Button'
 import SnakeBox from '../../Components/SnakeBox'
-import readbtn from '../../assets/readbtn.png'
-import next from '../../assets/next.svg'
+
 import Last3Page from '../../Components/Last3Page'
 import Circles from '../../Components/Circles'
+import { Helmet } from 'react-helmet-async'
 
 export default function Smm() {
     const [navbar, setNavbar] = useState(true);
@@ -32,21 +31,28 @@ export default function Smm() {
             setNavbar(false)
         }
     };
+
+    const keywords = ['SMM продвижение', 'SMM стратегия', 'cоздание контента', 'фирменный стиль страниц', 'таргетированная реклама']
+
     return (
+        <>
+        <Helmet>
+            <title>Смм продвижение и реклама</title>
+            <meta name='description' content='В современном цифровом мире сильное присутствие в социальных сетях является ключевым фактором успеха бизнеса. Spectr поможет вам разработать и реализовать выигрышные стратегии продвижения и рекламы в SMM, которые усилят голос вашего бренда, привлекут целевую аудиторию и обеспечат ощутимые результаты.'/>
+            <link rel='cannonical' href='/services/smm'/>
+            <meta name="keywords" content={keywords.join(', ')} />
+
+        </Helmet>
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-x-auto overflow-x-hidden lg:overflow-y-hidden h-[100vh]'>
             <NavBar navbar={navbar} />
             <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] flex items-center md:pt-0 pt-32'>
                 <div className='lg:flex '>
                     <Circles/>
-                    {/* <div className='  flex lg:flex-col items-center justify-center md:mt-4  lg:space-y-14 lg:space-x-0 space-x-10'>
-                        <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                        <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                        <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                    </div> */}
+               
                     <div className=''>
 
                         <div className='lg:ml-[5rem] w-full md:pr-4 pr-2'>
-                            <h1 className="text-white text-right 2xl:text-[120px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">смм продвижение<span className='font-extralight ml-3'>и</span>  <span className='font-extralight flex justify-end'>реклама</span></h1>
+                            <h1 className="text-white text-right 2xl:text-[120px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">смм продвижение  <span className='font-extralight flex justify-end'>и   реклама</span></h1>
                         </div>
 
                         <div className='lg:ml-[5rem] pl-4'>
@@ -58,7 +64,7 @@ export default function Smm() {
 
 
 
-            <section className='bg-black flex-shrink-0 xl:ml-0 ml-0 lg:ml-[8rem] md:w-auto w-screen lg:h-screen lg:pr-0 md:pr-12 pr-12 pb-9 h-auto lg:flex items-center  lg:pt-0 md:pt-24 '>
+            <section className='bg-black flex-shrink-0 xl:ml-0 ml-0 lg:ml-[8rem] md:w-auto w-screen lg:h-screen lg:pr-0 md:pr-12 pr-12 lg:pb-0 pb-9 h-auto lg:flex items-center  lg:pt-0 md:pt-24 '>
                 <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                     <h3 className=" text-white horizon-text 2xl:text-[70px] md:text-[50px] text-4xl my-auto  font-bold uppercase  leading-snug tracking-wider">Какие виды CMM</h3>
                 </div>
@@ -115,5 +121,6 @@ export default function Smm() {
             <Last3Page />
 
         </div>
+        </>
     )
 }

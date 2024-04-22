@@ -86,7 +86,7 @@ export default function Last3Page({ isBeating }) {
                         </div>
                     </div>
 
-                    <div className=' space-y-14'>
+                    <div className=' space-y-14 flex flex-col justify-center'>
 
 
                         <div className='flex flex-col lg:items-start items-center'>
@@ -119,7 +119,7 @@ export default function Last3Page({ isBeating }) {
                         </div>
 
 
-                        <button type='submit' className=' text-white text-xl border-2 ml-10 border-teal-500 rounded-xl hover:bg-teal-500 w-[20rem] h-[3rem]'>Отправить</button>
+                        <button type='submit' className=' text-white text-xl border-2  mx-auto border-teal-500 rounded-xl hover:bg-teal-500 w-[20rem] h-[3rem]'>Отправить</button>
                     </div>
                 </form>
             </div>

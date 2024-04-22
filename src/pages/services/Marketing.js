@@ -1,14 +1,11 @@
 import React, { useRef, useState } from 'react'
 import NavBar from '../../Components/NavBar'
-import branding from "../../assets/services/branding.svg"
-import web from "../../assets/services/web.svg"
 import Slider from '../../Components/Slider'
 import SnakeBox from '../../Components/SnakeBox'
 import ButtonModal from '../../Components/Button'
-import readbtn from '../../assets/readbtn.png'
-import next from '../../assets/next.svg'
 import Last3Page from '../../Components/Last3Page'
 import Circles from '../../Components/Circles'
+import { Helmet } from 'react-helmet-async'
 
 export default function Marketing() {
     const scrollContainerRef = useRef(null);
@@ -34,6 +31,12 @@ export default function Marketing() {
         }
     };
     return (
+        <>
+        <Helmet>
+                <title>Маркетинг и продвижение</title>
+                <meta name='description' content='Увеличьте продажи и узнаваемость бренда с помощью комплексных маркетинговых решений Spectr.'/>
+                <link rel='cannonical' href='/services/marketing'/>
+        </Helmet>
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-x-auto  lg:overflow-y-hidden h-[100vh] '>
             <NavBar navbar={navbar} />
             <section className=' flex-shrink-0 px-4  lg:h-screen h-auto lg:flex items-center lg:w-[100vw] w-auto md:pt-0 pt-32'>
@@ -60,7 +63,7 @@ export default function Marketing() {
                     </div>
                 </div>
             </section>
-            <section className='bg-black flex-shrink-0 pb-10 w-auto lg:h-screen h-auto  lg:flex items-center md:pr-0 pr-10 xl:ml-0 lg:ml-[8rem]'>
+            <section className='bg-black flex-shrink-0 lg:pb-0 pb-10 w-auto lg:h-screen h-auto  lg:flex items-center md:pr-0 pr-10 xl:ml-0 lg:ml-[8rem]'>
                 <Slider text={'MARKETING'} />
                 <div className=' 2xl:max-w-[2688px] lg:ml-24 px-5 relative h-fit'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px] md:leading-[200px]">Виды <br />маркетинга</h2>
@@ -134,5 +137,6 @@ export default function Marketing() {
 
             <Last3Page />
         </div>
+        </>
     )
 }

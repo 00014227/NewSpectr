@@ -29,18 +29,19 @@ function Partners({images}) {
         autoplaySpeed: 2000,
         cssEase: "linear",
         arrows: false,
-
+        
     };
 
     return (
         <div className=" w-screen">
-            <Slider          {...settings} className="flex   mx-auto">
+            <Slider          {...settings} className="flex  mx-auto ">
 
             {images.map((item, index) => (
                         <div
                             onMouseEnter={() => handleMouseEnter(item.src1)}
                             onMouseLeave={() => handleMouseLeave(item.src)}
-                            className='w-[12rem] h-[8rem] bg-white rounded-2xl  mt-4 ml-4 flex justify-center items-center px-4'>
+                   
+                            className='w-[12rem] h-[8rem] bg-white rounded-2xl  mt-4  flex justify-center items-center px-4'>
 
                             <img
                                 key={index}

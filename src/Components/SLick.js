@@ -32,7 +32,7 @@ function SLick() {
   };
   return (
     <div className=" w-screen">
-      <Slider          {...settings} className="flex   mx-auto">
+      <Slider          {...settings} className="flex w-screen mx-auto">
 
         {potfolios.portfolio.map((item, index) => (
 

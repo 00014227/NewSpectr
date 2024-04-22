@@ -1,15 +1,14 @@
 import React, { useRef, useState } from 'react'
 import NavBar from '../../Components/NavBar'
-import branding from "../../assets/services/branding.svg"
-import web from "../../assets/services/web.svg"
+
 import Slider from '../../Components/Slider'
 import SnakeBox from '../../Components/SnakeBox'
 import Button from '../../Components/Button'
-import readbtn from '../../assets/readbtn.png'
-import next from '../../assets/next.svg'
+
 import servicesData from '../../data/services.json'
 import Last3Page from '../../Components/Last3Page'
 import Circles from '../../Components/Circles'
+import { Helmet } from 'react-helmet-async'
 
 export default function Web() {
     const [navbar, setNavbar] = useState(false); 
@@ -36,7 +35,18 @@ export default function Web() {
         } else{
         setNavbar(false) }
     };
+
+    const keywords = ['одностроничный сайт', 'онлайн магазин', 'корпоративный сайт', 'сайт каталог', 'маркетплейс', 'системы для бизнеса', 'ios разработка', 'android разработка']
+
+
     return (
+        <>
+        <Helmet>
+        <title>Создание сайтов и приложений</title>
+            <meta name='description' content='Создайте веб-сайт или приложение, которое будет работать на вас! Спектр - это опытная команда разработчиков, которая специализируется на создании высококачественных, функциональных и эффективных веб-сайтов и приложений для клиентов любого размера.'/>
+            <link rel='cannonical' href='/services/web'/>
+            <meta name="keywords" content={keywords.join(', ')} />
+        </Helmet>
         <div
         ref={scrollContainerRef} onWheel={handleWheelScroll} 
         className='lg:flex items-center bg-black block lg:overflow-x-auto overflow-x-hidden lg:overflow-y-hidden h-[100vh]'>
@@ -44,14 +54,10 @@ export default function Web() {
             <section className='bg-black flex-shrink-0  w-screen lg:h-[100vh] md:h-[80vh] px-4 flex items-center  md:pt-0 pt-32'>
                 <div className='lg:flex'>
                     <Circles/>
-                {/* <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
-                        <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                        <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                        <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                    </div> */}
+          
                     <div className=''>
                         
-                        <div className=' lg:ml-[17rem]'>
+                        <div className=' lg:ml-[17rem] lg:pr-0 pr-4'>
                             <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">создание сайтов<span className='font-extralight ml-3'>и</span>  <span className='font-extralight flex justify-end'>приложений</span></h1>
                         </div>
                         
@@ -74,8 +80,8 @@ export default function Web() {
                 </div>
 
 
-                <div className='lg:block  justify-center items-center pr-4 md:mt-0 mt-9 space-y-9'>
-                    <div className='lg:space-y-0 lg:block md:flex justify-between'>
+                <div className='lg:block  justify-center items-center pr-4 md:mt-0 mt-9 space-y-9 lg:ml-[8rem]'>
+                    <div className='lg:space-y-0 lg:block md:flex justify-between '>
                         <div className=' lg:ml-0 '>
                             <Button text={'Одностроничный сайт'} category={'web'} documentId = {17}/>
                         </div>
@@ -147,7 +153,7 @@ export default function Web() {
                 </div>
 
 
-                <div className=' flex flex-col lg:justify-center lg:items-center lg:ml-[30rem]  space-y-10'>
+                <div className=' flex flex-col lg:justify-center lg:items-center xl:ml-[38rem] lg:ml-[30rem]  space-y-10'>
                     <div className='flex justify-start items-start lg:ml-0 md:ml-[2.8rem] ml-[0.9rem]'>
                         <Button text={'IOS разработка'} documentId={23}/>
                     </div>
@@ -159,15 +165,10 @@ export default function Web() {
                     </div>
                 </div>
 
-                <div className='lg:flex hidden items-end h-[90vh] ml-20'>
-                    <div className='relative'>
-                        <img src={readbtn} className=" animate-spin-slow" />
-                        <img src={next} className=" w-[44px] h-[40px] absolute top-12 left-12" />
-                    </div>
-                </div>
+       
             </section>
 
-            <section className='bg-black flex-shrink-0  w-auto   lg:h-screen h-auto  lg:flex items-center'>
+            <section className='bg-black flex-shrink-0 lg:ml-[10rem]  w-auto   lg:h-screen h-auto  lg:flex items-center'>
                 <div className=' lg:h-screen lg:w-[102px] h-[70px] w-full lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                     <h3 className=" text-white horizon-text 2xl:text-[80px] my-auto md:text-[50px] text-4xl font-bold  leading-snug tracking-wider">Как мы работаем?</h3>
                 </div>
@@ -180,7 +181,7 @@ export default function Web() {
                                 <p className='md:text-[450px] text-[200px] text-white font-bold'>{service.id}</p>
                                 <div className='mt-auto'>
                                     <p className="text-white 2xl:text-[100px] md:text-[60px] text-[28px] font-bold uppercase">{service.title}</p>
-                                    <p className="text-white 2xl:text-[28px] 2xl:w-[800px] md:w-[500px] w-auto md:text-[18px] text-sm font-normal font-['Evolventa'] md:leading-[2rem] uppercase">{service.description}</p>
+                                    <p className="text-white 2xl:text-[28px] 2xl:w-[800px] md:w-[500px] w-auto md:text-[18px] text-sm font-normal font-['Evolventa'] pr-4 md:leading-[2rem] uppercase">{service.description}</p>
                                 </div>
                           
 
@@ -197,5 +198,6 @@ export default function Web() {
             <Last3Page />
 
         </div>
+        </>
     )
 }

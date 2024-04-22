@@ -1,11 +1,10 @@
 import React, { useRef, useState } from 'react'
 import NavBar from '../../Components/NavBar'
-import branding from "../../assets/services/branding.svg"
-import web from "../../assets/services/web.svg"
 import Button from '../../Components/Button';
 import SnakeBox from '../../Components/SnakeBox';
 import Last3Page from '../../Components/Last3Page';
 import Circles from '../../Components/Circles';
+import { Helmet } from 'react-helmet-async';
 
 export default function Production() {
     const scrollContainerRef = useRef(null);
@@ -29,7 +28,19 @@ export default function Production() {
         } else{
         setNavbar(false) }
     };
+
+    const keywords = ['создание контента', 'профессиональные видеоролики', 'проведении фотосессии', 'голос бренда', 'мобилография']
+
+
     return (
+        <>
+        <Helmet>
+            <title>Продакшн и создание контента</title>
+            <meta name='description' content='Спектр - это комплексное агентство, которое предлагает полный спектр услуг по производству и созданию контента. Мы помогаем компаниям любого размера создавать высококачественный, привлекательный и эффективный контент, который достигает целевой аудитории и решает бизнес-задачи'/>
+            <meta name="keywords" content={keywords.join(', ')} />
+
+            <link rel='cannonical' href='/services/production'/>
+        </Helmet>
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-y-hidden  overflow-x-hidden h-[100vh]'>
             <NavBar navbar={navbar} />
             <section className=' flex-shrink-0  w-screen lg:h-screen h-auto lg:flex items-center md:px-10 px-4 md:pt-0 pt-32'>
@@ -98,5 +109,6 @@ export default function Production() {
             </section>
             <Last3Page/>
         </div>
+        </>
     )
 }

@@ -1,12 +1,10 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import ButtonModal from './Button'
 import readbtn from '../assets/readbtn.png'
 import next from '../assets/next.svg'
 import { Link } from 'react-router-dom'
-import {motion, useScroll} from 'framer-motion'
 
 export default function Services() {
-    const scrollRef = useRef(null)
     return (
         <section className='flex-shrink-0  w-auto lg:h-screen  h-auto lg:flex block items-center lg:pb-0 pb-[50px]'>
             <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[70px]  w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>

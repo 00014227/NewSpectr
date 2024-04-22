@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Spectr from '../assets/spectr.jpg'
 import {
   Button,
   Dialog,
