@@ -1,20 +1,38 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ButtonModal from './Button'
 import readbtn from '../assets/readbtn.png'
 import next from '../assets/next.svg'
 import { Link } from 'react-router-dom'
 
 export default function Services() {
+  
+
     return (
         <section className='flex-shrink-0  w-auto lg:h-screen  h-auto lg:flex block items-center lg:pb-0 pb-[50px]'>
             <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[70px]  w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                 <h3 className=" text-white uppercase horizon-text  my-auto  2xl:text-[70px] md:text-[50px] text-xl  font-bold   leading-snug tracking-wider">наши услуги</h3>
             </div>
-         
+
             <div className=' lg:ml-20 px-8 lg:flex lg:space-x-20' >
                 <div className='lg:flex'>
                     <div className=' lg:space-y-4'>
-                        <ButtonModal text={'Web разработки'} />
+                        <button className='flex justify-center items-center' >
+                            <div className='relative flex justify-end mt-11 h-[5rem] lg:w-[300px] w-[300px] group'>
+                                {/* First Element */}
+                                <div className="element absolute lg:w-[56.50px] w-[46px] lg:h-[1.7rem] h-[30px] border border-teal-500 z-10 lg:left-[16.5rem] left-[18rem] bottom-[68px] "></div>
+
+                                {/* Second Element */}
+                                <div className="element absolute lg:w-[113px] w-[80px] h-[2.5rem]  border border-teal-500 ml-16 lg:left-[8.3rem] left-[11rem] lg:top-[-0.5rem] top-[-0.7rem] z-10"></div>
+
+                                {/* Third Element */}
+                                <div
+
+                                    className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-10 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px]`}
+                                >
+                                    Web разработки
+                                </div>
+                            </div>
+                        </button>
                         <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
                             <li>разработка одностраничного сайта ( landing page )</li>
                             <li>разработка корпоративных сайтов</li>
@@ -40,7 +58,23 @@ export default function Services() {
                 <div className='lg:flex'>
                     <div className='flex flex-col items-end'>
                         <div className=' lg:space-y-4 '>
-                            <ButtonModal text={'Брендинг'} />
+                        <button className='flex justify-center items-center' >
+                            <div className='relative flex justify-end mt-11 h-[5rem] lg:w-[300px] w-[300px] group'>
+                                {/* First Element */}
+                                <div className="element absolute lg:w-[56.50px] w-[46px] lg:h-[1.7rem] h-[30px] border border-teal-500 z-10 lg:left-[16.5rem] left-[18rem] bottom-[68px] "></div>
+
+                                {/* Second Element */}
+                                <div className="element absolute lg:w-[113px] w-[80px] h-[2.5rem]  border border-teal-500 ml-16 lg:left-[8.3rem] left-[11rem] lg:top-[-0.5rem] top-[-0.7rem] z-10"></div>
+
+                                {/* Third Element */}
+                                <div
+
+                                    className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-10 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px]`}
+                                >
+                                   Брендинг
+                                </div>
+                            </div>
+                        </button>
                             <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
                                 <li>определение бренда и его позиционирование на рынке</li>
                                 <li>разработка уникального нейминга и создание логотипа</li>
@@ -67,7 +101,23 @@ export default function Services() {
 
                 <div className='lg:flex'>
                     <div className=' lg:space-y-4'>
-                        <ButtonModal text={'Маркетинг'} />
+                    <button className='flex justify-center items-center' >
+                            <div className='relative flex justify-end mt-11 h-[5rem] lg:w-[300px] w-[300px] group'>
+                                {/* First Element */}
+                                <div className="element absolute lg:w-[56.50px] w-[46px] lg:h-[1.7rem] h-[30px] border border-teal-500 z-10 lg:left-[16.5rem] left-[18rem] bottom-[68px] "></div>
+
+                                {/* Second Element */}
+                                <div className="element absolute lg:w-[113px] w-[80px] h-[2.5rem]  border border-teal-500 ml-16 lg:left-[8.3rem] left-[11rem] lg:top-[-0.5rem] top-[-0.7rem] z-10"></div>
+
+                                {/* Third Element */}
+                                <div
+
+                                    className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-10 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px]`}
+                                >
+                                    Маркетинг
+                                </div>
+                            </div>
+                        </button>
                         <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
                             <li>маркетинг стратегия</li>
                             <li>разработка маркетинг плана</li>
@@ -93,20 +143,36 @@ export default function Services() {
 
                 <div className='lg:flex'>
                     <div className='flex flex-col md:items-end'>
-                    <div className='lg:space-y-4'>
-                        <ButtonModal text={'Smm'} />
-                        <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
-                            <li>разработка SMM стратегии</li>
-                            <li>SMM продвижение</li>
-                            <li>контент маркетинг</li>
-                            <li>создание контента для соц сетей</li>
-                            <li>инфлюенс маркетинг ( блоггеры )</li>
-                            <li>разработка TOV ( tone of voice )</li>
-                            <li>разработка фирменного стиля страниц</li>
-                            <li>настройка и запуск таргетированной рекламы</li>
+                        <div className='lg:space-y-4'>
+                        <button className='flex justify-center items-center' >
+                            <div className='relative flex justify-end mt-11 h-[5rem] lg:w-[300px] w-[300px] group'>
+                                {/* First Element */}
+                                <div className="element absolute lg:w-[56.50px] w-[46px] lg:h-[1.7rem] h-[30px] border border-teal-500 z-10 lg:left-[16.5rem] left-[18rem] bottom-[68px] "></div>
 
-                        </ul>
-                    </div>
+                                {/* Second Element */}
+                                <div className="element absolute lg:w-[113px] w-[80px] h-[2.5rem]  border border-teal-500 ml-16 lg:left-[8.3rem] left-[11rem] lg:top-[-0.5rem] top-[-0.7rem] z-10"></div>
+
+                                {/* Third Element */}
+                                <div
+
+                                    className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-10 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px]`}
+                                >
+                                    Смм
+                                </div>
+                            </div>
+                        </button>
+                            <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
+                                <li>разработка SMM стратегии</li>
+                                <li>SMM продвижение</li>
+                                <li>контент маркетинг</li>
+                                <li>создание контента для соц сетей</li>
+                                <li>инфлюенс маркетинг ( блоггеры )</li>
+                                <li>разработка TOV ( tone of voice )</li>
+                                <li>разработка фирменного стиля страниц</li>
+                                <li>настройка и запуск таргетированной рекламы</li>
+
+                            </ul>
+                        </div>
                     </div>
                     <div className='flex items-end justify-end mt-5'>
                         <Link to='/services/smm'>
@@ -121,7 +187,23 @@ export default function Services() {
 
                 <div className='lg:flex'>
                     <div className=' lg:space-y-4'>
-                        <ButtonModal text={'Продакшн'} />
+                    <button className='flex justify-center items-center' >
+                            <div className='relative flex justify-end mt-11 h-[5rem] lg:w-[300px] w-[300px] group'>
+                                {/* First Element */}
+                                <div className="element absolute lg:w-[56.50px] w-[46px] lg:h-[1.7rem] h-[30px] border border-teal-500 z-10 lg:left-[16.5rem] left-[18rem] bottom-[68px] "></div>
+
+                                {/* Second Element */}
+                                <div className="element absolute lg:w-[113px] w-[80px] h-[2.5rem]  border border-teal-500 ml-16 lg:left-[8.3rem] left-[11rem] lg:top-[-0.5rem] top-[-0.7rem] z-10"></div>
+
+                                {/* Third Element */}
+                                <div
+
+                                    className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-10 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px]`}
+                                >
+                                    Продакшн
+                                </div>
+                            </div>
+                        </button>
                         <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px] '>
                             <li>профессиональный видеоролик</li>
                             <li>создание контента</li>

@@ -33,15 +33,15 @@ function Partners({images}) {
     };
 
     return (
-        <div className=" w-screen mt-4">
-            <Slider          {...settings} className="flex  mx-auto ">
+        <div className=" w-[100vw]  mt-4">
+            <Slider          {...settings} className="flex   mx-auto ">
 
             {images.map((item, index) => (
                         <div
                             onMouseEnter={() => handleMouseEnter(item.src1)}
                             onMouseLeave={() => handleMouseLeave(item.src)}
                    
-                            className='w-[12rem] h-[8rem] bg-white rounded-2xl  mt-4  flex justify-center items-center px-4'>
+                            className='lg:w-[12rem] w-[8rem] h-[8rem] bg-white rounded-2xl  mt-4  flex justify-center items-center px-4'>
 
                             <img
                                 key={index}

@@ -8,9 +8,9 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-const ButtonModal = ({ text, style, isAnimating, category, documentId }) => {
+const ButtonModal = ({ text, style, isAnimating, category, documentId, open1 }) => {
   const shouldAnimate = isAnimating && !!style; // Check if isAnimating is true and style prop is provided
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false || open1);
   const [popupContent, setPopupContent] = useState(null); 
   const [infoData, setInfoData] = useState(null)
   useEffect(() => {

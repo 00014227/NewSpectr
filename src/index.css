@@ -9,12 +9,10 @@ h1, h2 {
 .slick-slide {
     margin-right:  20px;
     height: 5rem;
+   
 }
 
-/* the parent */
-.slick-list {
-  margin: 0 -50px;
-}
+
 
 .pcolor {
  color:  rgba(47, 48, 50, 1)

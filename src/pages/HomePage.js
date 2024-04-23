@@ -151,7 +151,7 @@ const HomePage = () => {
 
                 </section>
 
-                <section className='flex-shrink-0 lg:pb-0 pb-4 w-auto lg:h-screen h-auto lg:flex justify-center items-center 2xl:py-12 '>
+                <section className='flex-shrink-0 lg:pb-0 pb-7 w-auto lg:h-screen h-auto lg:flex justify-center items-center 2xl:py-12 '>
                     <div className='relative flex items-center justify-center'>
                         <img src={txt} className=" animate-spin-slow" />
                         <svg width="100" height="100" viewBox="0 0 527 527" fill="none" xmlns="http://www.w3.org/2000/svg" className=' absolute'>
@@ -191,7 +191,7 @@ const HomePage = () => {
                                 </div>
 
                             </div>
-                            <p className="text-white  text-xl block lg:hidden font-normal font-['Evolventa'] md:w-[500px] w-auto lg:w-auto capitalize leading-9 max-w-[810px]">
+                            <p className="text-white pt-8 text-xl block lg:hidden font-normal font-['Evolventa'] md:w-[500px] w-auto lg:w-auto capitalize leading-9 max-w-[810px]">
                                 Маркетинговое агентство «Спектр» (Ташкент) специализируется на комплексном развитии успешных корпоративных, продуктовых и розничных брендов от построения стратегии бренда, разработки имени, создания логотипа, создания фирменного стиля до разработки сайта любого сложность. Также мы поможем вам рассказать о компании, товаре или услуге посредством презентации.
                             </p>
                             <h1 className="text-white xl:text-[120px] text-[140px] hidden lg:block font-bold font-['Jost'] uppercase leading-[150px] 2xl:leading-[200px]">marketing <br /> agency</h1>
@@ -199,9 +199,9 @@ const HomePage = () => {
                     </div>
                 </section>
 
-                <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center md:pr-10 lg:pb-0 pb-10'>
+                <section className='flex-shrink-0  w-auto lg:h-screen lg:flex items-center justify-center md:pr-10 lg:pb-0 pb-5'>
                     <Slider text={'ПОРТФОЛИО'} />
-                    <div className='md:flex gap-3 md:mb-0 '>
+                    <div className='md:flex pt-4 gap-3 md:mb-0 '>
                         <div className=' lg:mb-40 md:mb-0 lg:ml-16 px-4'>
                             <h2 className="text-white 2xl:text-[140px] lg:text-[150px] md:text-[90px] text-[56px] font-bold font-['Jost'] uppercase lg:leading-[240px]">с кем  <span className='lg:hidden md:flex hidden items-end  justify-end'>работали</span></h2>
                         </div>
