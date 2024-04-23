@@ -63,15 +63,15 @@ export default function Marketing() {
                     </div>
                 </div>
             </section>
-            <section className='bg-black flex-shrink-0 lg:pb-0 pb-10 w-auto lg:h-screen h-auto  lg:flex items-center md:pr-0 pr-10 xl:ml-0 lg:ml-[8rem]'>
+            <section className='bg-black flex-shrink-0 lg:pb-0 md:pb-10 w-auto lg:h-screen h-auto  lg:flex items-center md:pr-0 pr-10 xl:ml-0 lg:ml-[8rem]'>
                 <Slider text={'MARKETING'} />
-                <div className=' 2xl:max-w-[2688px] lg:ml-24 px-5 relative h-fit'>
+                <div className=' 2xl:max-w-[2688px] lg:mt-0 mt-4 lg:ml-24 px-5 relative h-fit'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px] md:leading-[200px]">Виды <br />маркетинга</h2>
                     <p className=" md:absolute lg:top-0 2xl:-right-[22rem] lg:-right-[19rem] bottom-[180px] md:-right-0 right-[0px] lg:w-[90%] md:w-[460px] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  lg:leading-[42px] leading-[30px]">
                         Существует множество видов маркетинга, каждый из которых имеет свои особенности и преимущества. Они включают традиционный маркетинг, основанный на использовании традиционных каналов коммуникации, таких как ТВ и пресса, а также цифровой маркетинг, ориентированный на интернет-платформы и социальные сети для привлечения и взаимодействия с аудиторией.</p>
                 </div>
 
-                <div className='lg:block hidden lg:ml-[22rem] '>
+                <div className='lg:block hidden lg:ml-[22rem]  '>
                     <SnakeBox />
                 </div>
 
@@ -85,7 +85,7 @@ export default function Marketing() {
                             <ButtonModal text={'Диджитал маркетинг'} documentId={65} />
                         </div>
                     </div>
-                    <div className='md:hidden block py-10'>
+                    <div className='md:hidden ml-[5%] py-10'>
                         <SnakeBox />
                     </div>
 

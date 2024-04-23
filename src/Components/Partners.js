@@ -33,7 +33,7 @@ function Partners({images}) {
     };
 
     return (
-        <div className=" w-screen">
+        <div className=" w-screen mt-4">
             <Slider          {...settings} className="flex  mx-auto ">
 
             {images.map((item, index) => (

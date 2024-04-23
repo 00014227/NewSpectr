@@ -40,7 +40,7 @@ export default function Last3Page({ isBeating }) {
         <section className='flex-shrink-0  w-auto lg:pl-40  lg:h-screen  lg:flex 2xl:py-12 items-center  gap-36 bg-black'>
 
             <div className=''>
-                <form onSubmit={handleSubmit} className='flex lg:flex-row flex-col items-center gap-20'>
+                <form onSubmit={handleSubmit} className='flex lg:flex-row flex-col items-center md:gap-20 gap-10'>
                     <div className=' space-y-10 flex flex-col items-center'>
                         <div className='flex flex-col '>
                             <label className='text-white text-xl'>Название вашей компании</label>
@@ -89,7 +89,7 @@ export default function Last3Page({ isBeating }) {
                     <div className=' space-y-14 flex flex-col justify-center'>
 
 
-                        <div className='flex flex-col lg:items-start items-center'>
+                        <div className='flex flex-col lg:items-start '>
                             <label className=' text-white text-xl'>Контактный номер</label>
                             <div className="relative ">
                                 <div className="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
@@ -108,7 +108,7 @@ export default function Last3Page({ isBeating }) {
                             </div>
                         </div>
 
-                        <div className='flex flex-col lg:items-start items-center'>
+                        <div className='flex flex-col lg:items-start '>
                             <label className=' text-white text-xl'>Ваш бюджет: <span>{formData.budget}</span> $</label>
                             <input type='range'
                                 name='budget'

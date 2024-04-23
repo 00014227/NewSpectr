@@ -108,7 +108,7 @@ const NavBar = ({ navbar }) => {
                 {/* <div className='flex items-center' > */}
 
                 {isHovered || window.innerWidth < 850 ? (
-                    <div className='lg:w-[120px] w-screen  transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white bg-black lg:py-[60px] md:flex justify-center items-center  z-[100]'>
+                    <div className='lg:w-[120px] w-screen  transition-opacity duration-500 opacity-100 lg:h-screen md:h-[5.9rem] h-auto lg:border-r border-white bg-black lg:py-[60px] md:flex justify-center items-center pb-4 z-[100]'>
                         <div className='lg:w-[120px] w-screen flex lg:flex-col flex-row justify-between lg:h-[100%]'>
                             <div className=' space-y-12 lg:pl-0 pl-4'>
                                 <Link to={'/'}>

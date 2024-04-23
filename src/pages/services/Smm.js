@@ -68,7 +68,7 @@ export default function Smm() {
                 <div className=' lg:h-screen 2xl:w-[182px] lg:w-[102px] h-[102px] w-screen lg:border-r lg:border-l border-t border-b  border-white lg:rotate-180 flex flex-col lg:justify-between justify-center items-center'>
                     <h3 className=" text-white horizon-text 2xl:text-[70px] md:text-[50px] text-4xl my-auto  font-bold uppercase  leading-snug tracking-wider">Какие виды CMM</h3>
                 </div>
-                <div className=' 2xl:max-w-[2688px] lg:ml-24 px-4 relative'>
+                <div className=' 2xl:max-w-[2688px] lg:pt-0 pt-4 lg:ml-24 px-4 relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">виды смм<br /> продвижение <br /></h2>
                     <p className="2xl:w-[800px] lg:w-[900px] top-36 lg:right-[-80px] right-[200px] w-auto text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa'] leading-[42px]">
                         SMM (социальные медиа-маркетинг) - это стратегия продвижения бренда или продукта через социальные платформы, такие как Facebook, Instagram, Twitter и LinkedIn. Он включает в себя создание и распространение контента, взаимодействие с аудиторией, а также использование рекламных инструментов для достижения целей маркетинговой кампании.</p>

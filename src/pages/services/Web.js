@@ -69,10 +69,10 @@ export default function Web() {
             </section>
             <section className='bg-black flex-shrink-0  w-auto lg:h-screen h-auto block lg:flex items-center   '>
                 <Slider text={'Вебсайты'} />
-                <div className='px-4 lg:flex items-center justify-center md:px-11 '>
+                <div className='px-4 lg:pt-0 pt-3 lg:flex items-center justify-center md:px-11 '>
                 <div className=' 2xl:max-w-[2688px] lg:ml-24  relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> сайтов любой<br /> сложности</h2>
-                    <p className="2xl:w-[500px] lg:absolute 2xl:top-9 2xl:right-[-300px] lg:-top-8 lg:right-[-200px]  top-[280px] right-0 w-[350px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
+                    <p className="2xl:w-[500px] lg:absolute 2xl:top-9 2xl:right-[-300px] lg:-top-8 lg:right-[-200px]  top-[280px] right-0 w-[380px] text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Рисуем прототипы, создаём макеты, верстаем для разных типов устройств. Внедряем необходимую CMS, интегрируем CRM.</p>
                 </div>
                 <div className='lg:block hidden lg:ml-[14rem]'>
@@ -80,7 +80,7 @@ export default function Web() {
                 </div>
 
 
-                <div className='lg:block  justify-center items-center pr-4 md:mt-0 mt-9 space-y-9 lg:ml-[8rem]'>
+                <div className='lg:block  justify-center items-center pr-4 md:mt-0  space-y-9 lg:ml-[8rem]'>
                     <div className='lg:space-y-0 lg:block md:flex justify-between '>
                         <div className=' lg:ml-0 '>
                             <Button text={'Одностроничный сайт'} category={'web'} documentId = {17}/>
@@ -118,7 +118,7 @@ export default function Web() {
                     <h3 className="text-white horizon-text 2xl:text-[70px] my-auto md:text-[50px] text-2xl  font-bold uppercase leading-snug tracking-wider">онлайн сервисы</h3>
                 </div>
 
-                <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
+                <div className=' 2xl:max-w-[2688px] lg:pt-0 pt-4 lg:ml-24 md:px-10 px-4 relative'>
                     <h2 className="text-white 2xl:text-[120px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[200px]">Создание <br /> онлайн <br /> сервиса</h2>
                     <p className="2xl:w-[600px] md:absolute 2xl:top-[234px] lg:top-[164px] 2xl:right-[-450px] lg:right-[-250px]  md:ml-0 right-0 top-60 md:w-[350px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Проектируем, разрабатываем и развиваем сервисы для ваших клиентов или для внутреннего использования.</p>
@@ -141,12 +141,12 @@ export default function Web() {
 
             </section>
 
-            <section className='bg-black flex-shrink-0  w-auto lg:ml-[10rem]  lg:h-screen lg:pb-0 pb-4   lg:flex items-center'>
+            <section className='bg-black flex-shrink-0  w-auto lg:ml-[10rem]  lg:h-screen lg:pb-0    lg:flex items-center'>
                 <Slider text={'MOBILE APPS'} />
 
 
 
-                <div className=' 2xl:max-w-[2688px] lg:ml-24 md:px-10 px-4 relative'>
+                <div className=' 2xl:max-w-[2688px] lg:pt-0 pt-4 lg:ml-24 md:px-10 px-4 relative'>
                     <h2 className="text-white 2xl:text-[140px] md:text-[95px] text-[44px] font-black font-['Jost'] uppercase 2xl:leading-[240px]">создание <br /> мобильных <br />приложений</h2>
                     <p className="2xl:w-[600px] lg:w-[470px] w-auto lg:absolute 2xl:top-[205px] lg:top-[130px] 2xl:right-[-500px] lg:right-[-470px] right-[20px]  text-white text-[18px] 2xl:text-[28px] font-normal font-['Evolventa']  leading-[42px]">
                     Приложения для смартфонов экономят время и деньги благодаря простоте использования. Наши специалисты будут сопровождать Вас в создании интерфейса и необходимых шагов покупки подходящего для типа бизнеса. </p>
@@ -173,8 +173,8 @@ export default function Web() {
                     <h3 className=" text-white horizon-text 2xl:text-[80px] my-auto md:text-[50px] text-4xl font-bold  leading-snug tracking-wider">Как мы работаем?</h3>
                 </div>
 
-                <h3 className="text-white 2xl:text-[240px] px-4 uppercase md:text-[120px] text-[44px] font-bold">наш <br /> <span className=' ml-32'>процесс</span></h3>
-                <div className='lg:flex py-8'>
+                <h3 className="text-white 2xl:text-[240px] lg:pt-0 pt-4 px-4 uppercase md:text-[120px] text-[44px] font-bold">наш <br /> <span className=' ml-32'>процесс</span></h3>
+                <div className='lg:flex '>
                     {servicesData.services.map((service) => (
                         <div className='flex mb-[5.5rem] md:h-[400px] h-[200px]  items-center' key={service.id}>
               

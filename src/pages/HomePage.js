@@ -141,7 +141,7 @@ const HomePage = () => {
 
                 <section className=" flex-shrink-0  w-auto 2xl:h-screen h-auto  flex flex-col lg:items-center justify-center lg:pt-0 pt-32">
                     <div className='lg:w-screen'>
-                        <div className=' w-auto mx-auto py-14 lg:ml-36 px-4'>
+                        <div className=' w-auto mx-auto pt-14 pb-8   lg:ml-36 px-4'>
                             <h2 className=" text-white font-black hidden lg:block 2xl:text-[7rem]  xl:text-6xl lg:text-[80px] text-[50px] uppercase xl:leading-[152px] ">Мы <span className=" font-light lg:leading-[152px]">маркетинговое Агенство  и здесь чтобы создать</span> будущее для вашего бизнеса</h2>
                             <h2 className=" text-white font-black block lg:hidden  xl:text-7xl lg:text-[80px] text-[35px] uppercase  ">Мы <span className=" font-light ">маркетинговое Агенство  и здесь чтобы создать</span> <br /><span className='flex md:justify-end lg:mr-0 mr-7'>будущее для вашего бизнеса</span></h2>
 
@@ -151,7 +151,7 @@ const HomePage = () => {
 
                 </section>
 
-                <section className='flex-shrink-0  w-auto lg:h-screen h-auto lg:flex justify-center items-center 2xl:py-12 '>
+                <section className='flex-shrink-0 lg:pb-0 pb-4 w-auto lg:h-screen h-auto lg:flex justify-center items-center 2xl:py-12 '>
                     <div className='relative flex items-center justify-center'>
                         <img src={txt} className=" animate-spin-slow" />
                         <svg width="100" height="100" viewBox="0 0 527 527" fill="none" xmlns="http://www.w3.org/2000/svg" className=' absolute'>
@@ -167,11 +167,11 @@ const HomePage = () => {
                         </svg>
                     </div>
 
-                    <div className=' lg:ml-36 px-4'>
+                    <div className=' lg:ml-36 px-4 lg:pt-0 pt-8'>
                         {/* <h3 className="text-white text-[56px] font-bold  capitalize">about</h3> */}
                         <div className='lg:flex 2xl:gap-44 gap-9 items-center'>
                             <h1 className="text-white xl:text-[120px] lg:text[150px] md:text-[100px] text-[56px] font-bold font-['Jost'] uppercase ">spectr <span className='lg:hidden flex justify-end  '>agency</span> </h1>
-                            <p className="text-white xl:text-xl text-2xl hidden lg:block font-normal  font-['Evolventa']  leading-9 2xl:max-w-[810px] max-w-[670px]">
+                            <p className="text-white lg:mt-0  xl:text-xl text-2xl hidden lg:block font-normal  font-['Evolventa']  leading-9 2xl:max-w-[810px] max-w-[670px]">
                                 Маркетинговое агентство «Спектр» (Ташкент) специализируется на комплексном развитии успешных корпоративных, продуктовых и розничных брендов от построения стратегии бренда, разработки имени, создания логотипа, создания фирменного стиля до разработки сайта любого сложность. Также мы поможем вам рассказать о компании, товаре или услуге посредством презентации.
                             </p>
                         </div>
@@ -212,7 +212,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     {/* Cards */}
-                    <div className=' grid lg:px-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 space-y-4 space-x-4'>
+                    <div className=' grid lg:px-4 lg:grid-cols-4 md:grid-cols-3  grid-cols-2 space-y-4 space-x-4'>
                         {isMobile ? (
                             <SLick />
                         ) : (

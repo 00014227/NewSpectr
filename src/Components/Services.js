@@ -13,8 +13,8 @@ export default function Services() {
          
             <div className=' lg:ml-20 px-8 lg:flex lg:space-x-20' >
                 <div className='lg:flex'>
-                    <div className=' space-y-4'>
-                        <ButtonModal text={'WEB РАЗРАБОТКИ'} />
+                    <div className=' lg:space-y-4'>
+                        <ButtonModal text={'Web разработки'} />
                         <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
                             <li>разработка одностраничного сайта ( landing page )</li>
                             <li>разработка корпоративных сайтов</li>
@@ -26,7 +26,7 @@ export default function Services() {
 
                         </ul>
                     </div>
-                    <div className='flex items-end lg:justify-end md:justify-center justify-end'>
+                    <div className='flex items-end lg:justify-end md:justify-center justify-end mt-5'>
                         <Link to='/services/web'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
@@ -39,8 +39,8 @@ export default function Services() {
 
                 <div className='lg:flex'>
                     <div className='flex flex-col items-end'>
-                        <div className=' space-y-4 '>
-                            <ButtonModal text={'БРЕНДИНГ'} />
+                        <div className=' lg:space-y-4 '>
+                            <ButtonModal text={'Брендинг'} />
                             <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
                                 <li>определение бренда и его позиционирование на рынке</li>
                                 <li>разработка уникального нейминга и создание логотипа</li>
@@ -66,8 +66,8 @@ export default function Services() {
                 </div>
 
                 <div className='lg:flex'>
-                    <div className=' space-y-4'>
-                        <ButtonModal text={'МАРКЕТИНГ'} />
+                    <div className=' lg:space-y-4'>
+                        <ButtonModal text={'Маркетинг'} />
                         <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
                             <li>маркетинг стратегия</li>
                             <li>разработка маркетинг плана</li>
@@ -92,9 +92,9 @@ export default function Services() {
                 </div>
 
                 <div className='lg:flex'>
-                    <div className='flex flex-col items-end'>
-                    <div className=' space-y-4'>
-                        <ButtonModal text={'SMM'} />
+                    <div className='flex flex-col md:items-end'>
+                    <div className='lg:space-y-4'>
+                        <ButtonModal text={'Smm'} />
                         <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px]'>
                             <li>разработка SMM стратегии</li>
                             <li>SMM продвижение</li>
@@ -108,7 +108,7 @@ export default function Services() {
                         </ul>
                     </div>
                     </div>
-                    <div className='flex items-end justify-end'>
+                    <div className='flex items-end justify-end mt-5'>
                         <Link to='/services/smm'>
                             <div className='relative h-fit'>
                                 <img src={readbtn} className=" 2xl:w-[144px] 2xl:h-[144px] w-24 h-24 animate-spin-slow" />
@@ -120,7 +120,7 @@ export default function Services() {
 
 
                 <div className='lg:flex'>
-                    <div className=' space-y-4'>
+                    <div className=' lg:space-y-4'>
                         <ButtonModal text={'Продакшн'} />
                         <ul className=' text-white list-disc 2xl:text-[28px] lg:text-[18px] '>
                             <li>профессиональный видеоролик</li>
