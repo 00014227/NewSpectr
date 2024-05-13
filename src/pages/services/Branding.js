@@ -50,7 +50,7 @@ export default function Branding() {
             </Helmet>
         <div
             ref={scrollContainerRef} onWheel={handleWheelScroll}
-            className='lg:flex block bg-black lg:overflow-x-hidden  lg:overflow-y-hidden items-center  h-[100vh] ' >
+            className='lg:flex block bg-black  lg:overflow-y-hidden items-center  h-[100vh] ' >
             <NavBar navbar={navbar} />
             <section className='bg-black flex-shrink-0  lg:w-auto lg:h-screen h-auto lg:flex items-center md:px-10 px-4 md:pt-0 pt-32'>
                 <div className='lg:flex '>
@@ -58,12 +58,12 @@ export default function Branding() {
                 
                     <div className=' space-y-[10%]'>
                         <div className='lg:ml-[14rem] '>
-                            <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] text-end  font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">дизайн <span className='font-extralight ml-3'>и</span> брендинг</h1>
+                            <h1 className="text-white 2xl:text-[100px] md:text-[80px] text-[44px] text-end  font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">дизайн <span className='font-extralight ml-3'>и</span> брендинг</h1>
 
                         </div>
 
                         <div className=' lg:ml-[5rem]'>
-                            <h2 className="2xl:text-[200px] md:text-[120px] text-[64px] font_border  font-bold font-['Jost'] uppercase ">Наши<br />услуги</h2>
+                            <h2 className="2xl:text-[150px] md:text-[120px] text-[64px] font_border  font-bold font-['Jost'] uppercase ">Наши<br />услуги</h2>
                         </div>
                     </div>
                 </div>
@@ -78,10 +78,10 @@ export default function Branding() {
 
                 <div className=''>
                     <div className='lg:block hidden'>
-                        <h3 className=' text-white 2xl:text-[70px] md:text-[70px] text-center font-[jost] uppercase text-2xl'>создание</h3>
+                        <h3 className=' text-white 2xl:text-[70px] md:text-[70px] text-center font-[jost] uppercase text-2xl'>создание бренда</h3>
                     </div>
-                    <div className='lg:flex '>
-                        <div className=' lg:mx-14 pl-[0.7rem]  lg:block md:flex justify-between'>
+                    <div className='lg:flex lg:space-y-11'>
+                        <div className=' lg:mx-14 pl-[0.7rem] lg:mt-12 lg:block md:flex justify-between'>
                             <div>
                                 <Button text={'Cтратегия бренда'} documentId={39} />
                                 <div className='lg:block flex justify-end'>
@@ -91,7 +91,7 @@ export default function Branding() {
 
 
                             </div>
-                            <div className=' md:mr-11'>
+                            <div className=' md:mr-11 '>
                                 <Button text={'Cтратегия комуникации'} documentId={27} />
                                 <div className='lg:block flex justify-end'>
                                     <Button text={'Брендбук и гайдлайн'} documentId={33} />
@@ -152,13 +152,13 @@ export default function Branding() {
 
                 </div>
                 <div>
-                    <div className=' lg:block hidden'>
-                        <h3 className=' text-white 2xl:text-[70px] md:text-[70px] text-center font-[jost] uppercase text-2xl'>бренда</h3>
+                    <div className=' lg:block hidden ml-[4rem]'>
+                        <h3 className=' text-white 2xl:text-[70px] md:text-[70px] text-center font-[jost] uppercase text-2xl'>создание айдентики</h3>
                     </div>
-                    <div className='lg:flex justify-between'>
+                    <div className='lg:flex justify-between lg:space-y-10'>
 
 
-                        <div className=' lg:mx-14 pl-[0.7rem] lg:block  justify-between'>
+                        <div className=' lg:mx-14 pl-[0.7rem] lg:mt-10 lg:block  justify-between'>
                             <div>
                             <div className='lg:block flex justify-end'>
                                 <Button text={'Создание логотипа'} documentId={32} />
@@ -179,7 +179,7 @@ export default function Branding() {
                         </div>
 
                         <div className='lg:ml-32 lg:flex-col pl-[0.7rem] lg:justify-center md:justify-between  items-center '>
-                            <div className='flex justify-end'>
+                            <div className='flex lg:justify-start justify-end'>
                                 <Button text={'Фирменные шрифты'} documentId={35} />
                             </div>
 

@@ -32,7 +32,7 @@ function SLick() {
   };
   return (
     <div className=" w-screen">
-      <Slider {...settings} className="flex  mx-auto">
+      <Slider {...settings} className="flex  mx-auto ">
 
         {potfolios.portfolio.map((item, index) => (
 
@@ -41,7 +41,7 @@ function SLick() {
           <div
             onMouseEnter={() => handleMouseEnter(item.image)}
             onMouseLeave={() => handleMouseLeave(item.geyLogo)}
-            key={item.id} className='lg:w-[12rem] w-[8rem] h-[8rem] bg-white rounded-2xl py-3 mt-4 ml-4 flex justify-center items-center px-4'>
+            key={item.id} className='lg:w-[12rem] w-[10rem] h-[8rem] bg-white rounded-2xl py-3 mt-4  flex justify-center items-center px-4'>
             <img className="w-full h-full object-contain" src={isHovered && imageSrc === item.image ? item.image : item.geyLogo} />
           </div>
 

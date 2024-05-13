@@ -55,11 +55,11 @@ export default function Production() {
                         <div className=''>
 
                             <div className=' lg:ml-[8rem] w-full'>
-                                <h1 className="text-white text-right 2xl:text-[120px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">продакшн<span className='font-extralight ml-3'>и</span>  <span className='font-extralight flex justify-end'>создание контента</span></h1>
+                                <h1 className="text-white text-right 2xl:text-[100px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">продакшн<span className='font-extralight ml-3'>и</span>  <span className='font-extralight flex justify-end'>создание контента</span></h1>
                             </div>
 
                             <div className='lg:ml-[5rem]'>
-                                <h2 className="2xl:text-[190px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
+                                <h2 className="2xl:text-[150px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
                             </div>
                         </div>
 

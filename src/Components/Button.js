@@ -69,7 +69,7 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId, open1 }) 
           {/* Third Element */}
           <div
 
-            className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-10 2xl:text-2xl text-[20px] font-bold font-Jost leading-[43.20px] ${shouldAnimate ? 'animated-button' : ''} ${style}`}
+            className={`element absolute max-w-[320px] w-full 2xl:py-2 px-7  h-auto border border-teal-500 hover:bg-teal-500 text-white z-10 2xl:text-xl text-[20px] font-bold font-Jost leading-[43.20px] ${shouldAnimate ? 'animated-button' : ''} ${style}`}
           >
             {text}
           </div>
@@ -105,7 +105,7 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId, open1 }) 
           unmount: { scale: 0.9, y: -100 },
         }}
         
-        className="popup lg:w-[40vw] lg:h-[80vh] h-[50vh]   mx-auto my-auto lg:my-auto lg:flex lg:items-center lg:justify-center items-end justify-end bg-white">
+        className="popup lg:w-[40vw] lg:h-[80vh] h-[60vh]   mx-auto my-auto lg:my-auto lg:flex lg:items-center lg:justify-center items-end justify-end bg-white">
         {popupContent && (
           <>
           <div className='lg:hidden flex justify-between items-center px-4  '>
@@ -130,7 +130,7 @@ const ButtonModal = ({ text, style, isAnimating, category, documentId, open1 }) 
                 </svg>
 
               </div>
-              <Typography className="font-normal px-4 lg:mt-11 text-white">
+              <Typography className="font-normal px-4 2xl:text-2xl lg:mt-11 text-white">
                 {popupContent.description}
               </Typography>
               <DialogFooter className="space-x-2">

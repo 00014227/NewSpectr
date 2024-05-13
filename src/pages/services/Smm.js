@@ -38,7 +38,7 @@ export default function Smm() {
         <>
         <Helmet>
             <title>Смм продвижение и реклама</title>
-            <meta name='description' content='В современном цифровом мире сильное присутствие в социальных сетях является ключевым фактором успеха бизнеса. Spectr поможет вам разработать и реализовать выигрышные стратегии продвижения и рекламы в SMM, которые усилят голос вашего бренда, привлекут целевую аудиторию и обеспечат ощутимые результаты.'/>
+            <meta name='description' content='Социальные сети, считающиеся сегодня наиболее оптимальным рекламным инструментом, станут с нами местом, где Ваши клиенты смогут найти Вас и выбрать без колебаний.'/>
             <link rel='cannonical' href='/services/smm'/>
             <meta name="keywords" content={keywords.join(', ')} />
 
@@ -51,12 +51,12 @@ export default function Smm() {
                
                     <div className=''>
 
-                        <div className='lg:ml-[5rem] w-full md:pr-4 pr-2'>
-                            <h1 className="text-white text-right 2xl:text-[120px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">смм продвижение  <span className='font-extralight flex justify-end'>и   реклама</span></h1>
+                        <div className='2xl:ml-[8rem] lg:ml-[5rem] w-full md:pr-4 pr-2'>
+                            <h1 className="text-white  text-right 2xl:text-[100px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">смм продвижение  <span className='font-extralight flex justify-end'>и   реклама</span></h1>
                         </div>
 
                         <div className='lg:ml-[5rem] pl-4'>
-                            <h2 className="2xl:text-[190px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
+                            <h2 className="2xl:text-[150px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@ export default function Smm() {
                 </div>
 
                 <div className=' md:flex lg:flex-col lg:justify-center justify-between space-y-9 lg:ml-20 items-center'>
-                    <div className='ml-[0.9rem]'>
+                    <div className=' ml-[0.9rem]'>
                         <Button text={'Фирменный стиль страниц'}  documentId={60}/>
                     </div>
 

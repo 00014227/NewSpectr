@@ -43,7 +43,7 @@ export default function Web() {
         <>
         <Helmet>
         <title>Создание сайтов и приложений</title>
-            <meta name='description' content='Создайте веб-сайт или приложение, которое будет работать на вас! Спектр - это опытная команда разработчиков, которая специализируется на создании высококачественных, функциональных и эффективных веб-сайтов и приложений для клиентов любого размера.'/>
+            <meta name='description' content='Мы разрабатываем и оптимизируем сайты любой сложности исходя из целей и задач. Комплексные услуги, такие как техническая поддержка, SEO и контекстная реклама, предоставляются высококвалифицированными ИТ-специалистами, имеющими опыт работы в этой области.'/>
             <link rel='cannonical' href='/services/web'/>
             <meta name="keywords" content={keywords.join(', ')} />
         </Helmet>
@@ -58,11 +58,11 @@ export default function Web() {
                     <div className=''>
                         
                         <div className=' lg:ml-[17rem] lg:pr-0 pr-4'>
-                            <h1 className="text-white 2xl:text-[120px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">создание сайтов<span className='font-extralight ml-3'>и</span>  <span className='font-extralight flex justify-end'>приложений</span></h1>
+                            <h1 className="text-white 2xl:text-[100px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">создание сайтов<span className='font-extralight ml-3'>и</span>  <span className='font-extralight flex justify-end'>приложений</span></h1>
                         </div>
                         
                         <div className='lg:ml-[5rem]'>
-                            <h2 className="2xl:text-[190px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
+                            <h2 className="2xl:text-[150px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
                         </div>
                     </div>
                 </div>  

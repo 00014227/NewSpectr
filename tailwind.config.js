@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    
     extend: {
       animation: {
         'spin-slow': 'spin 10s linear infinite',
@@ -12,6 +13,7 @@ module.exports = {
        square: 'square',
        disc: 'disc',
      },
+     
 
     //  backgroundSize: {
     //   'auto': 'auto',

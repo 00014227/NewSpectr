@@ -30,32 +30,30 @@ export default function Marketing() {
             setNavbar(false)
         }
     };
+    const keywords = ['диджитал маркетинг', 'маркетинг стратегия', 'маркетинг анализ', 'маркетинг план', 'маркетинг продвижение', 'оффлайн маркетинг']
     return (
         <>
         <Helmet>
                 <title>Маркетинг и продвижение</title>
-                <meta name='description' content='Увеличьте продажи и узнаваемость бренда с помощью комплексных маркетинговых решений Spectr.'/>
+                <meta name='description' content='Мы выполняем работу в отличном тандеме: направленную на повышение уровня продаж, эмоционально преподнося вид товара или услуги, ориентируясь на потребности клиента.'/>
+                <meta name="keywords" content={keywords.join(', ')} />
+
                 <link rel='cannonical' href='/services/marketing'/>
         </Helmet>
         <div ref={scrollContainerRef} onWheel={handleWheelScroll} className='lg:flex items-center bg-black block lg:overflow-x-auto  lg:overflow-y-hidden h-[100vh] '>
             <NavBar navbar={navbar} />
             <section className=' flex-shrink-0 px-4  lg:h-screen h-auto lg:flex items-center lg:w-[100vw] w-auto md:pt-0 pt-32'>
                 <div className='lg:flex gap-40'>
-                    <div className='lg:flex relative justify-center'>
+                    <div className='lg:flex relative justify-end'>
                         <Circles/>
-                        {/* <div className='  flex lg:flex-col items-center justify-center md:mt-4 lg:mt-20 lg:space-y-14 lg:space-x-0 space-x-10'>
-                            <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                            <img src={web} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                            <img src={branding} className=" animate-spin-slow md:w-auto md:h-auto w-16 h-16" />
-                        </div> */}
                         <div className=''>
 
-                            <div className=' xl:ml-[17rem] lg:ml-[10rem] w-full'>
-                                <h1 className="text-white text-right 2xl:text-[120px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">маркетинг<span className='font-extralight ml-3'>и</span>  <span className='font-extralight flex justify-end'>продвижение</span></h1>
+                            <div className=' flex justify-end xl:ml-[15rem] lg:ml-[10rem]  w-full'>
+                                <h1 className="text-white text-right 2xl:text-[100px] md:text-[80px] text-[44px] font-bold  uppercase md:leading-[120px] 2xl:leading-[192px]">маркетинг и  <span className='font-extralight flex justify-end'>продвижение</span></h1>
                             </div>
 
                             <div className='lg:ml-[5rem]'>
-                                <h2 className="2xl:text-[190px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
+                                <h2 className="2xl:text-[150px] md:text-[120px] text-[64px] font_border  font-bold  uppercase ">Наши<br /> услуги</h2>
                             </div>
                         </div>
 

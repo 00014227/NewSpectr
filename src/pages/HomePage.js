@@ -126,13 +126,13 @@ const HomePage = () => {
     return (
         <>
             <Helmet>
-                <title>Spectr Marketing Agency</title>
-                <meta name='description' content='Самое опытное и надежное агентство по мнению наших клиентов.' />
+                <title>Маркетинговое агентство - Spectr</title>
+                <meta name='description' content='Spectr Marketing — агентство, которое прекрасно может выполнить все этапы маркетинга, начиная от анализа и заканчивая передачей клиентов в отдел продаж.' />
 
             </Helmet>
 
             <div ref={scrollContainerRef} onWheel={handleWheelScroll}
-                className="  relative z-50 lg:flex items-center lg:overflow-x-hidden  lg:overflow-y-hidden  block  bg-black h-[100vh]">
+                className="  relative z-50 lg:flex items-center   lg:overflow-y-hidden  block  bg-black h-[100vh]">
                 <NavBar navbar={navbar} />
                 <div className='w-full h-[100vh] -z-10 absolute top-0 left-0'>
                     <Background />
@@ -141,9 +141,9 @@ const HomePage = () => {
 
                 <section className=" flex-shrink-0  w-auto 2xl:h-screen h-auto  flex flex-col lg:items-center justify-center lg:pt-0 pt-32">
                     <div className='lg:w-screen'>
-                        <div className=' w-auto mx-auto pt-14 pb-8   lg:ml-36 px-4'>
-                            <h2 className=" text-white font-black hidden lg:block 2xl:text-[7rem]  xl:text-6xl lg:text-[80px] text-[50px] uppercase xl:leading-[152px] ">Мы <span className=" font-light lg:leading-[152px]">маркетинговое Агенство  и здесь чтобы создать</span> будущее для вашего бизнеса</h2>
-                            <h2 className=" text-white font-black block lg:hidden  xl:text-7xl lg:text-[80px] text-[35px] uppercase  ">Мы <span className=" font-light ">маркетинговое Агенство  и здесь чтобы создать</span> <br /><span className='flex md:justify-end lg:mr-0 mr-7'>будущее для вашего бизнеса</span></h2>
+                        <div className=' w-auto mx-auto pt-14 pb-8    lg:ml-36 px-4'>
+                            <h2 className=" text-white font-black mx-center hidden lg:block 2xl:text-[5rem]  xl:text-6xl lg:text-[80px] text-[50px] uppercase xl:leading-[152px] ">Мы маркетинговое Агенство и <br/> здесь чтобы создать будущее<br/> для вашего бизнеса</h2>
+                            <h2 className=" text-white font-black block lg:hidden  xl:text-7xl lg:text-[80px] text-[30px] uppercase  ">Мы <span className=" font-light ">маркетинговое Агенство  и здесь чтобы создать</span> <br /><span className='flex md:justify-end lg:mr-0 mr-7'>будущее для вашего бизнеса</span></h2>
 
                         </div>
 

@@ -2,14 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 h1, h2 {
   font-family: 'Jost', sans-serif;
 }
 
-.slick-slide {
-    margin-right:  20px;
-    height: 5rem;
-   
+.slick-slider .slick-slide {
+  padding: 0 10px;
+}
+
+.range-slider::-webkit-slider-thumb {
+  appearance: none;
+    width: 1rem;
+    height: 2rem;
+    border-radius: 10%;
+    background-color: rgb(20 184 166 / var(--tw-border-opacity));
 }
 
 
